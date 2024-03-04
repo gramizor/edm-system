@@ -52,7 +52,7 @@ function generateRandomRecord(id) {
     return {
         id: id,
         full_name: randomName(),
-        birthday: randomDate(new Date(1950, 0, 1), new Date(2000, 0, 1)).toLocaleDateString(),
+        birthday: randomDate(new Date(1950, 0, 1), new Date(2000, 0, 1)).toISOString(),
         phone: randomPhoneNumber(),
         email: randomEmail(),
         address: randomAddress(),

@@ -1,25 +1,22 @@
-import users from '../../Data';
+import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+import users, { cities } from '../../Data';
 import { MaterialReactTable } from 'material-react-table';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { IconButton } from '@mui/material';
 
 export const columns = [
     {
         header: 'ФИО',
-        accessorKey: 'full_name'
+        accessorKey: 'full_name',
+        filterVariant: 'text',
     },
     {
+        accessorFn: (originalRow) => new Date(originalRow.birthday), //convert to date for sorting and filtering
+        id: 'birthday',
         header: 'Дата рождения',
-        accessorKey: 'birthday',
-    },
-    {
-        header: 'Дата рождения',
-        accessorKey: 'birthday',
-        filterMethod: (filterValue, row) => {
-            const filterDate = new Date(filterValue);
-            const rowDate = new Date(row.birthday);
-            return filterDate.getFullYear() === rowDate.getFullYear() &&
-                filterDate.getMonth() === rowDate.getMonth() &&
-                filterDate.getDate() === rowDate.getDate();
-        }
+        filterVariant: 'date-range',
+        Cell: ({ cell }) => cell.getValue().toLocaleDateString(), // convert back to string for display
     },
     {
         header: 'Телефон',
@@ -31,8 +28,22 @@ export const columns = [
     },
     {
         header: 'Адрес',
-        accessorKey: 'address'
+        accessorKey: 'address',
+        filterVariant: 'multi-select',
+        filterSelectOptions: cities,
     },
+    {
+        header: '',
+        accessorKey: 'actions',
+        Cell: ({ row }) => (
+            <Link to={`/user/${parseInt(row.id) + 1}`}>
+                <IconButton color="inherit">
+                    <ArrowForwardIosIcon />
+                </IconButton>
+            </Link>
+        )
+
+    }
 ];
 
 export default function CustomTable() {
