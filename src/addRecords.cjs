@@ -1,72 +1,212 @@
 const fs = require('fs');
 
 // Функция для генерации случайной даты рождения
-function randomDate(start, end) {
-    return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+function generateBirthday() {
+    const start = new Date(1970, 0, 1);
+    const end = new Date(2005, 11, 31);
+    const randomDate = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+    return randomDate.toISOString();
 }
 
 // Функция для генерации случайного номера телефона
-function randomPhoneNumber() {
-    return '+7 (' + Math.floor(Math.random() * 1000) + ') ' + Math.floor(Math.random() * 1000) + '-' + Math.floor(Math.random() * 100) + '-' + Math.floor(Math.random() * 100);
+function generatePhoneNumber() {
+    const phoneFormats = [
+        "+7 (9**) ***-**-**",
+        "+7 (9##) ###-##-##"
+    ];
+
+    const randomFormat = phoneFormats[Math.floor(Math.random() * phoneFormats.length)];
+    return randomFormat.replace(/\*/g, () => Math.floor(Math.random() * 10))
+        .replace(/\#/g, () => Math.floor(Math.random() * 9) + 1);
+}
+
+// Функция для генерации случайного количества детей, братьев и сестер
+function random4() {
+    return Math.floor(Math.random() * 4);
+}
+
+// Функция для генерации случайного ФИО
+function generateFullName(gender) {
+    const maleFirstNames = ["Иван", "Петр", "Александр", "Сергей", "Михаил"];
+    const femaleFirstNames = ["Елена", "Ольга", "Анна", "Мария", "Светлана"];
+    const lastNames = ["Иванов", "Петров", "Сидоров", "Кузнецов", "Смирнов"];
+    const maleMiddleNames = ["Иванович", "Петрович", "Александрович", "Сергеевич", "Михайлович"];
+    const femaleMiddleNames = ["Ивановна", "Петровна", "Александровна", "Сергеевна", "Михайловна"];
+
+    const firstName = gender === "Мужской" ? maleFirstNames[Math.floor(Math.random() * maleFirstNames.length)] : femaleFirstNames[Math.floor(Math.random() * femaleFirstNames.length)];
+    const lastName = gender === "Мужской" ? lastNames[Math.floor(Math.random() * lastNames.length)] : lastNames[Math.floor(Math.random() * lastNames.length)] + 'а';
+    const middleName = gender === "Мужской" ? maleMiddleNames[Math.floor(Math.random() * maleMiddleNames.length)] : femaleMiddleNames[Math.floor(Math.random() * femaleMiddleNames.length)];
+
+    return `${lastName} ${firstName} ${middleName}`;
 }
 
 // Функция для генерации случайного адреса
-function randomAddress() {
-    return 'г. ' + ['Москва', 'Санкт-Петербург', 'Новосибирск', 'Екатеринбург', 'Нижний Новгород', 'Казань', 'Челябинск', 'Омск', 'Самара', 'Ростов-на-Дону'][Math.floor(Math.random() * 10)] + ', ул. ' + ['Ленина', 'Пушкина', 'Гагарина', 'Кирова', 'Сталина', 'Маркса', 'Красной Армии', 'Октябрьская', 'Советская', 'Мира'][Math.floor(Math.random() * 10)] + ', д. ' + Math.floor(Math.random() * 100) + ', кв. ' + Math.floor(Math.random() * 100);
+function generateAddress() {
+    const cities = ["Москва", "Санкт-Петербург", "Екатеринбург", "Новосибирск", "Красноярск"];
+    const streets = ["Ленина", "Мира", "Пушкина", "Гагарина", "Комсомольская"];
+
+    const city = cities[Math.floor(Math.random() * cities.length)];
+    const street = streets[Math.floor(Math.random() * streets.length)];
+    const houseNumber = Math.floor(Math.random() * 100) + 1;
+    const apartmentNumber = Math.floor(Math.random() * 200) + 1;
+
+    return `г. ${city}, ул. ${street}, д. ${houseNumber}, кв. ${apartmentNumber}`;
 }
 
-// Функция для генерации случайного имени и фамилии
-function randomName() {
-    return ['Иванов', 'Петров', 'Сидоров', 'Кузнецов', 'Смирнов', 'Михайлов', 'Федоров', 'Морозов', 'Волков', 'Алексеев'][Math.floor(Math.random() * 10)] + ' ' + ['Иван', 'Петр', 'Александр', 'Андрей', 'Сергей', 'Михаил', 'Николай', 'Владимир', 'Артем', 'Дмитрий'][Math.floor(Math.random() * 10)] + ' ' + ['Иванович', 'Петрович', 'Александрович', 'Андреевич', 'Сергеевич', 'Михайлович', 'Николаевич', 'Владимирович', 'Артемович', 'Дмитриевич'][Math.floor(Math.random() * 10)];
+// Функция для генерации случайного пола
+function generateGender() {
+    const genders = ["Мужской", "Женский"];
+    return genders[Math.floor(Math.random() * genders.length)];
 }
 
-// Функция для генерации случайных символов в почтовом адресе
-function randomEmail() {
-    const symbols = 'abcdefghijklmnopqrstuvwxyz';
-    const numbers = '0123456789';
-    let email = '';
-    for (let i = 0; i < 8; i++) {
-        email += symbols.charAt(Math.floor(Math.random() * symbols.length));
-    }
-    email += Math.floor(Math.random() * 100) + '@' + ['yandex.ru', 'mail.ru', 'google.com'][Math.floor(Math.random() * 3)];
-    return email;
+// Функция для выбора случайного университета
+function generateUniversity() {
+    const universities = [
+        "Московский государственный университет имени М. В. Ломоносова (МГУ)",
+        "Национальный исследовательский ядерный университет «МИФИ»",
+        "Московский физико-технический институт (МФТИ)",
+        "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)",
+        "Санкт-Петербургский государственный университет (СПбГУ)",
+        "Национальный исследовательский технологический университет «МИСИС»",
+        "Университет ИТМО",
+        "Российский университет дружбы народов (РУДН)",
+        "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)",
+        "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)",
+        "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+    ];
+    return universities[Math.floor(Math.random() * universities.length)];
 }
 
-// Функция для генерации случайного стажа работы
-function randomWorkExperience() {
-    return Math.floor(Math.random() * 40);
+// Функция для генерации случайного статуса брака
+function generateMaritalStatus(gender) {
+    const statuses = gender === "Мужской" ? ["женат", "холост", "разведен"] : ["замужем", "холоста", "разведена"];
+    return statuses[Math.floor(Math.random() * statuses.length)];
 }
 
-// Функция для генерации случайного отдела работы
+// Функция для генерации случайного опыта работы
+function generateWorkExperience() {
+    return Math.floor(Math.random() * 16);
+}
+
+// Функция для генерации случайной зарплаты
+function generateSalary() {
+    return Math.floor(Math.random() * 270001) + 30000;
+}
+
 function randomDepartment() {
     return ['IT', 'HR', 'Финансы', 'Продажи', 'Маркетинг', 'Логистика', 'Производство', 'Кадры', 'Бухгалтерия', 'Юридический'][Math.floor(Math.random() * 10)];
 }
 
-// Функция для генерации случайного количества детей, братьев и сестер
-function randomFamilyMembers() {
-    return Math.floor(Math.random() * 4);
+function randomPosition() {
+    return ['Разработчик', 'Менеджер', 'Бухгалтер', 'Директор', 'Специалист', 'Аналитик', 'Консультант', 'Инженер', 'Программист', 'Администратор'][Math.floor(Math.random() * 10)];
 }
 
-// Функция для генерации случайной записи
-function generateRandomRecord(id) {
+// Функция для генерации случайных данных пользователя
+function generateRandomUserData(id) {
+    const gender = generateGender();
+    const maritalStatus = generateMaritalStatus(gender);
+    const education = [];
+    const siblings = [];
+    const siblingsCount = random4(); // Случайное количество братьев и сестер
+
+    for (let i = 0; i < siblingsCount; i++) {
+        const siblingGender = generateGender();
+        siblings.push({
+            title: siblingGender === "Мужской" ? "Брат" : "Сестра",
+            name: generateFullName(siblingGender)
+        });
+    }
+
+    const educationCount = Math.min(random4() + 1, 3); // Случайное количество высших образований (максимум 3)
+
+    for (let j = 0; j < educationCount; j++) {
+        const degree = j === 0 ? "Среднее" : (j === 1 ? "Бакалавриат" : "Магистратура");
+        const uni = j === 0 ? "Колледж" : generateUniversity();
+        education.push({
+            title: degree,
+            name: uni,
+        });
+    }
+
+    const career = [];
+    const workExperience = generateWorkExperience();
+    if (workExperience > 0) {
+        career.push({
+            title: "Стаж",
+            workExperience: workExperience,
+        });
+        career.push({
+            title: "Зарплата",
+            salary: generateSalary(),
+        });
+        career.push({
+            title: "Должность",
+            position: randomPosition(),
+        });
+        career.push({
+            title: "Отдел",
+            department: randomDepartment(),
+        });
+    }
+
     return {
         id: id,
-        full_name: randomName(),
-        birthday: randomDate(new Date(1950, 0, 1), new Date(2000, 0, 1)).toISOString(),
-        phone: randomPhoneNumber(),
-        email: randomEmail(),
-        address: randomAddress(),
-        sisters: Array.from({ length: randomFamilyMembers() }, () => randomName()),
-        brothers: Array.from({ length: randomFamilyMembers() }, () => randomName()),
-        children: Array.from({ length: randomFamilyMembers() }, () => randomName()),
-        father: randomName(),
-        mother: randomName(),
-        maritalStatus: ['женат', 'не женат'][Math.floor(Math.random() * 2)],
-        education: ['Высшее', 'Среднее', 'Среднее специальное', 'Начальное'][Math.floor(Math.random() * 4)],
-        workExperience: randomWorkExperience(),
-        salary: Math.floor(Math.random() * 100000),
-        position: ['Разработчик', 'Менеджер', 'Бухгалтер', 'Директор', 'Специалист', 'Аналитик', 'Консультант', 'Инженер', 'Программист', 'Администратор'][Math.floor(Math.random() * 10)],
-        department: randomDepartment()
+        params: {
+            title: "Основная информация",
+            value: [
+                {
+                    title: "ФИО",
+                    full_name: generateFullName(gender),
+                },
+                {
+                    title: "Дата рождения",
+                    birthday: generateBirthday(),
+                },
+                {
+                    title: "Номер телефона",
+                    phone: generatePhoneNumber(),
+                },
+                {
+                    title: "Адрес",
+                    address: generateAddress(),
+                },
+                {
+                    title: "Пол",
+                    gender: gender,
+                },
+            ],
+        },
+        modules: {
+            education: {
+                title: "Образование",
+                value: education,
+            },
+            career: {
+                title: "Карьера",
+                value: career,
+            },
+            family: {
+                title: "Семья",
+                value: [
+                    {
+                        title: "Отец",
+                        father: generateFullName("Мужской"),
+                    },
+                    {
+                        title: "Мать",
+                        mother: generateFullName("Женский"),
+                    },
+                    {
+                        title: "Брак",
+                        maritalStatus: maritalStatus,
+                    },
+                    {
+                        title: "Братья/сестры",
+                        siblings: siblings,
+                    },
+                ]
+            },
+        },
     };
 }
 
@@ -77,5 +217,5 @@ function addRecordToFile(record) {
 
 // Генерируем и добавляем 10 случайных записей
 for (let i = 1; i <= 100; i++) {
-    addRecordToFile(generateRandomRecord(i));
+    addRecordToFile(generateRandomUserData(i));
 }

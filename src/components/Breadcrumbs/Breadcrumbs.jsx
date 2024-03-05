@@ -6,43 +6,33 @@ import users from '../../Data'; // Подключаем массив польз�
 
 function BreadcrumbComponent() {
     const location = useLocation(); // Получаем текущий путь
-    const { id } = useParams(); // Получаем параметр id из URL
-
     // Находим пользователя по идентификатору
-    const user = users.find(user => user.id === parseInt(id));
 
     // Определяем, какие кнопки должны отображаться в зависимости от текущего пути
+    // Определяем, какие кнопки должны отображаться в зависимости от текущего пути
     const getButtons = () => {
-        switch (location.pathname) {
-            case '/':
-                return (
-                    <>
-                        <Button color="inherit" href="/" sx={{ color: "white" }}>
-                            Главная
-                        </Button>
-                    </>
-                );
-            case `/user/${id}`:
-                return (
-                    <>
-                        <Button color="inherit" href="/" sx={{ color: "white" }}>
-                            Главная
-                        </Button>
-                        <Button color="inherit" href={`/user/${id}`} sx={{ color: "white" }}>
-                            {user ? user.full_name : 'Пользователь'}
-                        </Button>
-                    </>
-                );
-            default:
-                return (
-                    <>
-                        <Button color="inherit" href="/" sx={{ color: "white" }}>
-                            Главная
-                        </Button>
-                    </>
-                );
+        console.log("Current path:", location.pathname); // Output current path to console for debugging
+        if (location.pathname === '/') {
+            return [
+                <Button key="home" color="inherit" href="/" sx={{ color: "white" }}>
+                    Главная
+                </Button>
+            ];
+        }
+        if (location.pathname.startsWith(`/user/`)) {
+            let id = location.pathname.slice(6);
+            const user = users.find(user => user.id === parseInt(id));
+            return [
+                <Button key="home" color="inherit" href="/" sx={{ color: "white" }}>
+                    Главная
+                </Button>,
+                <Button key="user" color="inherit" href={`/user/${id}`} sx={{ color: "white" }}>
+                    {user ? user.params.value.find(item => item.title === 'ФИО').full_name : 'Пользователь'}
+                </Button>
+            ];
         }
     };
+
 
     return (
         <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">

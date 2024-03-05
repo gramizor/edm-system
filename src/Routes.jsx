@@ -1,5 +1,3 @@
-// AppRoutes.js
-
 import { useRoutes } from "react-router-dom";
 import Main from "./Pages/Main/Main";
 import Card from "./Pages/Card/Card";
@@ -7,11 +5,11 @@ import Card from "./Pages/Card/Card";
 const routes = [
     {
         path: "/",
-        element: Main(),
+        element: <Main />,
     },
     {
         path: "/user/:id",
-        element: Card(),
+        element: <Card />,
     }
 ];
 

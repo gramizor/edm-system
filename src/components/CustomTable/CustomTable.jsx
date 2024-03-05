@@ -8,7 +8,7 @@ import { IconButton } from '@mui/material';
 export const columns = [
     {
         header: 'ФИО',
-        accessorKey: 'full_name',
+        accessorKey: 'params.value[0].full_name',
         filterVariant: 'text',
     },
     {
@@ -42,9 +42,25 @@ export const columns = [
                 </IconButton>
             </Link>
         )
-
     }
 ];
+
+// // Создаем функцию, которая получает все доступные поля из params всех пользователей
+// const getAllFields = () => {
+//     const allFields = new Set();
+//     users.forEach(user => {
+//         user.params.value.forEach(field => {
+//             allFields.add(field.title);
+//         });
+//     });
+//     return Array.from(allFields);
+// };
+
+// // Создаем колонки динамически на основе всех доступных полей в params всех пользователей
+// const columns = getAllFields().map(field => ({
+//     header: field,
+//     accessorKey: field.toLowerCase().replace(/\s+/g, '_'), // Преобразуем заголовок в ключ, убирая пробелы и приводя к нижнему регистру
+// }));
 
 export default function CustomTable() {
     return (
