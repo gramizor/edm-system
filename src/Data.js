@@ -1,14 +1,5 @@
 export const cities = [
-    'Москва',
-    'Санкт-Петербург',
-    'Новосибирск',
-    'Екатеринбург',
-    'Нижний Новгород',
-    'Казань',
-    'Челябинск',
-    'Омск',
-    'Самара',
-    'Ростов-на-Дону',
+    "Москва", "Санкт-Петербург", "Екатеринбург", "Новосибирск", "Красноярск"
 ]
 
 const users = [
@@ -18,79 +9,87 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петров Михаил Иванович"
+                    title: "Full name",
+                    full_name: "Сидорова Ольга Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1985-09-11T19:45:11.165Z"
+                    title: "Date of birth",
+                    birthday: "1979-04-02T01:14:30.356Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (982) 175-85-88"
+                    title: "Phone number",
+                    phone: "+7 (961) 210-20-93"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Гагарина, д. 78, кв. 191"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Ленина, д. 63, кв. 177"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский физико-технический институт (МФТИ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 12
+                        workExperience: 2
                     },
                     {
                         title: "Зарплата",
-                        salary: 176381
+                        salary: 57767
                     },
                     {
                         title: "Должность",
-                        position: "Аналитик"
+                        position: "Администратор"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Сергеевич"
+                        title: "Father",
+                        father: "Смирнов Сергей Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Анна Петровна"
+                        title: "Mother",
+                        mother: "Смирнова Мария Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Петрова Ольга Петровна"
+                                title: "Брат",
+                                name: "Сидоров Петр Сергеевич"
                             }
                         ]
                     }
@@ -104,55 +103,47 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнова Светлана Петровна"
+                    title: "Full name",
+                    full_name: "Иванова Елена Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1995-03-02T03:36:41.047Z"
+                    title: "Date of birth",
+                    birthday: "1982-04-25T12:28:00.821Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (952) 345-79-82"
+                    title: "Phone number",
+                    phone: "+7 (938) 173-64-77"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Мира, д. 84, кв. 181"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Гагарина, д. 26, кв. 153"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 4
+                        workExperience: 8
                     },
                     {
                         title: "Зарплата",
-                        salary: 43810
+                        salary: 217608
                     },
                     {
                         title: "Должность",
@@ -160,39 +151,35 @@ const users = [
                     },
                     {
                         title: "Отдел",
-                        department: "Юридический"
+                        department: "Логистика"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Иван Михайлович"
+                        title: "Father",
+                        father: "Иванов Александр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Елена Михайловна"
+                        title: "Mother",
+                        mother: "Иванова Ольга Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Иванов Александр Иванович"
+                                name: "Иванов Михаил Михайлович"
                             },
                             {
-                                title: "Сестра",
-                                name: "Смирнова Анна Александровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Смирнова Елена Александровна"
+                                title: "Брат",
+                                name: "Сидоров Сергей Михайлович"
                             }
                         ]
                     }
@@ -206,30 +193,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Мария Ивановна"
+                    title: "Full name",
+                    full_name: "Сидорова Ольга Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1991-03-29T15:24:31.925Z"
+                    title: "Date of birth",
+                    birthday: "2000-08-31T22:34:32.635Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (931) 746-56-01"
+                    title: "Phone number",
+                    phone: "+7 (913) 984-49-75"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Комсомольская, д. 82, кв. 173"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Ленина, д. 37, кв. 65"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -237,56 +224,52 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
-                    },
-                    {
-                        title: "Магистратура",
                         name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 12
+                        workExperience: 8
                     },
                     {
                         title: "Зарплата",
-                        salary: 78172
+                        salary: 122114
                     },
                     {
                         title: "Должность",
-                        position: "Менеджер"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "Бухгалтерия"
+                        department: "Продажи"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Иван Иванович"
+                        title: "Father",
+                        father: "Смирнов Иван Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Елена Сергеевна"
+                        title: "Mother",
+                        mother: "Иванова Светлана Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Смирнов Михаил Сергеевич"
+                                title: "Сестра",
+                                name: "Кузнецова Ольга Сергеевна"
                             }
                         ]
                     }
@@ -300,30 +283,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Иван Александрович"
+                    title: "Full name",
+                    full_name: "Иванов Александр Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1995-07-09T13:21:06.247Z"
+                    title: "Date of birth",
+                    birthday: "1974-10-11T19:31:33.968Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (997) 513-26-85"
+                    title: "Phone number",
+                    phone: "+7 (992) 884-92-60"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Комсомольская, д. 99, кв. 2"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Ленина, д. 18, кв. 123"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -331,24 +314,20 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Национальный исследовательский ядерный университет «МИФИ»"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                        name: "Московский физико-технический институт (МФТИ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 10
+                        workExperience: 8
                     },
                     {
                         title: "Зарплата",
-                        salary: 55437
+                        salary: 71104
                     },
                     {
                         title: "Должность",
@@ -356,39 +335,35 @@ const users = [
                     },
                     {
                         title: "Отдел",
-                        department: "Юридический"
+                        department: "Кадры"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Петр Михайлович"
+                        title: "Father",
+                        father: "Смирнов Александр Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Анна Сергеевна"
+                        title: "Mother",
+                        mother: "Иванова Ольга Александровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
+                                title: "Сестра",
+                                name: "Кузнецова Мария Александровна"
+                            },
+                            {
                                 title: "Брат",
-                                name: "Петров Петр Александрович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Смирнова Мария Михайловна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Мария Ивановна"
+                                name: "Сидоров Иван Михайлович"
                             }
                         ]
                     }
@@ -402,30 +377,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Петр Александрович"
+                    title: "Full name",
+                    full_name: "Сидорова Анна Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1988-10-30T03:35:22.002Z"
+                    title: "Date of birth",
+                    birthday: "1972-04-05T11:03:01.975Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (918) 471-63-79"
+                    title: "Phone number",
+                    phone: "+7 (958) 645-53-18"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Комсомольская, д. 19, кв. 78"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Комсомольская, д. 89, кв. 182"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -433,60 +408,64 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
+                        name: "Национальный исследовательский ядерный университет «МИФИ»"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 3
+                        workExperience: 15
                     },
                     {
                         title: "Зарплата",
-                        salary: 215604
+                        salary: 172808
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Логистика"
+                        department: "Юридический"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Иванович"
+                        title: "Father",
+                        father: "Иванов Иван Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Мария Михайловна"
+                        title: "Mother",
+                        mother: "Иванова Светлана Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Сидоров Сергей Сергеевич"
-                            },
-                            {
                                 title: "Сестра",
-                                name: "Сидорова Мария Петровна"
+                                name: "Иванова Анна Петровна"
                             },
                             {
                                 title: "Брат",
-                                name: "Смирнов Михаил Александрович"
+                                name: "Смирнов Иван Иванович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Сидоров Иван Петрович"
                             }
                         ]
                     }
@@ -500,30 +479,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецов Иван Иванович"
+                    title: "Full name",
+                    full_name: "Смирнов Александр Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1980-05-17T12:04:49.068Z"
+                    title: "Date of birth",
+                    birthday: "1989-11-04T17:53:29.321Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (959) 557-31-36"
+                    title: "Phone number",
+                    phone: "+7 (919) 128-44-73"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Мира, д. 41, кв. 46"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Комсомольская, д. 51, кв. 10"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -531,56 +510,60 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 10
+                        workExperience: 1
                     },
                     {
                         title: "Зарплата",
-                        salary: 204106
+                        salary: 94031
                     },
                     {
                         title: "Должность",
-                        position: "Специалист"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "Продажи"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Петр Михайлович"
+                        title: "Father",
+                        father: "Иванов Петр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Мария Петровна"
+                        title: "Mother",
+                        mother: "Иванова Анна Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Кузнецов Петр Михайлович"
+                                title: "Сестра",
+                                name: "Иванова Елена Михайловна"
                             },
                             {
-                                title: "Сестра",
-                                name: "Петрова Мария Сергеевна"
+                                title: "Брат",
+                                name: "Иванов Михаил Петрович"
                             }
                         ]
                     }
@@ -594,30 +577,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванова Мария Сергеевна"
+                    title: "Full name",
+                    full_name: "Иванова Елена Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2002-07-09T02:14:19.340Z"
+                    title: "Date of birth",
+                    birthday: "1990-03-20T18:04:27.811Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (944) 714-35-75"
+                    title: "Phone number",
+                    phone: "+7 (998) 517-03-42"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Комсомольская, д. 4, кв. 200"
+                    title: "Address",
+                    address: "г. Москва, ул. Мира, д. 36, кв. 198"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -626,47 +609,47 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 8
+                        workExperience: 7
                     },
                     {
                         title: "Зарплата",
-                        salary: 158026
+                        salary: 222355
                     },
                     {
                         title: "Должность",
-                        position: "Аналитик"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "Бухгалтерия"
+                        department: "Продажи"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Петр Сергеевич"
+                        title: "Father",
+                        father: "Петров Сергей Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Мария Сергеевна"
+                        title: "Mother",
+                        mother: "Петрова Мария Сергеевна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Сидорова Анна Ивановна"
+                                name: "Петрова Светлана Петровна"
                             }
                         ]
                     }
@@ -680,30 +663,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Александр Иванович"
+                    title: "Full name",
+                    full_name: "Сидоров Иван Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1995-12-17T17:55:00.755Z"
+                    title: "Date of birth",
+                    birthday: "1991-10-28T12:20:45.425Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (931) 057-63-12"
+                    title: "Phone number",
+                    phone: "+7 (929) 252-82-99"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Ленина, д. 45, кв. 10"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Ленина, д. 55, кв. 97"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -711,43 +694,64 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                        name: "Российский университет дружбы народов (РУДН)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Университет ИТМО"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: []
-            },
-            family: {
-                title: "Семья",
+                title: "Career",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Иван Михайлович"
+                        title: "Стаж",
+                        workExperience: 2
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Елена Александровна"
+                        title: "Зарплата",
+                        salary: 157747
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Должность",
+                        position: "Инженер"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Отдел",
+                        department: "Логистика"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Сидоров Александр Иванович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Кузнецова Светлана Михайловна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "женат"
+                    },
+                    {
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Кузнецова Ольга Сергеевна"
+                                name: "Кузнецова Анна Сергеевна"
                             },
                             {
                                 title: "Брат",
-                                name: "Сидоров Иван Петрович"
+                                name: "Кузнецов Михаил Сергеевич"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Кузнецов Петр Иванович"
                             }
                         ]
                     }
@@ -761,30 +765,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Михаил Иванович"
+                    title: "Full name",
+                    full_name: "Сидорова Мария Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2003-05-13T09:00:58.651Z"
+                    title: "Date of birth",
+                    birthday: "1995-08-11T10:20:15.465Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (943) 745-55-66"
+                    title: "Phone number",
+                    phone: "+7 (922) 218-90-22"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Гагарина, д. 41, кв. 108"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Гагарина, д. 39, кв. 167"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -793,15 +797,15 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 7
+                        workExperience: 15
                     },
                     {
                         title: "Зарплата",
-                        salary: 52406
+                        salary: 241102
                     },
                     {
                         title: "Должность",
@@ -814,32 +818,23 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Сергей Сергеевич"
+                        title: "Father",
+                        father: "Кузнецов Иван Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Елена Александровна"
+                        title: "Mother",
+                        mother: "Петрова Елена Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Брат",
-                                name: "Кузнецов Иван Иванович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Светлана Михайловна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -851,30 +846,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Петр Сергеевич"
+                    title: "Full name",
+                    full_name: "Кузнецов Михаил Михайлович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2003-04-20T09:13:54.645Z"
+                    title: "Date of birth",
+                    birthday: "1984-08-09T04:07:31.640Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (912) 490-49-13"
+                    title: "Phone number",
+                    phone: "+7 (986) 675-72-30"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Комсомольская, д. 50, кв. 158"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 31, кв. 52"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -886,20 +881,20 @@ const users = [
                     },
                     {
                         title: "Магистратура",
-                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
+                        name: "Московский физико-технический институт (МФТИ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 10
+                        workExperience: 13
                     },
                     {
                         title: "Зарплата",
-                        salary: 215895
+                        salary: 93885
                     },
                     {
                         title: "Должность",
@@ -912,23 +907,28 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Александр Сергеевич"
+                        title: "Father",
+                        father: "Иванов Александр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Светлана Михайловна"
+                        title: "Mother",
+                        mother: "Иванова Светлана Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Сидоров Иван Иванович"
+                            }
+                        ]
                     }
                 ]
             }
@@ -940,83 +940,91 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Михаил Михайлович"
+                    title: "Full name",
+                    full_name: "Смирнова Светлана Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1975-05-29T03:46:39.372Z"
+                    title: "Date of birth",
+                    birthday: "1989-04-20T07:50:03.022Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (959) 172-71-24"
+                    title: "Phone number",
+                    phone: "+7 (965) 584-22-23"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Ленина, д. 3, кв. 155"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 52, кв. 72"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 3
+                        workExperience: 5
                     },
                     {
                         title: "Зарплата",
-                        salary: 125709
+                        salary: 137199
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Юридический"
+                        department: "Кадры"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Сергей Иванович"
+                        title: "Father",
+                        father: "Сидоров Петр Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Светлана Михайловна"
+                        title: "Mother",
+                        mother: "Кузнецова Мария Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Иванов Александр Сергеевич"
+                                name: "Иванов Александр Александрович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Петрова Ольга Ивановна"
                             },
                             {
                                 title: "Брат",
-                                name: "Иванов Александр Михайлович"
+                                name: "Кузнецов Александр Михайлович"
                             }
                         ]
                     }
@@ -1030,87 +1038,95 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Елена Петровна"
+                    title: "Full name",
+                    full_name: "Смирнов Сергей Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2002-09-26T04:49:40.369Z"
+                    title: "Date of birth",
+                    birthday: "1970-03-10T10:25:51.152Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (915) 036-47-82"
+                    title: "Phone number",
+                    phone: "+7 (977) 429-77-86"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Пушкина, д. 31, кв. 108"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Ленина, д. 84, кв. 55"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 15
+                        workExperience: 12
                     },
                     {
                         title: "Зарплата",
-                        salary: 59703
+                        salary: 98954
                     },
                     {
                         title: "Должность",
-                        position: "Специалист"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "Кадры"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Сергей Александрович"
+                        title: "Father",
+                        father: "Петров Петр Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Ольга Михайловна"
+                        title: "Mother",
+                        mother: "Кузнецова Анна Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Кузнецов Иван Иванович"
+                                name: "Петров Сергей Сергеевич"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Петров Александр Петрович"
                             },
                             {
                                 title: "Сестра",
-                                name: "Сидорова Ольга Петровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Светлана Ивановна"
+                                name: "Петрова Мария Сергеевна"
                             }
                         ]
                     }
@@ -1124,30 +1140,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Ольга Александровна"
+                    title: "Full name",
+                    full_name: "Смирнова Светлана Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1994-07-29T00:23:24.105Z"
+                    title: "Date of birth",
+                    birthday: "1979-10-16T17:59:22.459Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (985) 086-05-36"
+                    title: "Phone number",
+                    phone: "+7 (955) 019-64-08"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Гагарина, д. 76, кв. 184"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Ленина, д. 4, кв. 182"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -1155,24 +1171,28 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский физико-технический институт (МФТИ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 8
+                        workExperience: 6
                     },
                     {
                         title: "Зарплата",
-                        salary: 71271
+                        salary: 59493
                     },
                     {
                         title: "Должность",
-                        position: "Специалист"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
@@ -1181,34 +1201,34 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Александр Михайлович"
+                        title: "Father",
+                        father: "Иванов Иван Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Анна Сергеевна"
+                        title: "Mother",
+                        mother: "Кузнецова Светлана Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Сидоров Иван Михайлович"
+                                name: "Иванов Иван Иванович"
                             },
                             {
                                 title: "Брат",
-                                name: "Петров Иван Петрович"
+                                name: "Иванов Александр Михайлович"
                             },
                             {
                                 title: "Брат",
-                                name: "Иванов Иван Михайлович"
+                                name: "Кузнецов Сергей Петрович"
                             }
                         ]
                     }
@@ -1222,30 +1242,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петров Сергей Петрович"
+                    title: "Full name",
+                    full_name: "Петрова Мария Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1976-06-16T19:43:31.053Z"
+                    title: "Date of birth",
+                    birthday: "1972-06-08T07:56:12.198Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (985) 643-04-62"
+                    title: "Phone number",
+                    phone: "+7 (923) 333-31-45"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Гагарина, д. 69, кв. 135"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Гагарина, д. 59, кв. 166"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -1253,52 +1273,52 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Российский университет дружбы народов (РУДН)"
+                        name: "Университет ИТМО"
                     },
                     {
                         title: "Магистратура",
-                        name: "Национальный исследовательский технологический университет «МИСИС»"
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 11
+                        workExperience: 4
                     },
                     {
                         title: "Зарплата",
-                        salary: 218694
+                        salary: 295633
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Аналитик"
                     },
                     {
                         title: "Отдел",
-                        department: "Логистика"
+                        department: "Юридический"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Иванович"
+                        title: "Father",
+                        father: "Сидоров Александр Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Ольга Сергеевна"
+                        title: "Mother",
+                        mother: "Кузнецова Анна Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: []
                     }
                 ]
@@ -1311,30 +1331,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Анна Михайловна"
+                    title: "Full name",
+                    full_name: "Иванова Анна Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2005-01-27T00:09:59.842Z"
+                    title: "Date of birth",
+                    birthday: "1999-03-27T15:24:41.226Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (917) 758-29-21"
+                    title: "Phone number",
+                    phone: "+7 (905) 963-87-72"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Гагарина, д. 42, кв. 128"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Пушкина, д. 71, кв. 178"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -1342,43 +1362,60 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский физико-технический институт (МФТИ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: []
-            },
-            family: {
-                title: "Семья",
+                title: "Career",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Александр Иванович"
+                        title: "Стаж",
+                        workExperience: 13
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Мария Петровна"
+                        title: "Зарплата",
+                        salary: 250767
                     },
                     {
-                        title: "Брак",
+                        title: "Должность",
+                        position: "Администратор"
+                    },
+                    {
+                        title: "Отдел",
+                        department: "Маркетинг"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Кузнецов Сергей Михайлович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Иванова Анна Михайловна"
+                    },
+                    {
+                        title: "Marriage",
                         maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Петров Михаил Михайлович"
+                                title: "Сестра",
+                                name: "Петрова Анна Ивановна"
                             },
                             {
-                                title: "Брат",
-                                name: "Петров Петр Сергеевич"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Иванов Сергей Иванович"
+                                title: "Сестра",
+                                name: "Смирнова Елена Ивановна"
                             }
                         ]
                     }
@@ -1392,30 +1429,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Александр Петрович"
+                    title: "Full name",
+                    full_name: "Петрова Елена Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1975-11-24T18:17:46.346Z"
+                    title: "Date of birth",
+                    birthday: "1999-02-20T13:51:53.140Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (984) 915-31-89"
+                    title: "Phone number",
+                    phone: "+7 (901) 483-98-79"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Мира, д. 12, кв. 102"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Комсомольская, д. 64, кв. 182"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -1423,60 +1460,52 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 1
+                        workExperience: 13
                     },
                     {
                         title: "Зарплата",
-                        salary: 228454
+                        salary: 94709
                     },
                     {
                         title: "Должность",
-                        position: "Администратор"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "Логистика"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Петр Александрович"
+                        title: "Father",
+                        father: "Кузнецов Михаил Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Светлана Сергеевна"
+                        title: "Mother",
+                        mother: "Сидорова Светлана Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Смирнов Михаил Сергеевич"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Смирнов Петр Иванович"
-                            },
-                            {
                                 title: "Сестра",
-                                name: "Иванова Ольга Александровна"
+                                name: "Сидорова Ольга Петровна"
                             }
                         ]
                     }
@@ -1490,30 +1519,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнова Анна Петровна"
+                    title: "Full name",
+                    full_name: "Иванов Михаил Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1978-03-19T09:28:24.546Z"
+                    title: "Date of birth",
+                    birthday: "1987-10-11T11:56:31.144Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (995) 443-13-42"
+                    title: "Phone number",
+                    phone: "+7 (948) 564-78-11"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Мира, д. 82, кв. 120"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Комсомольская, д. 23, кв. 99"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -1521,64 +1550,64 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Национальный исследовательский ядерный университет «МИФИ»"
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
                     },
                     {
                         title: "Магистратура",
-                        name: "Национальный исследовательский технологический университет «МИСИС»"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 4
+                        workExperience: 2
                     },
                     {
                         title: "Зарплата",
-                        salary: 290392
+                        salary: 137190
                     },
                     {
                         title: "Должность",
-                        position: "Аналитик"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "Кадры"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Петр Александрович"
+                        title: "Father",
+                        father: "Петров Петр Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Мария Петровна"
+                        title: "Mother",
+                        mother: "Смирнова Ольга Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Петров Михаил Иванович"
+                                name: "Кузнецов Михаил Михайлович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Петрова Елена Петровна"
                             },
                             {
                                 title: "Брат",
-                                name: "Смирнов Александр Михайлович"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Кузнецов Сергей Сергеевич"
+                                name: "Смирнов Сергей Иванович"
                             }
                         ]
                     }
@@ -1592,87 +1621,87 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнова Анна Михайловна"
+                    title: "Full name",
+                    full_name: "Смирнов Петр Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1982-09-21T02:39:20.168Z"
+                    title: "Date of birth",
+                    birthday: "1999-08-31T03:05:13.804Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (904) 527-25-76"
+                    title: "Phone number",
+                    phone: "+7 (954) 829-13-55"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Ленина, д. 13, кв. 112"
+                    title: "Address",
+                    address: "г. Москва, ул. Пушкина, д. 29, кв. 93"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Московский физико-технический институт (МФТИ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 3
+                        workExperience: 10
                     },
                     {
                         title: "Зарплата",
-                        salary: 75505
+                        salary: 70945
                     },
                     {
                         title: "Должность",
-                        position: "Аналитик"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "HR"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Иван Михайлович"
+                        title: "Father",
+                        father: "Смирнов Александр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Анна Ивановна"
+                        title: "Mother",
+                        mother: "Смирнова Мария Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
+                                title: "Сестра",
+                                name: "Петрова Анна Ивановна"
+                            },
+                            {
                                 title: "Брат",
-                                name: "Смирнов Сергей Михайлович"
+                                name: "Кузнецов Александр Александрович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Кузнецова Елена Михайловна"
                             }
                         ]
                     }
@@ -1686,30 +1715,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Сергей Сергеевич"
+                    title: "Full name",
+                    full_name: "Сидорова Елена Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1990-01-16T05:22:59.391Z"
+                    title: "Date of birth",
+                    birthday: "1980-01-12T22:23:43.154Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (905) 186-10-52"
+                    title: "Phone number",
+                    phone: "+7 (930) 415-77-72"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Мира, д. 93, кв. 70"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Ленина, д. 1, кв. 116"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -1721,62 +1750,49 @@ const users = [
                     },
                     {
                         title: "Магистратура",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 1
+                        workExperience: 5
                     },
                     {
                         title: "Зарплата",
-                        salary: 137809
+                        salary: 140652
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Разработчик"
                     },
                     {
                         title: "Отдел",
-                        department: "Финансы"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Петр Александрович"
+                        title: "Father",
+                        father: "Иванов Александр Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Анна Александровна"
+                        title: "Mother",
+                        mother: "Смирнова Елена Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Иванова Светлана Сергеевна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Ольга Ивановна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Петрова Ольга Ивановна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -1788,30 +1804,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Мария Ивановна"
+                    title: "Full name",
+                    full_name: "Смирнов Александр Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1996-10-24T14:38:08.987Z"
+                    title: "Date of birth",
+                    birthday: "1970-08-16T21:29:53.507Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (963) 660-24-00"
+                    title: "Phone number",
+                    phone: "+7 (939) 684-68-33"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Гагарина, д. 46, кв. 113"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Ленина, д. 99, кв. 181"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -1819,60 +1835,64 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 5
+                        workExperience: 12
                     },
                     {
                         title: "Зарплата",
-                        salary: 95735
+                        salary: 282985
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "Производство"
+                        department: "HR"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Сергеевич"
+                        title: "Father",
+                        father: "Кузнецов Александр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Ольга Александровна"
+                        title: "Mother",
+                        mother: "Сидорова Ольга Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Иванова Анна Михайловна"
+                                title: "Брат",
+                                name: "Смирнов Александр Александрович"
                             },
                             {
                                 title: "Брат",
-                                name: "Смирнов Сергей Петрович"
+                                name: "Смирнов Сергей Александрович"
                             },
                             {
                                 title: "Брат",
-                                name: "Петров Михаил Сергеевич"
+                                name: "Смирнов Сергей Сергеевич"
                             }
                         ]
                     }
@@ -1886,59 +1906,51 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Александр Александрович"
+                    title: "Full name",
+                    full_name: "Петрова Ольга Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1975-06-08T06:34:15.777Z"
+                    title: "Date of birth",
+                    birthday: "1994-05-16T14:29:57.816Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (984) 625-91-99"
+                    title: "Phone number",
+                    phone: "+7 (968) 126-96-28"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Ленина, д. 19, кв. 179"
+                    title: "Address",
+                    address: "г. Москва, ул. Гагарина, д. 62, кв. 73"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 6
+                        workExperience: 15
                     },
                     {
                         title: "Зарплата",
-                        salary: 144993
+                        salary: 167203
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
@@ -1947,34 +1959,34 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Сергей Александрович"
+                        title: "Father",
+                        father: "Иванов Петр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Мария Михайловна"
+                        title: "Mother",
+                        mother: "Петрова Мария Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Петров Михаил Иванович"
+                                name: "Сидоров Иван Александрович"
                             },
                             {
                                 title: "Брат",
-                                name: "Иванов Сергей Сергеевич"
+                                name: "Сидоров Александр Сергеевич"
                             },
                             {
-                                title: "Сестра",
-                                name: "Петрова Мария Ивановна"
+                                title: "Брат",
+                                name: "Петров Александр Сергеевич"
                             }
                         ]
                     }
@@ -1988,30 +2000,200 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Мария Ивановна"
+                    title: "Full name",
+                    full_name: "Смирнова Светлана Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1976-03-29T00:45:47.733Z"
+                    title: "Date of birth",
+                    birthday: "1985-05-03T04:39:11.564Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (915) 964-78-88"
+                    title: "Phone number",
+                    phone: "+7 (997) 712-22-77"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Ленина, д. 82, кв. 52"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Мира, д. 34, кв. 81"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
+                value: [
+                    {
+                        title: "Среднее",
+                        name: "Колледж"
+                    }
+                ]
+            },
+            career: {
+                title: "Career",
+                value: [
+                    {
+                        title: "Стаж",
+                        workExperience: 11
+                    },
+                    {
+                        title: "Зарплата",
+                        salary: 249837
+                    },
+                    {
+                        title: "Должность",
+                        position: "Программист"
+                    },
+                    {
+                        title: "Отдел",
+                        department: "IT"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Сидоров Иван Петрович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Смирнова Светлана Сергеевна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "замужем"
+                    },
+                    {
+                        title: "Siblings",
+                        siblings: []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        id: 23,
+        params: {
+            title: "Основная информация",
+            value: [
+                {
+                    title: "Full name",
+                    full_name: "Смирнова Елена Александровна"
+                },
+                {
+                    title: "Date of birth",
+                    birthday: "1992-09-15T17:47:32.931Z"
+                },
+                {
+                    title: "Phone number",
+                    phone: "+7 (966) 823-13-54"
+                },
+                {
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Ленина, д. 4, кв. 55"
+                },
+                {
+                    title: "Gender",
+                    gender: "Женский"
+                }
+            ]
+        },
+        modules: {
+            education: {
+                title: "Education",
+                value: [
+                    {
+                        title: "Среднее",
+                        name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Национальный исследовательский ядерный университет «МИФИ»"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                    }
+                ]
+            },
+            career: {
+                title: "Career",
+                value: [
+                    {
+                        title: "Стаж",
+                        workExperience: 15
+                    },
+                    {
+                        title: "Зарплата",
+                        salary: 295414
+                    },
+                    {
+                        title: "Должность",
+                        position: "Директор"
+                    },
+                    {
+                        title: "Отдел",
+                        department: "HR"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Смирнов Петр Михайлович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Петрова Светлана Михайловна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "холоста"
+                    },
+                    {
+                        title: "Siblings",
+                        siblings: []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        id: 24,
+        params: {
+            title: "Основная информация",
+            value: [
+                {
+                    title: "Full name",
+                    full_name: "Петрова Ольга Петровна"
+                },
+                {
+                    title: "Date of birth",
+                    birthday: "1997-01-24T05:12:55.353Z"
+                },
+                {
+                    title: "Phone number",
+                    phone: "+7 (945) 196-72-88"
+                },
+                {
+                    title: "Address",
+                    address: "г. Красноярск, ул. Комсомольская, д. 16, кв. 71"
+                },
+                {
+                    title: "Gender",
+                    gender: "Женский"
+                }
+            ]
+        },
+        modules: {
+            education: {
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -2024,207 +2206,19 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 6
+                        workExperience: 8
                     },
                     {
                         title: "Зарплата",
-                        salary: 101509
+                        salary: 273408
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Логистика"
-                    }
-                ]
-            },
-            family: {
-                title: "Семья",
-                value: [
-                    {
-                        title: "Отец",
-                        father: "Иванов Иван Иванович"
-                    },
-                    {
-                        title: "Мать",
-                        mother: "Сидорова Светлана Сергеевна"
-                    },
-                    {
-                        title: "Брак",
-                        maritalStatus: "холоста"
-                    },
-                    {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Анна Сергеевна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Смирнова Мария Александровна"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Смирнов Михаил Иванович"
-                            }
-                        ]
-                    }
-                ]
-            }
-        }
-    },
-    {
-        id: 23,
-        params: {
-            title: "Основная информация",
-            value: [
-                {
-                    title: "ФИО",
-                    full_name: "Петров Петр Петрович"
-                },
-                {
-                    title: "Дата рождения",
-                    birthday: "1974-03-24T05:24:21.705Z"
-                },
-                {
-                    title: "Номер телефона",
-                    phone: "+7 (925) 942-33-51"
-                },
-                {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Гагарина, д. 79, кв. 73"
-                },
-                {
-                    title: "Пол",
-                    gender: "Мужской"
-                }
-            ]
-        },
-        modules: {
-            education: {
-                title: "Образование",
-                value: [
-                    {
-                        title: "Среднее",
-                        name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
-                    }
-                ]
-            },
-            career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 9
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 108941
-                    },
-                    {
-                        title: "Должность",
-                        position: "Бухгалтер"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Логистика"
-                    }
-                ]
-            },
-            family: {
-                title: "Семья",
-                value: [
-                    {
-                        title: "Отец",
-                        father: "Иванов Иван Александрович"
-                    },
-                    {
-                        title: "Мать",
-                        mother: "Смирнова Мария Михайловна"
-                    },
-                    {
-                        title: "Брак",
-                        maritalStatus: "разведен"
-                    },
-                    {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Петрова Ольга Михайловна"
-                            }
-                        ]
-                    }
-                ]
-            }
-        }
-    },
-    {
-        id: 24,
-        params: {
-            title: "Основная информация",
-            value: [
-                {
-                    title: "ФИО",
-                    full_name: "Иванова Мария Петровна"
-                },
-                {
-                    title: "Дата рождения",
-                    birthday: "1983-02-16T12:00:21.022Z"
-                },
-                {
-                    title: "Номер телефона",
-                    phone: "+7 (929) 063-95-70"
-                },
-                {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Мира, д. 3, кв. 110"
-                },
-                {
-                    title: "Пол",
-                    gender: "Женский"
-                }
-            ]
-        },
-        modules: {
-            education: {
-                title: "Образование",
-                value: [
-                    {
-                        title: "Среднее",
-                        name: "Колледж"
-                    }
-                ]
-            },
-            career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 11
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 255191
-                    },
-                    {
-                        title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Инженер"
                     },
                     {
                         title: "Отдел",
@@ -2233,23 +2227,36 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Петр Иванович"
+                        title: "Father",
+                        father: "Сидоров Сергей Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Елена Ивановна"
+                        title: "Mother",
+                        mother: "Петрова Ольга Александровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Смирнов Александр Иванович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Смирнов Петр Иванович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Кузнецов Иван Петрович"
+                            }
+                        ]
                     }
                 ]
             }
@@ -2261,30 +2268,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Светлана Александровна"
+                    title: "Full name",
+                    full_name: "Петров Иван Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1977-11-27T14:57:40.485Z"
+                    title: "Date of birth",
+                    birthday: "1995-05-17T04:45:22.881Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (961) 547-07-17"
+                    title: "Phone number",
+                    phone: "+7 (961) 667-88-87"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Ленина, д. 8, кв. 68"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Ленина, д. 24, кв. 189"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -2297,7 +2304,7 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
@@ -2305,39 +2312,43 @@ const users = [
                     },
                     {
                         title: "Зарплата",
-                        salary: 156139
+                        salary: 234316
                     },
                     {
                         title: "Должность",
-                        position: "Директор"
+                        position: "Аналитик"
                     },
                     {
                         title: "Отдел",
-                        department: "Маркетинг"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Сергей Александрович"
+                        title: "Father",
+                        father: "Петров Михаил Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Ольга Михайловна"
+                        title: "Mother",
+                        mother: "Кузнецова Мария Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Петрова Мария Сергеевна"
+                                name: "Петрова Светлана Михайловна"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Смирнов Александр Михайлович"
                             }
                         ]
                     }
@@ -2351,30 +2362,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнова Мария Александровна"
+                    title: "Full name",
+                    full_name: "Кузнецов Михаил Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1976-02-21T09:14:04.362Z"
+                    title: "Date of birth",
+                    birthday: "1989-09-16T21:55:50.162Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (925) 930-92-33"
+                    title: "Phone number",
+                    phone: "+7 (991) 384-82-87"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Мира, д. 26, кв. 111"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Мира, д. 5, кв. 45"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -2383,7 +2394,7 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
@@ -2391,47 +2402,47 @@ const users = [
                     },
                     {
                         title: "Зарплата",
-                        salary: 203254
+                        salary: 94501
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Менеджер"
                     },
                     {
                         title: "Отдел",
-                        department: "Маркетинг"
+                        department: "Логистика"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Иван Петрович"
+                        title: "Father",
+                        father: "Сидоров Александр Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Елена Петровна"
+                        title: "Mother",
+                        mother: "Сидорова Елена Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Кузнецов Сергей Михайлович"
+                                title: "Сестра",
+                                name: "Иванова Ольга Михайловна"
                             },
                             {
                                 title: "Брат",
-                                name: "Смирнов Александр Александрович"
+                                name: "Сидоров Петр Сергеевич"
                             },
                             {
                                 title: "Сестра",
-                                name: "Петрова Мария Михайловна"
+                                name: "Петрова Мария Александровна"
                             }
                         ]
                     }
@@ -2445,30 +2456,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Александр Сергеевич"
+                    title: "Full name",
+                    full_name: "Кузнецова Анна Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2000-01-13T10:00:54.286Z"
+                    title: "Date of birth",
+                    birthday: "1975-10-30T18:39:53.476Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (978) 237-03-82"
+                    title: "Phone number",
+                    phone: "+7 (961) 757-58-71"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Мира, д. 10, кв. 174"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Мира, д. 89, кв. 158"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -2476,20 +2487,24 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Университет ИТМО"
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 5
+                        workExperience: 3
                     },
                     {
                         title: "Зарплата",
-                        salary: 246639
+                        salary: 243360
                     },
                     {
                         title: "Должность",
@@ -2497,39 +2512,35 @@ const users = [
                     },
                     {
                         title: "Отдел",
-                        department: "HR"
+                        department: "Юридический"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Михаил Сергеевич"
+                        title: "Father",
+                        father: "Иванов Сергей Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Елена Ивановна"
+                        title: "Mother",
+                        mother: "Сидорова Елена Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Петров Иван Михайлович"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Сидоров Иван Петрович"
+                                title: "Сестра",
+                                name: "Петрова Анна Александровна"
                             },
                             {
                                 title: "Сестра",
-                                name: "Петрова Мария Михайловна"
+                                name: "Кузнецова Елена Сергеевна"
                             }
                         ]
                     }
@@ -2543,51 +2554,55 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Анна Сергеевна"
+                    title: "Full name",
+                    full_name: "Кузнецов Александр Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1970-06-26T08:50:28.864Z"
+                    title: "Date of birth",
+                    birthday: "1975-03-25T22:30:13.062Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (999) 436-59-11"
+                    title: "Phone number",
+                    phone: "+7 (985) 731-69-83"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Гагарина, д. 29, кв. 3"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Комсомольская, д. 41, кв. 123"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 2
+                        workExperience: 12
                     },
                     {
                         title: "Зарплата",
-                        salary: 76909
+                        salary: 122403
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
@@ -2596,30 +2611,34 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Петр Михайлович"
+                        title: "Father",
+                        father: "Кузнецов Петр Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Светлана Петровна"
+                        title: "Mother",
+                        mother: "Сидорова Елена Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Сидорова Елена Ивановна"
+                                title: "Брат",
+                                name: "Смирнов Александр Петрович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Сидоров Иван Иванович"
                             },
                             {
                                 title: "Сестра",
-                                name: "Кузнецова Ольга Александровна"
+                                name: "Смирнова Светлана Сергеевна"
                             }
                         ]
                     }
@@ -2633,30 +2652,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванова Светлана Михайловна"
+                    title: "Full name",
+                    full_name: "Петрова Елена Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1979-06-08T09:16:40.346Z"
+                    title: "Date of birth",
+                    birthday: "1988-02-26T17:17:09.657Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (981) 958-27-78"
+                    title: "Phone number",
+                    phone: "+7 (966) 476-62-83"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Мира, д. 37, кв. 40"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Гагарина, д. 1, кв. 166"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -2664,54 +2683,53 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
+                        name: "Национальный исследовательский ядерный университет «МИФИ»"
+                    },
+                    {
+                        title: "Магистратура",
                         name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 11
+                        workExperience: 10
                     },
                     {
                         title: "Зарплата",
-                        salary: 112753
+                        salary: 99299
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "Кадры"
+                        department: "Маркетинг"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Петр Александрович"
+                        title: "Father",
+                        father: "Иванов Петр Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Мария Сергеевна"
+                        title: "Mother",
+                        mother: "Петрова Елена Александровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Елена Ивановна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -2723,30 +2741,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнов Михаил Михайлович"
+                    title: "Full name",
+                    full_name: "Петрова Ольга Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1992-02-09T09:48:34.082Z"
+                    title: "Date of birth",
+                    birthday: "1977-09-30T14:27:11.721Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (916) 817-99-39"
+                    title: "Phone number",
+                    phone: "+7 (972) 863-85-57"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Комсомольская, д. 26, кв. 59"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Ленина, д. 96, кв. 36"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -2754,49 +2772,58 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 7
+                        workExperience: 12
                     },
                     {
                         title: "Зарплата",
-                        salary: 199647
+                        salary: 37774
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "Маркетинг"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Сергей Петрович"
+                        title: "Father",
+                        father: "Кузнецов Михаил Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Ольга Сергеевна"
+                        title: "Mother",
+                        mother: "Кузнецова Ольга Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Сестра",
+                                name: "Петрова Анна Сергеевна"
+                            }
+                        ]
                     }
                 ]
             }
@@ -2808,30 +2835,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Ольга Ивановна"
+                    title: "Full name",
+                    full_name: "Сидорова Светлана Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1985-09-28T10:17:50.552Z"
+                    title: "Date of birth",
+                    birthday: "1994-07-28T04:58:11.701Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (979) 638-94-15"
+                    title: "Phone number",
+                    phone: "+7 (954) 751-91-61"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Мира, д. 96, кв. 99"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Пушкина, д. 92, кв. 183"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -2843,60 +2870,52 @@ const users = [
                     },
                     {
                         title: "Магистратура",
-                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
+                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 10
+                        workExperience: 15
                     },
                     {
                         title: "Зарплата",
-                        salary: 133347
+                        salary: 128801
                     },
                     {
                         title: "Должность",
-                        position: "Менеджер"
+                        position: "Аналитик"
                     },
                     {
                         title: "Отдел",
-                        department: "HR"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Сергей Сергеевич"
+                        title: "Father",
+                        father: "Петров Петр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Елена Ивановна"
+                        title: "Mother",
+                        mother: "Кузнецова Ольга Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Смирнова Елена Ивановна"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Иванов Сергей Михайлович"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Иванов Петр Петрович"
+                                name: "Иванова Елена Михайловна"
                             }
                         ]
                     }
@@ -2910,30 +2929,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецов Петр Михайлович"
+                    title: "Full name",
+                    full_name: "Кузнецова Елена Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1990-11-17T17:23:36.773Z"
+                    title: "Date of birth",
+                    birthday: "1973-10-20T04:58:03.477Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (917) 665-16-19"
+                    title: "Phone number",
+                    phone: "+7 (935) 313-29-74"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Мира, д. 32, кв. 50"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Гагарина, д. 53, кв. 163"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -2941,53 +2960,62 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Университет ИТМО"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 3
+                        workExperience: 5
                     },
                     {
                         title: "Зарплата",
-                        salary: 65148
+                        salary: 150406
                     },
                     {
                         title: "Должность",
-                        position: "Консультант"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Юридический"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Сергей Петрович"
+                        title: "Father",
+                        father: "Сидоров Иван Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Елена Михайловна"
+                        title: "Mother",
+                        mother: "Сидорова Светлана Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Смирнов Александр Александрович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Петрова Светлана Петровна"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Иванова Светлана Александровна"
+                            }
+                        ]
                     }
                 ]
             }
@@ -2999,55 +3027,51 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванова Мария Петровна"
+                    title: "Full name",
+                    full_name: "Петров Сергей Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1976-05-18T13:41:26.179Z"
+                    title: "Date of birth",
+                    birthday: "1995-04-01T13:32:23.513Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (975) 235-13-99"
+                    title: "Phone number",
+                    phone: "+7 (977) 374-42-41"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Ленина, д. 3, кв. 25"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Мира, д. 16, кв. 147"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Национальный исследовательский ядерный университет «МИФИ»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 6
+                        workExperience: 7
                     },
                     {
                         title: "Зарплата",
-                        salary: 94252
+                        salary: 87526
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Менеджер"
                     },
                     {
                         title: "Отдел",
@@ -3056,30 +3080,34 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Иван Александрович"
+                        title: "Father",
+                        father: "Иванов Александр Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Мария Сергеевна"
+                        title: "Mother",
+                        mother: "Иванова Елена Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Петрова Светлана Александровна"
+                                title: "Брат",
+                                name: "Кузнецов Михаил Петрович"
                             },
                             {
                                 title: "Брат",
-                                name: "Кузнецов Петр Александрович"
+                                name: "Петров Петр Михайлович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Петров Петр Сергеевич"
                             }
                         ]
                     }
@@ -3093,30 +3121,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Петр Иванович"
+                    title: "Full name",
+                    full_name: "Смирнов Александр Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1987-08-14T20:08:52.698Z"
+                    title: "Date of birth",
+                    birthday: "2004-11-14T15:03:07.591Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (981) 337-86-70"
+                    title: "Phone number",
+                    phone: "+7 (922) 546-34-71"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Мира, д. 42, кв. 146"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Ленина, д. 41, кв. 15"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -3124,48 +3152,52 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Национальный исследовательский технологический университет «МИСИС»"
+                        name: "Московский физико-технический институт (МФТИ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 5
+                        workExperience: 13
                     },
                     {
                         title: "Зарплата",
-                        salary: 289245
+                        salary: 115782
                     },
                     {
                         title: "Должность",
-                        position: "Консультант"
+                        position: "Специалист"
                     },
                     {
                         title: "Отдел",
-                        department: "Производство"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Сергей Михайлович"
+                        title: "Father",
+                        father: "Кузнецов Иван Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Светлана Сергеевна"
+                        title: "Mother",
+                        mother: "Смирнова Ольга Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: []
                     }
                 ]
@@ -3178,78 +3210,79 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Анна Сергеевна"
+                    title: "Full name",
+                    full_name: "Смирнов Иван Михайлович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2004-11-29T13:41:11.018Z"
+                    title: "Date of birth",
+                    birthday: "1981-05-30T05:59:21.589Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (948) 531-94-22"
+                    title: "Phone number",
+                    phone: "+7 (986) 390-12-24"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Гагарина, д. 56, кв. 197"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Пушкина, д. 6, кв. 156"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: []
-            },
-            family: {
-                title: "Семья",
+                title: "Career",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Александр Сергеевич"
+                        title: "Стаж",
+                        workExperience: 12
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Елена Александровна"
+                        title: "Зарплата",
+                        salary: 114675
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Должность",
+                        position: "Администратор"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Отдел",
+                        department: "Бухгалтерия"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Кузнецов Сергей Михайлович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Сидорова Мария Михайловна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "холост"
+                    },
+                    {
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Сидорова Елена Александровна"
-                            },
-                            {
                                 title: "Брат",
-                                name: "Петров Петр Александрович"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Петров Александр Александрович"
+                                name: "Петров Александр Михайлович"
                             }
                         ]
                     }
@@ -3263,95 +3296,79 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Иван Александрович"
+                    title: "Full name",
+                    full_name: "Смирнова Светлана Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2003-09-13T17:29:39.503Z"
+                    title: "Date of birth",
+                    birthday: "1974-02-13T08:19:33.088Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (927) 875-25-95"
+                    title: "Phone number",
+                    phone: "+7 (925) 114-57-37"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Пушкина, д. 70, кв. 110"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Пушкина, д. 19, кв. 21"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 10
+                        workExperience: 15
                     },
                     {
                         title: "Зарплата",
-                        salary: 179486
+                        salary: 285312
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Производство"
+                        department: "Юридический"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Александр Иванович"
+                        title: "Father",
+                        father: "Кузнецов Сергей Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Светлана Ивановна"
+                        title: "Mother",
+                        mother: "Петрова Ольга Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Петров Александр Сергеевич"
-                            },
-                            {
                                 title: "Сестра",
-                                name: "Сидорова Светлана Петровна"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Сидоров Иван Александрович"
+                                name: "Петрова Мария Ивановна"
                             }
                         ]
                     }
@@ -3365,30 +3382,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнов Михаил Сергеевич"
+                    title: "Full name",
+                    full_name: "Кузнецов Иван Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2000-05-19T01:58:40.881Z"
+                    title: "Date of birth",
+                    birthday: "1978-01-25T05:58:06.310Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (981) 858-56-56"
+                    title: "Phone number",
+                    phone: "+7 (955) 355-83-75"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Гагарина, д. 49, кв. 170"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Мира, д. 42, кв. 10"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -3396,56 +3413,56 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Национальный исследовательский технологический университет «МИСИС»"
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 13
+                        workExperience: 3
                     },
                     {
                         title: "Зарплата",
-                        salary: 254372
+                        salary: 212292
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Инженер"
                     },
                     {
                         title: "Отдел",
-                        department: "Юридический"
+                        department: "Логистика"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Михаил Сергеевич"
+                        title: "Father",
+                        father: "Сидоров Александр Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Мария Петровна"
+                        title: "Mother",
+                        mother: "Смирнова Ольга Петровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Кузнецова Ольга Сергеевна"
+                                title: "Брат",
+                                name: "Иванов Сергей Александрович"
                             }
                         ]
                     }
@@ -3459,30 +3476,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Ольга Александровна"
+                    title: "Full name",
+                    full_name: "Иванов Александр Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1970-08-04T17:43:04.501Z"
+                    title: "Date of birth",
+                    birthday: "1974-09-05T04:02:45.738Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (999) 323-69-73"
+                    title: "Phone number",
+                    phone: "+7 (998) 547-07-85"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Комсомольская, д. 82, кв. 7"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Мира, д. 1, кв. 53"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -3490,12 +3507,16 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Национальный исследовательский ядерный университет «МИФИ»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
@@ -3503,47 +3524,39 @@ const users = [
                     },
                     {
                         title: "Зарплата",
-                        salary: 274134
+                        salary: 207288
                     },
                     {
                         title: "Должность",
-                        position: "Специалист"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "Финансы"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Михаил Александрович"
+                        title: "Father",
+                        father: "Иванов Петр Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Мария Александровна"
+                        title: "Mother",
+                        mother: "Кузнецова Светлана Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Иванов Иван Михайлович"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Сидоров Михаил Петрович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Петрова Анна Сергеевна"
+                                name: "Петров Петр Сергеевич"
                             }
                         ]
                     }
@@ -3557,30 +3570,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петров Петр Михайлович"
+                    title: "Full name",
+                    full_name: "Петрова Анна Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1993-08-04T02:35:41.224Z"
+                    title: "Date of birth",
+                    birthday: "2003-04-01T13:01:44.233Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (968) 462-21-47"
+                    title: "Phone number",
+                    phone: "+7 (968) 990-43-26"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Пушкина, д. 33, кв. 119"
+                    title: "Address",
+                    address: "г. Москва, ул. Гагарина, д. 49, кв. 74"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -3588,66 +3601,36 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 8
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 66559
-                    },
-                    {
-                        title: "Должность",
-                        position: "Программист"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Юридический"
-                    }
-                ]
+                title: "Career",
+                value: []
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Сергей Иванович"
+                        title: "Father",
+                        father: "Кузнецов Петр Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Мария Александровна"
+                        title: "Mother",
+                        mother: "Петрова Светлана Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Елена Ивановна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Смирнова Мария Михайловна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Петрова Светлана Александровна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -3659,87 +3642,87 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Светлана Сергеевна"
+                    title: "Full name",
+                    full_name: "Сидоров Сергей Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1994-12-23T15:15:40.662Z"
+                    title: "Date of birth",
+                    birthday: "1992-12-07T10:08:13.939Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (941) 599-87-64"
+                    title: "Phone number",
+                    phone: "+7 (983) 096-08-04"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Пушкина, д. 29, кв. 131"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Пушкина, д. 23, кв. 176"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 14
+                        workExperience: 1
                     },
                     {
                         title: "Зарплата",
-                        salary: 101043
+                        salary: 124066
                     },
                     {
                         title: "Должность",
-                        position: "Директор"
+                        position: "Разработчик"
                     },
                     {
                         title: "Отдел",
-                        department: "Юридический"
+                        department: "HR"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Сергеевич"
+                        title: "Father",
+                        father: "Кузнецов Александр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Мария Александровна"
+                        title: "Mother",
+                        mother: "Иванова Елена Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Петров Сергей Александрович"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Иванов Александр Александрович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Светлана Александровна"
+                                name: "Сидоров Иван Михайлович"
                             }
                         ]
                     }
@@ -3753,76 +3736,93 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Анна Михайловна"
+                    title: "Full name",
+                    full_name: "Кузнецов Петр Михайлович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2000-11-16T17:27:25.989Z"
+                    title: "Date of birth",
+                    birthday: "2003-06-11T03:57:08.066Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (912) 122-87-52"
+                    title: "Phone number",
+                    phone: "+7 (985) 584-96-67"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Мира, д. 10, кв. 177"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Ленина, д. 18, кв. 12"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 11
+                        workExperience: 15
                     },
                     {
                         title: "Зарплата",
-                        salary: 244061
+                        salary: 202260
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Аналитик"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "HR"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Михаил Иванович"
+                        title: "Father",
+                        father: "Иванов Сергей Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Мария Петровна"
+                        title: "Mother",
+                        mother: "Сидорова Анна Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Иванов Михаил Петрович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Смирнов Иван Александрович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Петрова Светлана Ивановна"
+                            }
+                        ]
                     }
                 ]
             }
@@ -3834,30 +3834,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Михаил Сергеевич"
+                    title: "Full name",
+                    full_name: "Сидорова Мария Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1989-08-04T05:52:27.288Z"
+                    title: "Date of birth",
+                    birthday: "1989-05-08T10:47:12.834Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (911) 834-73-93"
+                    title: "Phone number",
+                    phone: "+7 (938) 385-54-88"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Ленина, д. 4, кв. 92"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Ленина, д. 43, кв. 101"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -3865,28 +3865,24 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Университет ИТМО"
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 15
+                        workExperience: 6
                     },
                     {
                         title: "Зарплата",
-                        salary: 272578
+                        salary: 268759
                     },
                     {
                         title: "Должность",
-                        position: "Аналитик"
+                        position: "Администратор"
                     },
                     {
                         title: "Отдел",
@@ -3895,23 +3891,28 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Иван Михайлович"
+                        title: "Father",
+                        father: "Смирнов Иван Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Елена Александровна"
+                        title: "Mother",
+                        mother: "Сидорова Анна Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Смирнов Иван Сергеевич"
+                            }
+                        ]
                     }
                 ]
             }
@@ -3923,51 +3924,59 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Иван Сергеевич"
+                    title: "Full name",
+                    full_name: "Смирнова Мария Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1973-10-29T03:03:32.361Z"
+                    title: "Date of birth",
+                    birthday: "1994-09-20T15:10:42.432Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (916) 971-83-45"
+                    title: "Phone number",
+                    phone: "+7 (962) 224-74-26"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Комсомольская, д. 49, кв. 176"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Комсомольская, д. 92, кв. 105"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Университет ИТМО"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Российский университет дружбы народов (РУДН)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 2
+                        workExperience: 13
                     },
                     {
                         title: "Зарплата",
-                        salary: 268984
+                        salary: 180321
                     },
                     {
                         title: "Должность",
-                        position: "Консультант"
+                        position: "Инженер"
                     },
                     {
                         title: "Отдел",
@@ -3976,30 +3985,30 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Михайлович"
+                        title: "Father",
+                        father: "Кузнецов Александр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Анна Петровна"
+                        title: "Mother",
+                        mother: "Смирнова Ольга Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Петрова Ольга Петровна"
+                                name: "Сидорова Светлана Ивановна"
                             },
                             {
                                 title: "Сестра",
-                                name: "Кузнецова Елена Александровна"
+                                name: "Петрова Елена Петровна"
                             }
                         ]
                     }
@@ -4013,47 +4022,39 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Иван Петрович"
+                    title: "Full name",
+                    full_name: "Сидорова Ольга Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1976-05-01T02:54:01.053Z"
+                    title: "Date of birth",
+                    birthday: "1990-11-29T13:15:20.224Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (904) 234-41-24"
+                    title: "Phone number",
+                    phone: "+7 (962) 359-73-52"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Ленина, д. 98, кв. 90"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Ленина, д. 14, кв. 14"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
@@ -4061,39 +4062,47 @@ const users = [
                     },
                     {
                         title: "Зарплата",
-                        salary: 277256
+                        salary: 123162
                     },
                     {
                         title: "Должность",
-                        position: "Директор"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "Производство"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Петр Сергеевич"
+                        title: "Father",
+                        father: "Смирнов Сергей Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Анна Петровна"
+                        title: "Mother",
+                        mother: "Петрова Мария Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Смирнова Ольга Ивановна"
+                                name: "Петрова Светлана Александровна"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Сидоров Михаил Петрович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Иванов Михаил Михайлович"
                             }
                         ]
                     }
@@ -4107,84 +4116,72 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнов Петр Михайлович"
+                    title: "Full name",
+                    full_name: "Смирнова Ольга Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1981-12-03T09:14:43.748Z"
+                    title: "Date of birth",
+                    birthday: "1984-03-15T17:09:58.199Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (969) 060-65-52"
+                    title: "Phone number",
+                    phone: "+7 (967) 915-24-82"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Комсомольская, д. 37, кв. 62"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Ленина, д. 61, кв. 147"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Российский университет дружбы народов (РУДН)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Московский физико-технический институт (МФТИ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 12
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 290772
-                    },
-                    {
-                        title: "Должность",
-                        position: "Администратор"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Маркетинг"
-                    }
-                ]
+                title: "Career",
+                value: []
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
+                        title: "Father",
                         father: "Кузнецов Петр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Ольга Сергеевна"
+                        title: "Mother",
+                        mother: "Кузнецова Елена Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Иванов Иван Михайлович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Смирнов Петр Иванович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Смирнов Сергей Александрович"
+                            }
+                        ]
                     }
                 ]
             }
@@ -4196,30 +4193,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Анна Михайловна"
+                    title: "Full name",
+                    full_name: "Иванов Сергей Сергеевич"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2004-04-29T02:31:32.015Z"
+                    title: "Date of birth",
+                    birthday: "2004-07-29T13:09:02.616Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (945) 684-78-82"
+                    title: "Phone number",
+                    phone: "+7 (927) 285-38-35"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Комсомольская, д. 8, кв. 110"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Ленина, д. 88, кв. 161"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -4227,58 +4224,53 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Национальный исследовательский технологический университет «МИСИС»"
+                        name: "Российский университет дружбы народов (РУДН)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 3
+                        workExperience: 1
                     },
                     {
                         title: "Зарплата",
-                        salary: 288845
+                        salary: 55900
                     },
                     {
                         title: "Должность",
-                        position: "Директор"
+                        position: "Менеджер"
                     },
                     {
                         title: "Отдел",
-                        department: "HR"
+                        department: "Маркетинг"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Петр Петрович"
+                        title: "Father",
+                        father: "Сидоров Михаил Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Анна Сергеевна"
+                        title: "Mother",
+                        mother: "Петрова Елена Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Брат",
-                                name: "Кузнецов Михаил Сергеевич"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -4290,30 +4282,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Петр Михайлович"
+                    title: "Full name",
+                    full_name: "Петров Александр Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1979-02-21T10:33:15.698Z"
+                    title: "Date of birth",
+                    birthday: "1988-07-20T21:33:21.172Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (968) 739-87-61"
+                    title: "Phone number",
+                    phone: "+7 (948) 315-63-64"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Комсомольская, д. 5, кв. 170"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Комсомольская, д. 75, кв. 95"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -4321,56 +4313,60 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                        name: "Московский физико-технический институт (МФТИ)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                        name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 5
+                        workExperience: 3
                     },
                     {
                         title: "Зарплата",
-                        salary: 70766
+                        salary: 181762
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Специалист"
                     },
                     {
                         title: "Отдел",
-                        department: "Логистика"
+                        department: "Кадры"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Петр Иванович"
+                        title: "Father",
+                        father: "Смирнов Петр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Светлана Михайловна"
+                        title: "Mother",
+                        mother: "Иванова Анна Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Иванова Анна Петровна"
+                                title: "Брат",
+                                name: "Сидоров Сергей Петрович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Сидоров Иван Петрович"
                             }
                         ]
                     }
@@ -4384,119 +4380,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Иван Михайлович"
+                    title: "Full name",
+                    full_name: "Сидоров Петр Михайлович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1997-06-22T14:15:02.274Z"
+                    title: "Date of birth",
+                    birthday: "1999-08-30T01:44:36.033Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (985) 603-88-80"
+                    title: "Phone number",
+                    phone: "+7 (938) 582-92-32"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Пушкина, д. 43, кв. 149"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Комсомольская, д. 59, кв. 116"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
-                value: [
-                    {
-                        title: "Среднее",
-                        name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Национальный исследовательский ядерный университет «МИФИ»"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
-                    }
-                ]
-            },
-            career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 7
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 209304
-                    },
-                    {
-                        title: "Должность",
-                        position: "Инженер"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Юридический"
-                    }
-                ]
-            },
-            family: {
-                title: "Семья",
-                value: [
-                    {
-                        title: "Отец",
-                        father: "Петров Сергей Михайлович"
-                    },
-                    {
-                        title: "Мать",
-                        mother: "Иванова Елена Александровна"
-                    },
-                    {
-                        title: "Брак",
-                        maritalStatus: "женат"
-                    },
-                    {
-                        title: "Братья/сестры",
-                        siblings: []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        id: 49,
-        params: {
-            title: "Основная информация",
-            value: [
-                {
-                    title: "ФИО",
-                    full_name: "Смирнов Александр Иванович"
-                },
-                {
-                    title: "Дата рождения",
-                    birthday: "1978-05-02T03:49:04.454Z"
-                },
-                {
-                    title: "Номер телефона",
-                    phone: "+7 (923) 533-78-48"
-                },
-                {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Мира, д. 85, кв. 13"
-                },
-                {
-                    title: "Пол",
-                    gender: "Мужской"
-                }
-            ]
-        },
-        modules: {
-            education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -4508,62 +4415,135 @@ const users = [
                     },
                     {
                         title: "Магистратура",
-                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
+                        name: "Московский физико-технический институт (МФТИ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 10
+                        workExperience: 14
                     },
                     {
                         title: "Зарплата",
-                        salary: 267376
+                        salary: 159311
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Кадры"
+                        department: "Юридический"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Александр Петрович"
+                        title: "Father",
+                        father: "Кузнецов Петр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Анна Петровна"
+                        title: "Mother",
+                        mother: "Петрова Светлана Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Иванова Ольга Александровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Ольга Петровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Елена Сергеевна"
+                                title: "Брат",
+                                name: "Петров Александр Петрович"
                             }
                         ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        id: 49,
+        params: {
+            title: "Основная информация",
+            value: [
+                {
+                    title: "Full name",
+                    full_name: "Петрова Светлана Петровна"
+                },
+                {
+                    title: "Date of birth",
+                    birthday: "1994-12-13T02:59:16.195Z"
+                },
+                {
+                    title: "Phone number",
+                    phone: "+7 (942) 119-77-49"
+                },
+                {
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Мира, д. 59, кв. 96"
+                },
+                {
+                    title: "Gender",
+                    gender: "Женский"
+                }
+            ]
+        },
+        modules: {
+            education: {
+                title: "Education",
+                value: [
+                    {
+                        title: "Среднее",
+                        name: "Колледж"
+                    }
+                ]
+            },
+            career: {
+                title: "Career",
+                value: [
+                    {
+                        title: "Стаж",
+                        workExperience: 4
+                    },
+                    {
+                        title: "Зарплата",
+                        salary: 244762
+                    },
+                    {
+                        title: "Должность",
+                        position: "Аналитик"
+                    },
+                    {
+                        title: "Отдел",
+                        department: "Производство"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Смирнов Сергей Иванович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Кузнецова Мария Ивановна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "холоста"
+                    },
+                    {
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -4575,30 +4555,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Светлана Петровна"
+                    title: "Full name",
+                    full_name: "Иванов Александр Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1971-03-29T15:36:59.330Z"
+                    title: "Date of birth",
+                    birthday: "1978-05-17T04:39:06.642Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (947) 809-52-33"
+                    title: "Phone number",
+                    phone: "+7 (924) 939-14-97"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Гагарина, д. 47, кв. 33"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Ленина, д. 83, кв. 53"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -4606,62 +4586,49 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 13
+                        workExperience: 12
                     },
                     {
                         title: "Зарплата",
-                        salary: 177324
+                        salary: 292275
                     },
                     {
                         title: "Должность",
-                        position: "Аналитик"
+                        position: "Администратор"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "Логистика"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Сергей Иванович"
+                        title: "Father",
+                        father: "Сидоров Иван Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Анна Сергеевна"
+                        title: "Mother",
+                        mother: "Смирнова Мария Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Ольга Петровна"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Иванов Сергей Иванович"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -4673,30 +4640,111 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Анна Александровна"
+                    title: "Full name",
+                    full_name: "Петров Сергей Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1980-01-05T18:45:34.314Z"
+                    title: "Date of birth",
+                    birthday: "1996-08-26T20:40:24.748Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (953) 281-00-83"
+                    title: "Phone number",
+                    phone: "+7 (987) 930-43-47"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Ленина, д. 78, кв. 67"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Комсомольская, д. 65, кв. 102"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
+                    gender: "Мужской"
+                }
+            ]
+        },
+        modules: {
+            education: {
+                title: "Education",
+                value: [
+                    {
+                        title: "Среднее",
+                        name: "Колледж"
+                    }
+                ]
+            },
+            career: {
+                title: "Career",
+                value: [
+                    {
+                        title: "Стаж",
+                        workExperience: 2
+                    },
+                    {
+                        title: "Зарплата",
+                        salary: 89485
+                    },
+                    {
+                        title: "Должность",
+                        position: "Менеджер"
+                    },
+                    {
+                        title: "Отдел",
+                        department: "Логистика"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Смирнов Александр Михайлович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Сидорова Светлана Ивановна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "разведен"
+                    },
+                    {
+                        title: "Siblings",
+                        siblings: []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        id: 52,
+        params: {
+            title: "Основная информация",
+            value: [
+                {
+                    title: "Full name",
+                    full_name: "Петрова Мария Михайловна"
+                },
+                {
+                    title: "Date of birth",
+                    birthday: "1999-04-07T00:04:01.478Z"
+                },
+                {
+                    title: "Phone number",
+                    phone: "+7 (983) 141-31-95"
+                },
+                {
+                    title: "Address",
+                    address: "г. Москва, ул. Ленина, д. 45, кв. 188"
+                },
+                {
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -4713,15 +4761,15 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 5
+                        workExperience: 3
                     },
                     {
                         title: "Зарплата",
-                        salary: 259258
+                        salary: 119299
                     },
                     {
                         title: "Должность",
@@ -4729,117 +4777,37 @@ const users = [
                     },
                     {
                         title: "Отдел",
-                        department: "Бухгалтерия"
+                        department: "Кадры"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Иван Иванович"
+                        title: "Father",
+                        father: "Иванов Сергей Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Мария Михайловна"
+                        title: "Mother",
+                        mother: "Петрова Мария Петровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        id: 52,
-        params: {
-            title: "Основная информация",
-            value: [
-                {
-                    title: "ФИО",
-                    full_name: "Петров Сергей Михайлович"
-                },
-                {
-                    title: "Дата рождения",
-                    birthday: "1996-05-16T17:42:14.873Z"
-                },
-                {
-                    title: "Номер телефона",
-                    phone: "+7 (948) 926-03-15"
-                },
-                {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Ленина, д. 3, кв. 58"
-                },
-                {
-                    title: "Пол",
-                    gender: "Мужской"
-                }
-            ]
-        },
-        modules: {
-            education: {
-                title: "Образование",
-                value: [
-                    {
-                        title: "Среднее",
-                        name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
-                    }
-                ]
-            },
-            career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 15
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 145166
-                    },
-                    {
-                        title: "Должность",
-                        position: "Программист"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "HR"
-                    }
-                ]
-            },
-            family: {
-                title: "Семья",
-                value: [
-                    {
-                        title: "Отец",
-                        father: "Кузнецов Александр Александрович"
-                    },
-                    {
-                        title: "Мать",
-                        mother: "Иванова Светлана Петровна"
-                    },
-                    {
-                        title: "Брак",
-                        maritalStatus: "холост"
-                    },
-                    {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Кузнецов Михаил Михайлович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Кузнецов Иван Михайлович"
+                            }
+                        ]
                     }
                 ]
             }
@@ -4851,30 +4819,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Елена Александровна"
+                    title: "Full name",
+                    full_name: "Петрова Ольга Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1990-07-01T19:17:24.132Z"
+                    title: "Date of birth",
+                    birthday: "2005-08-02T08:38:04.603Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (998) 819-72-67"
+                    title: "Phone number",
+                    phone: "+7 (935) 687-19-53"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Пушкина, д. 22, кв. 60"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Комсомольская, д. 37, кв. 22"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -4883,44 +4851,57 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 12
+                        workExperience: 10
                     },
                     {
                         title: "Зарплата",
-                        salary: 90818
+                        salary: 52248
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Администратор"
                     },
                     {
                         title: "Отдел",
-                        department: "HR"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Петр Петрович"
+                        title: "Father",
+                        father: "Сидоров Сергей Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Ольга Михайловна"
+                        title: "Mother",
+                        mother: "Смирнова Анна Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Смирнов Александр Петрович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Сидорова Ольга Ивановна"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Сидоров Петр Иванович"
+                            }
+                        ]
                     }
                 ]
             }
@@ -4932,59 +4913,85 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецов Михаил Иванович"
+                    title: "Full name",
+                    full_name: "Сидорова Ольга Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1995-01-10T17:41:52.501Z"
+                    title: "Date of birth",
+                    birthday: "1987-04-20T13:37:57.124Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (927) 663-45-71"
+                    title: "Phone number",
+                    phone: "+7 (924) 462-11-33"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Пушкина, д. 61, кв. 39"
+                    title: "Address",
+                    address: "г. Москва, ул. Пушкина, д. 12, кв. 34"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: []
-            },
-            family: {
-                title: "Семья",
+                title: "Career",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Сергей Иванович"
+                        title: "Стаж",
+                        workExperience: 12
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Ольга Александровна"
+                        title: "Зарплата",
+                        salary: 95778
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Должность",
+                        position: "Инженер"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Отдел",
+                        department: "Маркетинг"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Иванов Александр Иванович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Кузнецова Ольга Ивановна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "разведена"
+                    },
+                    {
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Сестра",
+                                name: "Петрова Мария Александровна"
+                            }
+                        ]
                     }
                 ]
             }
@@ -4996,79 +5003,91 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Светлана Сергеевна"
+                    title: "Full name",
+                    full_name: "Иванова Мария Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1970-02-09T00:24:29.923Z"
+                    title: "Date of birth",
+                    birthday: "1993-09-21T02:16:57.208Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (994) 968-33-40"
+                    title: "Phone number",
+                    phone: "+7 (943) 891-52-57"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Мира, д. 72, кв. 118"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Гагарина, д. 3, кв. 76"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 1
+                        workExperience: 7
                     },
                     {
                         title: "Зарплата",
-                        salary: 204719
+                        salary: 141895
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "HR"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Сергей Александрович"
+                        title: "Father",
+                        father: "Кузнецов Петр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Ольга Ивановна"
+                        title: "Mother",
+                        mother: "Иванова Светлана Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Сидоров Сергей Михайлович"
+                                title: "Сестра",
+                                name: "Кузнецова Мария Петровна"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Смирнова Ольга Сергеевна"
                             }
                         ]
                     }
@@ -5082,30 +5101,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецов Михаил Сергеевич"
+                    title: "Full name",
+                    full_name: "Смирнов Сергей Сергеевич"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2002-09-14T21:50:36.572Z"
+                    title: "Date of birth",
+                    birthday: "1995-01-24T15:14:10.246Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (929) 447-91-93"
+                    title: "Phone number",
+                    phone: "+7 (943) 377-56-31"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Пушкина, д. 81, кв. 140"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Мира, д. 39, кв. 171"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -5113,66 +5132,49 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 6
+                        workExperience: 2
                     },
                     {
                         title: "Зарплата",
-                        salary: 147674
+                        salary: 102525
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "Логистика"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Петр Иванович"
+                        title: "Father",
+                        father: "Смирнов Сергей Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Ольга Петровна"
+                        title: "Mother",
+                        mother: "Кузнецова Елена Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Ольга Михайловна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Смирнова Мария Ивановна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Иванова Ольга Александровна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -5184,30 +5186,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнова Елена Александровна"
+                    title: "Full name",
+                    full_name: "Кузнецов Петр Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1974-07-16T21:54:24.964Z"
+                    title: "Date of birth",
+                    birthday: "1973-07-07T03:40:57.602Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (916) 204-60-41"
+                    title: "Phone number",
+                    phone: "+7 (928) 910-27-71"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Комсомольская, д. 44, кв. 72"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Ленина, д. 20, кв. 131"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -5215,53 +5217,62 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Университет ИТМО"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 2
+                        workExperience: 12
                     },
                     {
                         title: "Зарплата",
-                        salary: 289695
+                        salary: 218781
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Аналитик"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "Производство"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Петр Иванович"
+                        title: "Father",
+                        father: "Кузнецов Сергей Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Ольга Михайловна"
+                        title: "Mother",
+                        mother: "Иванова Елена Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Смирнов Петр Сергеевич"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Петров Александр Петрович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Иванов Сергей Александрович"
+                            }
+                        ]
                     }
                 ]
             }
@@ -5273,30 +5284,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Александр Александрович"
+                    title: "Full name",
+                    full_name: "Иванов Сергей Сергеевич"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1985-11-15T06:01:01.274Z"
+                    title: "Date of birth",
+                    birthday: "2005-07-19T03:08:40.009Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (991) 423-59-13"
+                    title: "Phone number",
+                    phone: "+7 (968) 527-99-92"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Мира, д. 4, кв. 128"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Пушкина, д. 89, кв. 21"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -5304,60 +5315,60 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 15
+                        workExperience: 4
                     },
                     {
                         title: "Зарплата",
-                        salary: 260003
+                        salary: 131591
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Администратор"
                     },
                     {
                         title: "Отдел",
-                        department: "Маркетинг"
+                        department: "Продажи"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Сергей Александрович"
+                        title: "Father",
+                        father: "Сидоров Сергей Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Анна Сергеевна"
+                        title: "Mother",
+                        mother: "Смирнова Анна Михайловна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Смирнов Александр Иванович"
+                                name: "Смирнов Михаил Иванович"
                             },
                             {
                                 title: "Брат",
-                                name: "Петров Петр Петрович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Светлана Александровна"
+                                name: "Иванов Михаил Петрович"
                             }
                         ]
                     }
@@ -5371,83 +5382,91 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Иван Петрович"
+                    title: "Full name",
+                    full_name: "Кузнецова Ольга Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1979-10-27T03:55:51.024Z"
+                    title: "Date of birth",
+                    birthday: "1996-02-03T02:40:26.472Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (913) 911-83-71"
+                    title: "Phone number",
+                    phone: "+7 (998) 544-59-14"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Пушкина, д. 64, кв. 182"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Мира, д. 98, кв. 74"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Университет ИТМО"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 14
+                        workExperience: 4
                     },
                     {
                         title: "Зарплата",
-                        salary: 221504
+                        salary: 85285
                     },
                     {
                         title: "Должность",
-                        position: "Консультант"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "Кадры"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Иван Сергеевич"
+                        title: "Father",
+                        father: "Сидоров Иван Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Мария Михайловна"
+                        title: "Mother",
+                        mother: "Сидорова Мария Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Кузнецова Светлана Михайловна"
+                                name: "Иванова Светлана Петровна"
                             },
                             {
-                                title: "Сестра",
-                                name: "Петрова Ольга Александровна"
+                                title: "Брат",
+                                name: "Иванов Александр Александрович"
                             }
                         ]
                     }
@@ -5461,89 +5480,59 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнова Елена Ивановна"
+                    title: "Full name",
+                    full_name: "Иванов Петр Михайлович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1982-06-21T20:57:38.196Z"
+                    title: "Date of birth",
+                    birthday: "1977-01-21T16:12:41.135Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (941) 736-89-75"
+                    title: "Phone number",
+                    phone: "+7 (925) 717-32-57"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Пушкина, д. 29, кв. 109"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 22, кв. 36"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 11
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 146596
-                    },
-                    {
-                        title: "Должность",
-                        position: "Консультант"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Продажи"
-                    }
-                ]
+                title: "Career",
+                value: []
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Михаил Иванович"
+                        title: "Father",
+                        father: "Смирнов Сергей Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Елена Петровна"
+                        title: "Mother",
+                        mother: "Иванова Светлана Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Брат",
-                                name: "Смирнов Сергей Сергеевич"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Петрова Елена Александровна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -5555,83 +5544,87 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Ольга Александровна"
+                    title: "Full name",
+                    full_name: "Иванова Мария Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1982-07-12T21:57:13.772Z"
+                    title: "Date of birth",
+                    birthday: "1979-06-08T07:24:50.236Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (965) 566-91-26"
+                    title: "Phone number",
+                    phone: "+7 (911) 162-81-43"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Мира, д. 5, кв. 185"
+                    title: "Address",
+                    address: "г. Москва, ул. Ленина, д. 42, кв. 22"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Национальный исследовательский ядерный университет «МИФИ»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 7
+                        workExperience: 4
                     },
                     {
                         title: "Зарплата",
-                        salary: 264300
+                        salary: 150166
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Кадры"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Петр Иванович"
+                        title: "Father",
+                        father: "Кузнецов Сергей Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Мария Сергеевна"
+                        title: "Mother",
+                        mother: "Сидорова Анна Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Кузнецова Анна Петровна"
+                                name: "Смирнова Анна Сергеевна"
                             },
                             {
                                 title: "Сестра",
-                                name: "Кузнецова Светлана Михайловна"
+                                name: "Петрова Ольга Михайловна"
                             }
                         ]
                     }
@@ -5645,83 +5638,75 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Светлана Петровна"
+                    title: "Full name",
+                    full_name: "Петрова Анна Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1977-12-20T16:35:55.674Z"
+                    title: "Date of birth",
+                    birthday: "1989-08-30T21:58:47.275Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (948) 167-37-11"
+                    title: "Phone number",
+                    phone: "+7 (974) 263-41-42"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Пушкина, д. 15, кв. 7"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 30, кв. 167"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 7
+                        workExperience: 10
                     },
                     {
                         title: "Зарплата",
-                        salary: 290657
+                        salary: 248891
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Менеджер"
                     },
                     {
                         title: "Отдел",
-                        department: "HR"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Михаил Михайлович"
+                        title: "Father",
+                        father: "Сидоров Петр Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Светлана Сергеевна"
+                        title: "Mother",
+                        mother: "Сидорова Светлана Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: []
                     }
                 ]
@@ -5734,30 +5719,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Елена Михайловна"
+                    title: "Full name",
+                    full_name: "Иванов Михаил Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1996-12-01T02:08:46.172Z"
+                    title: "Date of birth",
+                    birthday: "1990-10-14T02:15:10.545Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (936) 469-71-25"
+                    title: "Phone number",
+                    phone: "+7 (970) 809-13-42"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Пушкина, д. 64, кв. 194"
+                    title: "Address",
+                    address: "г. Москва, ул. Комсомольская, д. 52, кв. 160"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -5765,24 +5750,20 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Национальный исследовательский технологический университет «МИСИС»"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 14
+                        workExperience: 1
                     },
                     {
                         title: "Зарплата",
-                        salary: 289885
+                        salary: 155149
                     },
                     {
                         title: "Должность",
@@ -5790,33 +5771,28 @@ const users = [
                     },
                     {
                         title: "Отдел",
-                        department: "HR"
+                        department: "Продажи"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Александр Александрович"
+                        title: "Father",
+                        father: "Петров Александр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Мария Петровна"
+                        title: "Mother",
+                        mother: "Кузнецова Елена Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Брат",
-                                name: "Кузнецов Петр Михайлович"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -5828,76 +5804,97 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Александр Михайлович"
+                    title: "Full name",
+                    full_name: "Сидорова Мария Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1996-09-19T07:20:24.969Z"
+                    title: "Date of birth",
+                    birthday: "1987-09-17T08:12:18.319Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (986) 178-16-57"
+                    title: "Phone number",
+                    phone: "+7 (985) 385-12-84"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Гагарина, д. 55, кв. 30"
+                    title: "Address",
+                    address: "г. Москва, ул. Ленина, д. 51, кв. 173"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 2
+                        workExperience: 11
                     },
                     {
                         title: "Зарплата",
-                        salary: 156268
+                        salary: 218033
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "Производство"
+                        department: "Финансы"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Иванович"
+                        title: "Father",
+                        father: "Петров Сергей Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Мария Ивановна"
+                        title: "Mother",
+                        mother: "Сидорова Елена Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Петров Иван Петрович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Кузнецов Сергей Иванович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Сидорова Елена Александровна"
+                            }
+                        ]
                     }
                 ]
             }
@@ -5909,55 +5906,47 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Сергей Иванович"
+                    title: "Full name",
+                    full_name: "Петров Александр Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1974-02-03T03:29:46.964Z"
+                    title: "Date of birth",
+                    birthday: "1988-09-11T12:16:21.379Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (989) 135-05-07"
+                    title: "Phone number",
+                    phone: "+7 (928) 555-34-55"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Ленина, д. 35, кв. 82"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Комсомольская, д. 62, кв. 69"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Национальный исследовательский технологический университет «МИСИС»"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 9
+                        workExperience: 14
                     },
                     {
                         title: "Зарплата",
-                        salary: 242633
+                        salary: 252008
                     },
                     {
                         title: "Должность",
@@ -5965,33 +5954,28 @@ const users = [
                     },
                     {
                         title: "Отдел",
-                        department: "Логистика"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Александр Михайлович"
+                        title: "Father",
+                        father: "Смирнов Михаил Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Светлана Ивановна"
+                        title: "Mother",
+                        mother: "Смирнова Светлана Михайловна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Брат",
-                                name: "Смирнов Сергей Александрович"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -6003,30 +5987,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Иван Михайлович"
+                    title: "Full name",
+                    full_name: "Петров Иван Михайлович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1987-09-09T12:35:38.069Z"
+                    title: "Date of birth",
+                    birthday: "1977-04-30T03:44:27.156Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (943) 885-07-80"
+                    title: "Phone number",
+                    phone: "+7 (951) 455-63-67"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Гагарина, д. 8, кв. 155"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Ленина, д. 59, кв. 171"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -6034,60 +6018,56 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                        name: "Московский физико-технический институт (МФТИ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 11
+                        workExperience: 2
                     },
                     {
                         title: "Зарплата",
-                        salary: 207623
+                        salary: 48312
                     },
                     {
                         title: "Должность",
-                        position: "Специалист"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "Финансы"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Иван Иванович"
+                        title: "Father",
+                        father: "Смирнов Сергей Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Елена Сергеевна"
+                        title: "Mother",
+                        mother: "Кузнецова Анна Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Смирнова Светлана Петровна"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Смирнов Иван Петрович"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Иванов Иван Михайлович"
+                                name: "Кузнецова Елена Сергеевна"
                             }
                         ]
                     }
@@ -6101,30 +6081,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецов Петр Михайлович"
+                    title: "Full name",
+                    full_name: "Смирнова Светлана Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1992-09-15T01:10:10.968Z"
+                    title: "Date of birth",
+                    birthday: "1997-10-13T03:59:02.191Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (918) 146-24-78"
+                    title: "Phone number",
+                    phone: "+7 (988) 306-43-41"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Ленина, д. 40, кв. 109"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Гагарина, д. 21, кв. 63"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -6132,7 +6112,7 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
                     },
                     {
                         title: "Магистратура",
@@ -6141,19 +6121,19 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 11
+                        workExperience: 10
                     },
                     {
                         title: "Зарплата",
-                        salary: 53357
+                        salary: 214569
                     },
                     {
                         title: "Должность",
-                        position: "Директор"
+                        position: "Менеджер"
                     },
                     {
                         title: "Отдел",
@@ -6162,34 +6142,26 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Сергей Михайлович"
+                        title: "Father",
+                        father: "Петров Петр Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Ольга Петровна"
+                        title: "Mother",
+                        mother: "Сидорова Ольга Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Сидорова Мария Михайловна"
-                            },
-                            {
                                 title: "Брат",
-                                name: "Смирнов Иван Александрович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Иванова Елена Сергеевна"
+                                name: "Кузнецов Михаил Иванович"
                             }
                         ]
                     }
@@ -6203,83 +6175,91 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Елена Александровна"
+                    title: "Full name",
+                    full_name: "Иванова Мария Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2000-10-29T18:46:03.828Z"
+                    title: "Date of birth",
+                    birthday: "1977-01-25T05:17:02.930Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (908) 020-79-01"
+                    title: "Phone number",
+                    phone: "+7 (967) 549-75-76"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Гагарина, д. 41, кв. 168"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Гагарина, д. 88, кв. 53"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 10
+                        workExperience: 3
                     },
                     {
                         title: "Зарплата",
-                        salary: 91655
+                        salary: 242455
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "Кадры"
+                        department: "Финансы"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Михаил Петрович"
+                        title: "Father",
+                        father: "Петров Александр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Ольга Александровна"
+                        title: "Mother",
+                        mother: "Петрова Ольга Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Смирнова Мария Петровна"
+                                name: "Петрова Елена Александровна"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Петрова Елена Петровна"
                             },
                             {
                                 title: "Брат",
-                                name: "Смирнов Михаил Иванович"
+                                name: "Петров Петр Петрович"
                             }
                         ]
                     }
@@ -6293,30 +6273,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Светлана Ивановна"
+                    title: "Full name",
+                    full_name: "Сидорова Светлана Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2004-09-05T10:37:53.544Z"
+                    title: "Date of birth",
+                    birthday: "2005-06-19T11:31:05.569Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (948) 667-57-84"
+                    title: "Phone number",
+                    phone: "+7 (918) 753-99-92"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Ленина, д. 73, кв. 46"
+                    title: "Address",
+                    address: "г. Москва, ул. Гагарина, д. 6, кв. 4"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -6324,62 +6304,53 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Университет ИТМО"
+                        name: "Национальный исследовательский ядерный университет «МИФИ»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 6
+                        workExperience: 11
                     },
                     {
                         title: "Зарплата",
-                        salary: 214043
+                        salary: 191769
                     },
                     {
                         title: "Должность",
-                        position: "Специалист"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "Бухгалтерия"
+                        department: "HR"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Александр Иванович"
+                        title: "Father",
+                        father: "Кузнецов Михаил Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Светлана Ивановна"
+                        title: "Mother",
+                        mother: "Петрова Анна Петровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Мария Петровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Ольга Ивановна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -6391,30 +6362,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнов Иван Петрович"
+                    title: "Full name",
+                    full_name: "Иванов Сергей Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1993-04-07T00:01:44.873Z"
+                    title: "Date of birth",
+                    birthday: "1989-12-07T04:57:48.404Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (969) 966-98-67"
+                    title: "Phone number",
+                    phone: "+7 (925) 107-05-75"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Мира, д. 95, кв. 149"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Комсомольская, д. 4, кв. 21"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -6422,7 +6393,7 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
                     },
                     {
                         title: "Магистратура",
@@ -6431,47 +6402,47 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 10
+                        workExperience: 13
                     },
                     {
                         title: "Зарплата",
-                        salary: 59827
+                        salary: 131860
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "Юридический"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Александр Михайлович"
+                        title: "Father",
+                        father: "Смирнов Александр Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Мария Михайловна"
+                        title: "Mother",
+                        mother: "Кузнецова Мария Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Кузнецова Светлана Сергеевна"
+                                title: "Брат",
+                                name: "Петров Сергей Михайлович"
                             }
                         ]
                     }
@@ -6485,30 +6456,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петров Иван Иванович"
+                    title: "Full name",
+                    full_name: "Смирнов Петр Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1987-10-08T22:03:45.241Z"
+                    title: "Date of birth",
+                    birthday: "1979-03-03T11:21:50.387Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (963) 161-88-61"
+                    title: "Phone number",
+                    phone: "+7 (970) 524-25-22"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Ленина, д. 56, кв. 134"
+                    title: "Address",
+                    address: "г. Москва, ул. Мира, д. 24, кв. 135"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -6516,60 +6487,60 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Российский университет дружбы народов (РУДН)"
+                        name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 11
+                        workExperience: 6
                     },
                     {
                         title: "Зарплата",
-                        salary: 83526
+                        salary: 219108
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Инженер"
                     },
                     {
                         title: "Отдел",
-                        department: "Юридический"
+                        department: "Продажи"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Иван Иванович"
+                        title: "Father",
+                        father: "Кузнецов Михаил Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Елена Михайловна"
+                        title: "Mother",
+                        mother: "Сидорова Елена Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "разведен"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Сидоров Петр Михайлович"
+                                name: "Петров Петр Иванович"
                             },
                             {
                                 title: "Брат",
-                                name: "Смирнов Иван Иванович"
+                                name: "Кузнецов Иван Петрович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Кузнецова Мария Александровна"
                             }
                         ]
                     }
@@ -6583,30 +6554,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Анна Ивановна"
+                    title: "Full name",
+                    full_name: "Иванова Мария Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2002-07-02T01:49:53.922Z"
+                    title: "Date of birth",
+                    birthday: "1982-12-27T20:54:01.576Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (984) 118-62-68"
+                    title: "Phone number",
+                    phone: "+7 (982) 972-30-63"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Мира, д. 13, кв. 64"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Гагарина, д. 29, кв. 51"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -6614,7 +6585,7 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                        name: "Национальный исследовательский ядерный университет «МИФИ»"
                     },
                     {
                         title: "Магистратура",
@@ -6623,55 +6594,51 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 13
+                        workExperience: 11
                     },
                     {
                         title: "Зарплата",
-                        salary: 241090
+                        salary: 193963
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Менеджер"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "Маркетинг"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Петр Петрович"
+                        title: "Father",
+                        father: "Иванов Петр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Елена Ивановна"
+                        title: "Mother",
+                        mother: "Петрова Мария Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Сидорова Мария Александровна"
+                                name: "Сидорова Ольга Михайловна"
                             },
                             {
-                                title: "Сестра",
-                                name: "Кузнецова Мария Петровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Иванова Ольга Михайловна"
+                                title: "Брат",
+                                name: "Петров Петр Михайлович"
                             }
                         ]
                     }
@@ -6685,30 +6652,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Петр Иванович"
+                    title: "Full name",
+                    full_name: "Иванов Александр Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1980-01-04T13:15:46.734Z"
+                    title: "Date of birth",
+                    birthday: "2000-06-10T22:23:36.918Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (997) 314-97-54"
+                    title: "Phone number",
+                    phone: "+7 (928) 823-19-21"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 25, кв. 107"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Пушкина, д. 43, кв. 183"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -6716,56 +6683,35 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Российский университет дружбы народов (РУДН)"
-                    },
-                    {
-                        title: "Магистратура",
                         name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 13
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 130748
-                    },
-                    {
-                        title: "Должность",
-                        position: "Бухгалтер"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Кадры"
-                    }
-                ]
+                title: "Career",
+                value: []
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Михаил Иванович"
+                        title: "Father",
+                        father: "Сидоров Александр Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Мария Михайловна"
+                        title: "Mother",
+                        mother: "Смирнова Анна Сергеевна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Смирнов Иван Сергеевич"
+                                name: "Кузнецов Михаил Иванович"
                             }
                         ]
                     }
@@ -6779,51 +6725,55 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Ольга Сергеевна"
+                    title: "Full name",
+                    full_name: "Иванова Светлана Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1972-12-21T23:14:33.909Z"
+                    title: "Date of birth",
+                    birthday: "1996-01-12T04:39:27.036Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (982) 725-22-21"
+                    title: "Phone number",
+                    phone: "+7 (946) 434-97-85"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Гагарина, д. 47, кв. 87"
+                    title: "Address",
+                    address: "г. Москва, ул. Пушкина, д. 33, кв. 62"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Российский университет дружбы народов (РУДН)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 4
+                        workExperience: 6
                     },
                     {
                         title: "Зарплата",
-                        salary: 105910
+                        salary: 262067
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Менеджер"
                     },
                     {
                         title: "Отдел",
@@ -6832,34 +6782,26 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Михайлович"
+                        title: "Father",
+                        father: "Кузнецов Александр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Ольга Сергеевна"
+                        title: "Mother",
+                        mother: "Петрова Анна Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Петрова Елена Петровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Иванова Анна Ивановна"
-                            },
-                            {
                                 title: "Брат",
-                                name: "Смирнов Сергей Михайлович"
+                                name: "Иванов Михаил Петрович"
                             }
                         ]
                     }
@@ -6873,30 +6815,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Александр Иванович"
+                    title: "Full name",
+                    full_name: "Смирнов Петр Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1983-08-25T18:31:39.641Z"
+                    title: "Date of birth",
+                    birthday: "1970-12-27T23:45:37.784Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (904) 132-74-80"
+                    title: "Phone number",
+                    phone: "+7 (955) 884-55-40"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Пушкина, д. 94, кв. 123"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Пушкина, д. 82, кв. 20"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -6904,52 +6846,39 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 14
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 299020
-                    },
-                    {
-                        title: "Должность",
-                        position: "Администратор"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Маркетинг"
-                    }
-                ]
+                title: "Career",
+                value: []
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Александр Сергеевич"
+                        title: "Father",
+                        father: "Иванов Иван Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Ольга Александровна"
+                        title: "Mother",
+                        mother: "Смирнова Елена Сергеевна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Смирнов Александр Иванович"
+                                name: "Кузнецов Петр Сергеевич"
                             }
                         ]
                     }
@@ -6963,83 +6892,87 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Ольга Петровна"
+                    title: "Full name",
+                    full_name: "Иванова Елена Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1985-03-29T05:22:10.194Z"
+                    title: "Date of birth",
+                    birthday: "1976-03-09T11:51:59.570Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (918) 982-14-22"
+                    title: "Phone number",
+                    phone: "+7 (926) 277-64-28"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Мира, д. 100, кв. 146"
+                    title: "Address",
+                    address: "г. Москва, ул. Мира, д. 98, кв. 18"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 14
+                        workExperience: 4
                     },
                     {
                         title: "Зарплата",
-                        salary: 185215
+                        salary: 246852
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Производство"
+                        department: "Маркетинг"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Сергей Сергеевич"
+                        title: "Father",
+                        father: "Кузнецов Александр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Мария Петровна"
+                        title: "Mother",
+                        mother: "Кузнецова Светлана Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Сидоров Сергей Александрович"
+                                name: "Сидоров Сергей Петрович"
                             },
                             {
                                 title: "Брат",
-                                name: "Петров Михаил Петрович"
+                                name: "Смирнов Петр Иванович"
                             }
                         ]
                     }
@@ -7053,80 +6986,85 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванова Мария Петровна"
+                    title: "Full name",
+                    full_name: "Смирнова Светлана Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1994-03-25T15:32:32.416Z"
+                    title: "Date of birth",
+                    birthday: "1977-01-02T10:26:00.481Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (952) 637-12-05"
+                    title: "Phone number",
+                    phone: "+7 (963) 729-84-74"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Мира, д. 78, кв. 69"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Ленина, д. 95, кв. 129"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 5
+                        workExperience: 8
                     },
                     {
                         title: "Зарплата",
-                        salary: 128993
+                        salary: 118976
                     },
                     {
                         title: "Должность",
-                        position: "Консультант"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Маркетинг"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Сергей Александрович"
+                        title: "Father",
+                        father: "Сидоров Петр Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Елена Петровна"
+                        title: "Mother",
+                        mother: "Сидорова Ольга Петровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Иванов Иван Иванович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Кузнецов Иван Иванович"
+                            }
+                        ]
                     }
                 ]
             }
@@ -7138,83 +7076,87 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Светлана Петровна"
+                    title: "Full name",
+                    full_name: "Кузнецова Светлана Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1995-06-25T22:16:23.501Z"
+                    title: "Date of birth",
+                    birthday: "1970-12-19T10:44:49.370Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (986) 318-33-64"
+                    title: "Phone number",
+                    phone: "+7 (956) 418-72-79"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Гагарина, д. 63, кв. 152"
+                    title: "Address",
+                    address: "г. Москва, ул. Мира, д. 45, кв. 77"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 12
+                        workExperience: 5
                     },
                     {
                         title: "Зарплата",
-                        salary: 59398
+                        salary: 168026
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Директор"
                     },
                     {
                         title: "Отдел",
-                        department: "Логистика"
+                        department: "Производство"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Александр Михайлович"
+                        title: "Father",
+                        father: "Кузнецов Александр Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Ольга Михайловна"
+                        title: "Mother",
+                        mother: "Смирнова Ольга Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Иванова Ольга Александровна"
+                                name: "Петрова Елена Ивановна"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Петров Петр Петрович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Петрова Ольга Михайловна"
                             }
                         ]
                     }
@@ -7228,30 +7170,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Мария Сергеевна"
+                    title: "Full name",
+                    full_name: "Иванова Елена Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1995-12-05T16:28:12.975Z"
+                    title: "Date of birth",
+                    birthday: "1980-05-04T08:04:50.408Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (965) 918-22-95"
+                    title: "Phone number",
+                    phone: "+7 (953) 496-26-91"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Мира, д. 3, кв. 183"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Пушкина, д. 79, кв. 199"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -7259,60 +7201,56 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                        name: "Университет ИТМО"
                     },
                     {
                         title: "Магистратура",
-                        name: "Российский университет дружбы народов (РУДН)"
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 8
+                        workExperience: 6
                     },
                     {
                         title: "Зарплата",
-                        salary: 299297
+                        salary: 145021
                     },
                     {
                         title: "Должность",
-                        position: "Менеджер"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "Производство"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Александр Иванович"
+                        title: "Father",
+                        father: "Петров Михаил Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Ольга Петровна"
+                        title: "Mother",
+                        mother: "Смирнова Светлана Михайловна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Иванов Сергей Петрович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Петрова Елена Петровна"
+                                name: "Петров Александр Александрович"
                             }
                         ]
                     }
@@ -7326,39 +7264,47 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Ольга Ивановна"
+                    title: "Full name",
+                    full_name: "Иванова Анна Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1984-03-27T05:24:08.738Z"
+                    title: "Date of birth",
+                    birthday: "1973-10-06T20:16:33.516Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (985) 718-63-11"
+                    title: "Phone number",
+                    phone: "+7 (968) 481-17-83"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Пушкина, д. 66, кв. 150"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Комсомольская, д. 49, кв. 48"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Национальный исследовательский технологический университет «МИСИС»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
@@ -7366,11 +7312,11 @@ const users = [
                     },
                     {
                         title: "Зарплата",
-                        salary: 283612
+                        salary: 168674
                     },
                     {
                         title: "Должность",
-                        position: "Менеджер"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
@@ -7379,32 +7325,23 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Александр Михайлович"
+                        title: "Father",
+                        father: "Кузнецов Иван Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Елена Петровна"
+                        title: "Mother",
+                        mother: "Смирнова Анна Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Мария Петровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Кузнецова Светлана Сергеевна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -7416,30 +7353,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Мария Ивановна"
+                    title: "Full name",
+                    full_name: "Смирнова Светлана Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1983-11-29T01:27:54.440Z"
+                    title: "Date of birth",
+                    birthday: "1980-08-20T22:07:41.824Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (995) 712-83-58"
+                    title: "Phone number",
+                    phone: "+7 (927) 854-69-66"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Мира, д. 6, кв. 143"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Комсомольская, д. 36, кв. 73"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -7447,62 +7384,49 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Университет ИТМО"
+                        name: "Национальный исследовательский ядерный университет «МИФИ»"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 7
+                        workExperience: 5
                     },
                     {
                         title: "Зарплата",
-                        salary: 52536
+                        salary: 133683
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "Логистика"
+                        department: "Финансы"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Михаил Александрович"
+                        title: "Father",
+                        father: "Петров Александр Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Анна Александровна"
+                        title: "Mother",
+                        mother: "Сидорова Анна Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Брат",
-                                name: "Иванов Александр Иванович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Смирнова Мария Александровна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -7514,30 +7438,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецов Михаил Петрович"
+                    title: "Full name",
+                    full_name: "Петрова Светлана Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1980-09-08T03:23:42.688Z"
+                    title: "Date of birth",
+                    birthday: "1983-06-04T07:51:44.946Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (961) 590-36-25"
+                    title: "Phone number",
+                    phone: "+7 (909) 099-00-19"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Ленина, д. 17, кв. 30"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Мира, д. 35, кв. 95"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -7545,56 +7469,56 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 9
+                        workExperience: 8
                     },
                     {
                         title: "Зарплата",
-                        salary: 267464
+                        salary: 131636
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "Финансы"
+                        department: "Логистика"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Александр Петрович"
+                        title: "Father",
+                        father: "Кузнецов Александр Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Светлана Александровна"
+                        title: "Mother",
+                        mother: "Смирнова Елена Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Кузнецов Петр Александрович"
+                                name: "Сидоров Иван Иванович"
                             },
                             {
                                 title: "Сестра",
-                                name: "Смирнова Светлана Александровна"
+                                name: "Иванова Анна Сергеевна"
                             }
                         ]
                     }
@@ -7608,30 +7532,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецова Светлана Сергеевна"
+                    title: "Full name",
+                    full_name: "Петров Михаил Петрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1983-07-22T11:36:06.671Z"
+                    title: "Date of birth",
+                    birthday: "1990-02-02T06:19:22.347Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (923) 549-54-85"
+                    title: "Phone number",
+                    phone: "+7 (984) 181-41-48"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Ленина, д. 11, кв. 8"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 42, кв. 86"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -7639,66 +7563,49 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Национальный исследовательский ядерный университет «МИФИ»"
+                        name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 11
+                        workExperience: 6
                     },
                     {
                         title: "Зарплата",
-                        salary: 104219
+                        salary: 186819
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "Маркетинг"
+                        department: "Финансы"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Михаил Михайлович"
+                        title: "Father",
+                        father: "Петров Петр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Елена Ивановна"
+                        title: "Mother",
+                        mother: "Сидорова Анна Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "женат"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Сестра",
-                                name: "Смирнова Светлана Ивановна"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Петров Михаил Сергеевич"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Петрова Мария Петровна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -7710,205 +7617,47 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петров Сергей Сергеевич"
+                    title: "Full name",
+                    full_name: "Кузнецова Мария Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2001-06-20T16:43:26.022Z"
+                    title: "Date of birth",
+                    birthday: "1971-09-26T02:01:55.102Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (987) 851-74-27"
+                    title: "Phone number",
+                    phone: "+7 (955) 258-41-15"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Гагарина, д. 25, кв. 72"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Гагарина, д. 32, кв. 153"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
-                }
-            ]
-        },
-        modules: {
-            education: {
-                title: "Образование",
-                value: [
-                    {
-                        title: "Среднее",
-                        name: "Колледж"
-                    }
-                ]
-            },
-            career: {
-                title: "Карьера",
-                value: [
-                    {
-                        title: "Стаж",
-                        workExperience: 5
-                    },
-                    {
-                        title: "Зарплата",
-                        salary: 81531
-                    },
-                    {
-                        title: "Должность",
-                        position: "Бухгалтер"
-                    },
-                    {
-                        title: "Отдел",
-                        department: "Юридический"
-                    }
-                ]
-            },
-            family: {
-                title: "Семья",
-                value: [
-                    {
-                        title: "Отец",
-                        father: "Кузнецов Иван Александрович"
-                    },
-                    {
-                        title: "Мать",
-                        mother: "Иванова Мария Сергеевна"
-                    },
-                    {
-                        title: "Брак",
-                        maritalStatus: "разведен"
-                    },
-                    {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Брат",
-                                name: "Иванов Сергей Михайлович"
-                            }
-                        ]
-                    }
-                ]
-            }
-        }
-    },
-    {
-        id: 85,
-        params: {
-            title: "Основная информация",
-            value: [
-                {
-                    title: "ФИО",
-                    full_name: "Кузнецов Петр Михайлович"
-                },
-                {
-                    title: "Дата рождения",
-                    birthday: "1975-01-02T13:26:00.259Z"
-                },
-                {
-                    title: "Номер телефона",
-                    phone: "+7 (931) 687-47-79"
-                },
-                {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 94, кв. 106"
-                },
-                {
-                    title: "Пол",
-                    gender: "Мужской"
-                }
-            ]
-        },
-        modules: {
-            education: {
-                title: "Образование",
-                value: [
-                    {
-                        title: "Среднее",
-                        name: "Колледж"
-                    }
-                ]
-            },
-            career: {
-                title: "Карьера",
-                value: []
-            },
-            family: {
-                title: "Семья",
-                value: [
-                    {
-                        title: "Отец",
-                        father: "Смирнов Александр Сергеевич"
-                    },
-                    {
-                        title: "Мать",
-                        mother: "Петрова Светлана Александровна"
-                    },
-                    {
-                        title: "Брак",
-                        maritalStatus: "холост"
-                    },
-                    {
-                        title: "Братья/сестры",
-                        siblings: []
-                    }
-                ]
-            }
-        }
-    },
-    {
-        id: 86,
-        params: {
-            title: "Основная информация",
-            value: [
-                {
-                    title: "ФИО",
-                    full_name: "Иванова Мария Михайловна"
-                },
-                {
-                    title: "Дата рождения",
-                    birthday: "2003-02-15T02:26:46.582Z"
-                },
-                {
-                    title: "Номер телефона",
-                    phone: "+7 (934) 124-19-18"
-                },
-                {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 78, кв. 81"
-                },
-                {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 1
+                        workExperience: 14
                     },
                     {
                         title: "Зарплата",
-                        salary: 290245
+                        salary: 141789
                     },
                     {
                         title: "Должность",
@@ -7921,26 +7670,213 @@ const users = [
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Михаил Петрович"
+                        title: "Father",
+                        father: "Кузнецов Иван Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Елена Михайловна"
+                        title: "Mother",
+                        mother: "Иванова Светлана Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
+                        siblings: []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        id: 85,
+        params: {
+            title: "Основная информация",
+            value: [
+                {
+                    title: "Full name",
+                    full_name: "Петрова Мария Сергеевна"
+                },
+                {
+                    title: "Date of birth",
+                    birthday: "1978-02-23T21:54:13.253Z"
+                },
+                {
+                    title: "Phone number",
+                    phone: "+7 (993) 591-01-76"
+                },
+                {
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Гагарина, д. 98, кв. 135"
+                },
+                {
+                    title: "Gender",
+                    gender: "Женский"
+                }
+            ]
+        },
+        modules: {
+            education: {
+                title: "Education",
+                value: [
+                    {
+                        title: "Среднее",
+                        name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Российский университет дружбы народов (РУДН)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                    }
+                ]
+            },
+            career: {
+                title: "Career",
+                value: [
+                    {
+                        title: "Стаж",
+                        workExperience: 5
+                    },
+                    {
+                        title: "Зарплата",
+                        salary: 203643
+                    },
+                    {
+                        title: "Должность",
+                        position: "Директор"
+                    },
+                    {
+                        title: "Отдел",
+                        department: "Продажи"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Петров Александр Петрович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Сидорова Светлана Ивановна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "замужем"
+                    },
+                    {
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Сестра",
+                                name: "Иванова Ольга Ивановна"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Сидоров Петр Петрович"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        id: 86,
+        params: {
+            title: "Основная информация",
+            value: [
+                {
+                    title: "Full name",
+                    full_name: "Кузнецова Елена Сергеевна"
+                },
+                {
+                    title: "Date of birth",
+                    birthday: "1977-12-26T10:06:10.720Z"
+                },
+                {
+                    title: "Phone number",
+                    phone: "+7 (988) 904-15-73"
+                },
+                {
+                    title: "Address",
+                    address: "г. Красноярск, ул. Мира, д. 89, кв. 88"
+                },
+                {
+                    title: "Gender",
+                    gender: "Женский"
+                }
+            ]
+        },
+        modules: {
+            education: {
+                title: "Education",
+                value: [
+                    {
+                        title: "Среднее",
+                        name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Московский физико-технический институт (МФТИ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                    }
+                ]
+            },
+            career: {
+                title: "Career",
+                value: [
+                    {
+                        title: "Стаж",
+                        workExperience: 4
+                    },
+                    {
+                        title: "Зарплата",
+                        salary: 286157
+                    },
+                    {
+                        title: "Должность",
+                        position: "Разработчик"
+                    },
+                    {
+                        title: "Отдел",
+                        department: "Маркетинг"
+                    }
+                ]
+            },
+            family: {
+                title: "Family",
+                value: [
+                    {
+                        title: "Father",
+                        father: "Кузнецов Александр Петрович"
+                    },
+                    {
+                        title: "Mother",
+                        mother: "Петрова Светлана Сергеевна"
+                    },
+                    {
+                        title: "Marriage",
+                        maritalStatus: "замужем"
+                    },
+                    {
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Петров Иван Михайлович"
+                                name: "Кузнецов Иван Петрович"
                             }
                         ]
                     }
@@ -7954,30 +7890,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петров Михаил Петрович"
+                    title: "Full name",
+                    full_name: "Сидоров Иван Александрович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1998-04-29T00:59:18.404Z"
+                    title: "Date of birth",
+                    birthday: "2003-10-13T00:39:56.121Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (994) 526-72-56"
+                    title: "Phone number",
+                    phone: "+7 (995) 957-24-22"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Гагарина, д. 70, кв. 116"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Гагарина, д. 90, кв. 99"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -7985,60 +7921,64 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
+                        name: "Российский университет дружбы народов (РУДН)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
+                        name: "Национальный исследовательский университет «Высшая школа экономики» (НИУ ВШЭ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 6
+                        workExperience: 5
                     },
                     {
                         title: "Зарплата",
-                        salary: 175030
+                        salary: 89191
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "HR"
+                        department: "Производство"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Петр Александрович"
+                        title: "Father",
+                        father: "Сидоров Александр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Мария Петровна"
+                        title: "Mother",
+                        mother: "Кузнецова Анна Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Иванов Иван Михайлович"
+                                name: "Сидоров Петр Петрович"
                             },
                             {
                                 title: "Сестра",
-                                name: "Петрова Анна Сергеевна"
+                                name: "Смирнова Мария Александровна"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Сидоров Михаил Михайлович"
                             }
                         ]
                     }
@@ -8052,30 +7992,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Светлана Петровна"
+                    title: "Full name",
+                    full_name: "Петрова Анна Сергеевна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1980-07-15T17:26:40.460Z"
+                    title: "Date of birth",
+                    birthday: "2003-06-19T06:25:07.134Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (922) 635-31-49"
+                    title: "Phone number",
+                    phone: "+7 (912) 118-55-85"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Пушкина, д. 10, кв. 200"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Пушкина, д. 42, кв. 75"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -8083,60 +8023,52 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                        name: "Российский университет дружбы народов (РУДН)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 14
+                        workExperience: 5
                     },
                     {
                         title: "Зарплата",
-                        salary: 191188
+                        salary: 95439
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Менеджер"
                     },
                     {
                         title: "Отдел",
-                        department: "Логистика"
+                        department: "Юридический"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Михаил Иванович"
+                        title: "Father",
+                        father: "Сидоров Сергей Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Елена Ивановна"
+                        title: "Mother",
+                        mother: "Петрова Анна Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведена"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Сидорова Мария Михайловна"
-                            },
-                            {
                                 title: "Брат",
-                                name: "Иванов Михаил Сергеевич"
-                            },
-                            {
-                                title: "Брат",
-                                name: "Смирнов Михаил Петрович"
+                                name: "Петров Александр Петрович"
                             }
                         ]
                     }
@@ -8150,30 +8082,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванов Михаил Михайлович"
+                    title: "Full name",
+                    full_name: "Смирнов Петр Михайлович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1998-05-22T00:52:20.127Z"
+                    title: "Date of birth",
+                    birthday: "1982-02-10T05:04:08.996Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (992) 921-76-74"
+                    title: "Phone number",
+                    phone: "+7 (955) 001-14-53"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Гагарина, д. 90, кв. 83"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 73, кв. 14"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -8181,52 +8113,52 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 8
+                        workExperience: 4
                     },
                     {
                         title: "Зарплата",
-                        salary: 67527
+                        salary: 183049
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "Финансы"
+                        department: "Маркетинг"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Петр Михайлович"
+                        title: "Father",
+                        father: "Кузнецов Петр Сергеевич"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Светлана Ивановна"
+                        title: "Mother",
+                        mother: "Кузнецова Ольга Александровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: []
                     }
                 ]
@@ -8239,87 +8171,91 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петров Иван Александрович"
+                    title: "Full name",
+                    full_name: "Сидорова Светлана Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2002-12-14T02:32:32.144Z"
+                    title: "Date of birth",
+                    birthday: "1997-10-13T16:57:29.814Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (976) 938-72-81"
+                    title: "Phone number",
+                    phone: "+7 (966) 523-88-14"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Санкт-Петербург, ул. Мира, д. 92, кв. 37"
+                    title: "Address",
+                    address: "г. Москва, ул. Гагарина, д. 26, кв. 191"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Российский университет дружбы народов (РУДН)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 9
+                        workExperience: 11
                     },
                     {
                         title: "Зарплата",
-                        salary: 62046
+                        salary: 190733
                     },
                     {
                         title: "Должность",
-                        position: "Программист"
+                        position: "Администратор"
                     },
                     {
                         title: "Отдел",
-                        department: "Финансы"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Михаил Петрович"
+                        title: "Father",
+                        father: "Сидоров Михаил Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Светлана Петровна"
+                        title: "Mother",
+                        mother: "Смирнова Мария Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холост"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Сестра",
-                                name: "Смирнова Ольга Петровна"
-                            },
-                            {
                                 title: "Брат",
-                                name: "Иванов Александр Михайлович"
+                                name: "Петров Иван Иванович"
                             },
                             {
                                 title: "Сестра",
-                                name: "Смирнова Мария Сергеевна"
+                                name: "Петрова Ольга Петровна"
                             }
                         ]
                     }
@@ -8333,30 +8269,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнова Ольга Сергеевна"
+                    title: "Full name",
+                    full_name: "Иванова Елена Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1973-08-16T17:13:30.338Z"
+                    title: "Date of birth",
+                    birthday: "1999-02-13T23:44:40.941Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (909) 649-57-85"
+                    title: "Phone number",
+                    phone: "+7 (925) 367-44-36"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Красноярск, ул. Пушкина, д. 20, кв. 48"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Мира, д. 9, кв. 101"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -8364,62 +8300,49 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский физико-технический институт (МФТИ)"
+                        name: "Университет ИТМО"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 2
+                        workExperience: 11
                     },
                     {
                         title: "Зарплата",
-                        salary: 53704
+                        salary: 122347
                     },
                     {
                         title: "Должность",
-                        position: "Специалист"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "Производство"
+                        department: "IT"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Сергей Сергеевич"
+                        title: "Father",
+                        father: "Петров Петр Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Светлана Ивановна"
+                        title: "Mother",
+                        mother: "Иванова Мария Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: [
-                            {
-                                title: "Брат",
-                                name: "Кузнецов Иван Александрович"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Иванова Ольга Петровна"
-                            },
-                            {
-                                title: "Сестра",
-                                name: "Сидорова Елена Петровна"
-                            }
-                        ]
+                        title: "Siblings",
+                        siblings: []
                     }
                 ]
             }
@@ -8431,87 +8354,79 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидоров Александр Александрович"
+                    title: "Full name",
+                    full_name: "Кузнецова Мария Михайловна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1994-01-20T04:48:02.939Z"
+                    title: "Date of birth",
+                    birthday: "2004-11-15T01:25:14.955Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (935) 024-92-83"
+                    title: "Phone number",
+                    phone: "+7 (935) 293-72-17"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Пушкина, д. 93, кв. 119"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Ленина, д. 49, кв. 46"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 11
+                        workExperience: 4
                     },
                     {
                         title: "Зарплата",
-                        salary: 202690
+                        salary: 281508
                     },
                     {
                         title: "Должность",
-                        position: "Администратор"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "Производство"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Иванов Михаил Иванович"
+                        title: "Father",
+                        father: "Петров Александр Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Анна Александровна"
+                        title: "Mother",
+                        mother: "Кузнецова Анна Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Сестра",
-                                name: "Сидорова Елена Александровна"
+                                name: "Иванова Светлана Сергеевна"
                             }
                         ]
                     }
@@ -8525,30 +8440,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Ольга Александровна"
+                    title: "Full name",
+                    full_name: "Иванова Елена Александровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2000-09-11T04:02:21.255Z"
+                    title: "Date of birth",
+                    birthday: "1993-12-10T04:28:07.996Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (926) 847-63-84"
+                    title: "Phone number",
+                    phone: "+7 (942) 896-92-73"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Пушкина, д. 11, кв. 63"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Пушкина, д. 44, кв. 154"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -8556,52 +8471,52 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     },
                     {
                         title: "Магистратура",
-                        name: "Санкт-Петербургский государственный университет (СПбГУ)"
+                        name: "Российский университет дружбы народов (РУДН)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 1
+                        workExperience: 3
                     },
                     {
                         title: "Зарплата",
-                        salary: 101730
+                        salary: 151089
                     },
                     {
                         title: "Должность",
-                        position: "Директор"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "Производство"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Петр Сергеевич"
+                        title: "Father",
+                        father: "Петров Иван Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Мария Александровна"
+                        title: "Mother",
+                        mother: "Сидорова Анна Александровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "разведена"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: []
                     }
                 ]
@@ -8614,30 +8529,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Смирнова Анна Александровна"
+                    title: "Full name",
+                    full_name: "Кузнецов Александр Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1981-12-13T04:58:22.417Z"
+                    title: "Date of birth",
+                    birthday: "1995-01-10T07:57:24.116Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (992) 783-31-33"
+                    title: "Phone number",
+                    phone: "+7 (939) 885-61-78"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Гагарина, д. 99, кв. 93"
+                    title: "Address",
+                    address: "г. Санкт-Петербург, ул. Комсомольская, д. 6, кв. 162"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -8645,52 +8560,56 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 3
+                        workExperience: 12
                     },
                     {
                         title: "Зарплата",
-                        salary: 37134
+                        salary: 42675
                     },
                     {
                         title: "Должность",
-                        position: "Бухгалтер"
+                        position: "Аналитик"
                     },
                     {
                         title: "Отдел",
-                        department: "IT"
+                        department: "HR"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Смирнов Сергей Александрович"
+                        title: "Father",
+                        father: "Сидоров Михаил Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Мария Ивановна"
+                        title: "Mother",
+                        mother: "Кузнецова Светлана Ивановна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "холоста"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
-                                title: "Брат",
-                                name: "Петров Михаил Михайлович"
+                                title: "Сестра",
+                                name: "Смирнова Ольга Ивановна"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Иванова Ольга Петровна"
                             }
                         ]
                     }
@@ -8704,30 +8623,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Кузнецов Александр Сергеевич"
+                    title: "Full name",
+                    full_name: "Иванова Светлана Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1991-07-15T01:11:44.855Z"
+                    title: "Date of birth",
+                    birthday: "1984-03-17T12:45:22.220Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (926) 401-60-99"
+                    title: "Phone number",
+                    phone: "+7 (947) 544-86-23"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Пушкина, д. 34, кв. 42"
+                    title: "Address",
+                    address: "г. Екатеринбург, ул. Гагарина, д. 47, кв. 122"
                 },
                 {
-                    title: "Пол",
-                    gender: "Мужской"
+                    title: "Gender",
+                    gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -8735,20 +8654,20 @@ const users = [
                     },
                     {
                         title: "Бакалавриат",
-                        name: "Университет ИТМО"
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 5
+                        workExperience: 14
                     },
                     {
                         title: "Зарплата",
-                        salary: 279158
+                        salary: 127568
                     },
                     {
                         title: "Должность",
@@ -8756,31 +8675,35 @@ const users = [
                     },
                     {
                         title: "Отдел",
-                        department: "Кадры"
+                        department: "Юридический"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Сергей Александрович"
+                        title: "Father",
+                        father: "Сидоров Михаил Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Иванова Ольга Сергеевна"
+                        title: "Mother",
+                        mother: "Иванова Светлана Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "женат"
+                        title: "Marriage",
+                        maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Петров Михаил Петрович"
+                                name: "Петров Александр Михайлович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Сидоров Михаил Иванович"
                             }
                         ]
                     }
@@ -8794,76 +8717,93 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Елена Ивановна"
+                    title: "Full name",
+                    full_name: "Кузнецов Петр Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1971-04-24T06:06:20.579Z"
+                    title: "Date of birth",
+                    birthday: "1980-07-01T11:02:32.281Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (969) 638-46-17"
+                    title: "Phone number",
+                    phone: "+7 (959) 652-42-43"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Екатеринбург, ул. Комсомольская, д. 19, кв. 148"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Пушкина, д. 92, кв. 172"
                 },
                 {
-                    title: "Пол",
-                    gender: "Женский"
+                    title: "Gender",
+                    gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Российская академия народного хозяйства и государственной службы (РАНХиГС)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 8
+                        workExperience: 15
                     },
                     {
                         title: "Зарплата",
-                        salary: 280869
+                        salary: 265989
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Программист"
                     },
                     {
                         title: "Отдел",
-                        department: "Логистика"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Петров Михаил Александрович"
+                        title: "Father",
+                        father: "Кузнецов Сергей Александрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Смирнова Светлана Ивановна"
+                        title: "Mother",
+                        mother: "Сидорова Мария Сергеевна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Сестра",
+                                name: "Иванова Ольга Петровна"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Иванов Сергей Михайлович"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Кузнецова Елена Петровна"
+                            }
+                        ]
                     }
                 ]
             }
@@ -8875,30 +8815,30 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Иванова Мария Ивановна"
+                    title: "Full name",
+                    full_name: "Смирнова Ольга Ивановна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1985-07-16T10:59:35.990Z"
+                    title: "Date of birth",
+                    birthday: "1976-04-10T03:52:25.942Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (915) 673-44-61"
+                    title: "Phone number",
+                    phone: "+7 (914) 704-57-95"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Комсомольская, д. 89, кв. 92"
+                    title: "Address",
+                    address: "г. Новосибирск, ул. Мира, д. 25, кв. 140"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
@@ -8907,44 +8847,53 @@ const users = [
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 8
+                        workExperience: 9
                     },
                     {
                         title: "Зарплата",
-                        salary: 115270
+                        salary: 216996
                     },
                     {
                         title: "Должность",
-                        position: "Инженер"
+                        position: "Консультант"
                     },
                     {
                         title: "Отдел",
-                        department: "Бухгалтерия"
+                        department: "Юридический"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Михаил Петрович"
+                        title: "Father",
+                        father: "Сидоров Михаил Михайлович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Ольга Петровна"
+                        title: "Mother",
+                        mother: "Кузнецова Мария Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
-                        siblings: []
+                        title: "Siblings",
+                        siblings: [
+                            {
+                                title: "Брат",
+                                name: "Кузнецов Александр Иванович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Иванов Сергей Иванович"
+                            }
+                        ]
                     }
                 ]
             }
@@ -8956,79 +8905,91 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Сидорова Ольга Сергеевна"
+                    title: "Full name",
+                    full_name: "Петрова Мария Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1994-05-15T16:11:53.033Z"
+                    title: "Date of birth",
+                    birthday: "1984-05-10T12:59:10.029Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (993) 253-27-45"
+                    title: "Phone number",
+                    phone: "+7 (941) 484-39-73"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Комсомольская, д. 31, кв. 112"
+                    title: "Address",
+                    address: "г. Москва, ул. Ленина, д. 13, кв. 142"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Российский университет дружбы народов (РУДН)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 3
+                        workExperience: 8
                     },
                     {
                         title: "Зарплата",
-                        salary: 284388
+                        salary: 228610
                     },
                     {
                         title: "Должность",
-                        position: "Консультант"
+                        position: "Бухгалтер"
                     },
                     {
                         title: "Отдел",
-                        department: "Кадры"
+                        department: "Производство"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Михаил Сергеевич"
+                        title: "Father",
+                        father: "Кузнецов Иван Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Сидорова Светлана Александровна"
+                        title: "Mother",
+                        mother: "Петрова Елена Петровна"
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: "замужем"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
+                                title: "Брат",
+                                name: "Петров Сергей Сергеевич"
+                            },
+                            {
                                 title: "Сестра",
-                                name: "Сидорова Ольга Петровна"
+                                name: "Кузнецова Анна Петровна"
                             }
                         ]
                     }
@@ -9042,79 +9003,95 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петрова Ольга Петровна"
+                    title: "Full name",
+                    full_name: "Сидорова Елена Петровна"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "1989-04-29T13:14:32.768Z"
+                    title: "Date of birth",
+                    birthday: "1976-08-30T11:36:34.501Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (971) 879-86-43"
+                    title: "Phone number",
+                    phone: "+7 (922) 677-79-25"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Новосибирск, ул. Пушкина, д. 9, кв. 193"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Гагарина, д. 78, кв. 75"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Женский"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
+                    },
+                    {
+                        title: "Бакалавриат",
+                        name: "Московский государственный университет имени М. В. Ломоносова (МГУ)"
+                    },
+                    {
+                        title: "Магистратура",
+                        name: "Первый Московский государственный медицинский университет имени И. М. Сеченова (Сеченовский Университет)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 5
+                        workExperience: 6
                     },
                     {
                         title: "Зарплата",
-                        salary: 115343
+                        salary: 157052
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Инженер"
                     },
                     {
                         title: "Отдел",
-                        department: "Финансы"
+                        department: "HR"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Кузнецов Александр Михайлович"
+                        title: "Father",
+                        father: "Смирнов Иван Иванович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Кузнецова Елена Ивановна"
+                        title: "Mother",
+                        mother: "Сидорова Анна Михайловна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "замужем"
+                        title: "Marriage",
+                        maritalStatus: "холоста"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
                                 title: "Брат",
-                                name: "Петров Сергей Иванович"
+                                name: "Смирнов Михаил Иванович"
+                            },
+                            {
+                                title: "Брат",
+                                name: "Смирнов Иван Сергеевич"
+                            },
+                            {
+                                title: "Сестра",
+                                name: "Смирнова Елена Сергеевна"
                             }
                         ]
                     }
@@ -9128,87 +9105,83 @@ const users = [
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
-                    full_name: "Петров Сергей Сергеевич"
+                    title: "Full name",
+                    full_name: "Петров Петр Иванович"
                 },
                 {
-                    title: "Дата рождения",
-                    birthday: "2003-11-06T11:10:58.228Z"
+                    title: "Date of birth",
+                    birthday: "1987-11-21T07:36:16.478Z"
                 },
                 {
-                    title: "Номер телефона",
-                    phone: "+7 (918) 551-85-12"
+                    title: "Phone number",
+                    phone: "+7 (979) 622-77-91"
                 },
                 {
-                    title: "Адрес",
-                    address: "г. Москва, ул. Гагарина, д. 10, кв. 151"
+                    title: "Address",
+                    address: "г. Красноярск, ул. Мира, д. 6, кв. 18"
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: "Мужской"
                 }
             ]
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: [
                     {
                         title: "Среднее",
                         name: "Колледж"
-                    },
-                    {
-                        title: "Бакалавриат",
-                        name: "Российский университет дружбы народов (РУДН)"
-                    },
-                    {
-                        title: "Магистратура",
-                        name: "Московский государственный технический университет имени Н. Э. Баумана (МГТУ)"
                     }
                 ]
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: [
                     {
                         title: "Стаж",
-                        workExperience: 13
+                        workExperience: 9
                     },
                     {
                         title: "Зарплата",
-                        salary: 255258
+                        salary: 138530
                     },
                     {
                         title: "Должность",
-                        position: "Разработчик"
+                        position: "Специалист"
                     },
                     {
                         title: "Отдел",
-                        department: "Продажи"
+                        department: "Бухгалтерия"
                     }
                 ]
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
-                        father: "Сидоров Сергей Сергеевич"
+                        title: "Father",
+                        father: "Сидоров Михаил Петрович"
                     },
                     {
-                        title: "Мать",
-                        mother: "Петрова Анна Ивановна"
+                        title: "Mother",
+                        mother: "Смирнова Елена Петровна"
                     },
                     {
-                        title: "Брак",
-                        maritalStatus: "разведен"
+                        title: "Marriage",
+                        maritalStatus: "холост"
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: [
                             {
+                                title: "Брат",
+                                name: "Петров Петр Сергеевич"
+                            },
+                            {
                                 title: "Сестра",
-                                name: "Кузнецова Елена Александровна"
+                                name: "Сидорова Светлана Петровна"
                             }
                         ]
                     }

@@ -1,73 +1,69 @@
-import { Button } from '@mui/material';
+import { IconButton, Box, Divider } from '@mui/material'; // Add Divider import
 import { Link } from 'react-router-dom';
 import users, { cities } from '../../Data';
-import { MaterialReactTable } from 'material-react-table';
+import { useMemo } from 'react';
+import { MaterialReactTable, MRT_ActionMenuItem } from 'material-react-table'; // Add MRT_ActionMenuItem import
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { IconButton } from '@mui/material';
-
-export const columns = [
-    {
-        header: 'ФИО',
-        accessorKey: 'params.value[0].full_name',
-        filterVariant: 'text',
-    },
-    {
-        accessorFn: (originalRow) => new Date(originalRow.birthday), //convert to date for sorting and filtering
-        id: 'birthday',
-        header: 'Дата рождения',
-        filterVariant: 'date-range',
-        Cell: ({ cell }) => cell.getValue().toLocaleDateString(), // convert back to string for display
-    },
-    {
-        header: 'Телефон',
-        accessorKey: 'phone'
-    },
-    {
-        header: 'Почта',
-        accessorKey: 'email'
-    },
-    {
-        header: 'Адрес',
-        accessorKey: 'address',
-        filterVariant: 'multi-select',
-        filterSelectOptions: cities,
-    },
-    {
-        header: '',
-        accessorKey: 'actions',
-        Cell: ({ row }) => (
-            <Link to={`/user/${parseInt(row.id) + 1}`}>
-                <IconButton color="inherit">
-                    <ArrowForwardIosIcon />
-                </IconButton>
-            </Link>
-        )
-    }
-];
-
-// // Создаем функцию, которая получает все доступные поля из params всех пользователей
-// const getAllFields = () => {
-//     const allFields = new Set();
-//     users.forEach(user => {
-//         user.params.value.forEach(field => {
-//             allFields.add(field.title);
-//         });
-//     });
-//     return Array.from(allFields);
-// };
-
-// // Создаем колонки динамически на основе всех доступных полей в params всех пользователей
-// const columns = getAllFields().map(field => ({
-//     header: field,
-//     accessorKey: field.toLowerCase().replace(/\s+/g, '_'), // Преобразуем заголовок в ключ, убирая пробелы и приводя к нижнему регистру
-// }));
 
 export default function CustomTable() {
+    const columns = useMemo(
+        () => [
+            {
+                header: 'Full name',
+                accessorFn: (originalRow) => new String(originalRow.params.value.find(item => item.title === "Full name").full_name),
+                filterVariant: 'text',
+            },
+            {
+                accessorFn: (originalRow) => new Date(originalRow.params.value.find(item => item.title === "Date of birth").birthday),
+                header: 'Date of birth',
+                filterVariant: 'date-range',
+                Cell: ({ cell }) => cell.getValue().toLocaleDateString(),
+            },
+            {
+                header: 'Phone number',
+                accessorFn: (originalRow) => new String(originalRow.params.value.find(item => item.title === "Phone number").phone),
+            },
+            {
+                header: 'Address',
+                filterVariant: 'multi-select',
+                filterSelectOptions: cities,
+                accessorFn: (originalRow) => new String(originalRow.params.value.find(item => item.title === "Address").address),
+            },
+            {
+                header: 'Gender',
+                filterVariant: 'multi-select',
+                filterSelectOptions: ["Мужской", "Женский"],
+                width: '100px',
+                accessorFn: (originalRow) => new String(originalRow.params.value.find(item => item.title === "Gender").gender),
+            }
+        ],
+        [],
+    );
+
     return (
-        <MaterialReactTable
-            columns={columns}
-            data={users}
-            initialState={{ density: 'compact' }}
-        />
+        <div>
+            <MaterialReactTable
+                columns={columns}
+                data={users}
+                initialState={{
+                    density: 'compact',
+                    showColumnFilters: true,
+                    columnPinning: {
+                        right: ['mrt-row-actions'],
+                    },
+                }}
+                editDisplayMode={'cell'}
+                enableRowActions={true}
+                enableColumnPinning={true}
+                positionActionsColumn={"last"}
+                renderRowActions={(row) => (
+                    <Link to={`/user/${+row.id + 1}`}>
+                        <IconButton color="inherit">
+                            <ArrowForwardIosIcon />
+                        </IconButton>
+                    </Link>
+                )}
+            />
+        </div>
     );
 }

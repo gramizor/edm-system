@@ -155,53 +155,53 @@ function generateRandomUserData(id) {
             title: "Основная информация",
             value: [
                 {
-                    title: "ФИО",
+                    title: "Full name",
                     full_name: generateFullName(gender),
                 },
                 {
-                    title: "Дата рождения",
+                    title: "Date of birth",
                     birthday: generateBirthday(),
                 },
                 {
-                    title: "Номер телефона",
+                    title: "Phone number",
                     phone: generatePhoneNumber(),
                 },
                 {
-                    title: "Адрес",
+                    title: "Address",
                     address: generateAddress(),
                 },
                 {
-                    title: "Пол",
+                    title: "Gender",
                     gender: gender,
                 },
             ],
         },
         modules: {
             education: {
-                title: "Образование",
+                title: "Education",
                 value: education,
             },
             career: {
-                title: "Карьера",
+                title: "Career",
                 value: career,
             },
             family: {
-                title: "Семья",
+                title: "Family",
                 value: [
                     {
-                        title: "Отец",
+                        title: "Father",
                         father: generateFullName("Мужской"),
                     },
                     {
-                        title: "Мать",
+                        title: "Mother",
                         mother: generateFullName("Женский"),
                     },
                     {
-                        title: "Брак",
+                        title: "Marriage",
                         maritalStatus: maritalStatus,
                     },
                     {
-                        title: "Братья/сестры",
+                        title: "Siblings",
                         siblings: siblings,
                     },
                 ]

@@ -1,11 +1,11 @@
 import { useRoutes } from "react-router-dom";
-import Main from "./Pages/Main/Main";
+import Home from "./Pages/Home/Home";
 import Card from "./Pages/Card/Card";
 
 const routes = [
     {
         path: "/",
-        element: <Main />,
+        element: <Home />,
     },
     {
         path: "/user/:id",

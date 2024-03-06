@@ -11,7 +11,6 @@ function BreadcrumbComponent() {
     // Определяем, какие кнопки должны отображаться в зависимости от текущего пути
     // Определяем, какие кнопки должны отображаться в зависимости от текущего пути
     const getButtons = () => {
-        console.log("Current path:", location.pathname); // Output current path to console for debugging
         if (location.pathname === '/') {
             return [
                 <Button key="home" color="inherit" href="/" sx={{ color: "white" }}>
@@ -27,7 +26,7 @@ function BreadcrumbComponent() {
                     Главная
                 </Button>,
                 <Button key="user" color="inherit" href={`/user/${id}`} sx={{ color: "white" }}>
-                    {user ? user.params.value.find(item => item.title === 'ФИО').full_name : 'Пользователь'}
+                    {user ? user.params.value.find(item => item.title === 'Full name').full_name : 'Пользователь'}
                 </Button>
             ];
         }
