@@ -15,7 +15,10 @@ const Home = () => {
                 <Stacking />
             </div>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <CustomTable />
+                <div style={{ padding: "20px"}}>
+                    <CustomTable />
+
+                </div>
             </LocalizationProvider>
         </div>
     )

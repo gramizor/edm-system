@@ -8,6 +8,11 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 export default function CustomTable() {
     const columns = useMemo(
         () => [
+            // {
+            //     header: 'ID',
+            //     accessorKey: 'id',
+            //     filterVariant: 'text',
+            // },
             {
                 header: 'Full name',
                 accessorFn: (originalRow) => new String(originalRow.params.value.find(item => item.title === "Full name").full_name),
@@ -35,7 +40,7 @@ export default function CustomTable() {
                 filterSelectOptions: ["Мужской", "Женский"],
                 width: '100px',
                 accessorFn: (originalRow) => new String(originalRow.params.value.find(item => item.title === "Gender").gender),
-            }
+            },
         ],
         [],
     );
@@ -43,8 +48,8 @@ export default function CustomTable() {
     return (
         <div>
             <MaterialReactTable
-                columns={columns}
                 data={users}
+                columns={columns}
                 initialState={{
                     density: 'compact',
                     showColumnFilters: true,
@@ -56,13 +61,19 @@ export default function CustomTable() {
                 enableRowActions={true}
                 enableColumnPinning={true}
                 positionActionsColumn={"last"}
-                renderRowActions={(row) => (
-                    <Link to={`/user/${+row.id + 1}`}>
+                renderRowActions={(cell) => (
+                    <Link to={`/user/${parseInt(cell.row.id) + 1}`}>
                         <IconButton color="inherit">
                             <ArrowForwardIosIcon />
                         </IconButton>
                     </Link>
                 )}
+                enableCellActions={true}
+                enableEditing={true}
+                enableClickToCopy={'context-menu'}
+                renderCellActionMenuItems={({ internalMenuItems }) => [
+                    ...internalMenuItems,
+                ]}
             />
         </div>
     );
