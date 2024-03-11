@@ -6,9 +6,9 @@ export default function CityPopulationChart() {
     const cityCounts = {};
 
     users.forEach(user => {
-        const address = user.params.value.find(param => param.title === "Address");
+        const address = user.params.value.find(param => param.title === "Адрес");
         if (address) {
-            const city = address.address.split(',')[0].trim();
+            const city = address.value.split(',')[0].trim();
             cityCounts[city] = (cityCounts[city] || 0) + 1;
         }
     });
@@ -18,8 +18,8 @@ export default function CityPopulationChart() {
 
     return (
         <BarChart
-            xAxis={[{ scaleType: 'band', data: xAxis}]}
-            yAxis={[{label: "Жители"}]}
+            xAxis={[{ scaleType: 'band', data: xAxis }]}
+            yAxis={[{ label: "Жители" }]}
             series={series}
             width={700}
             height={300}

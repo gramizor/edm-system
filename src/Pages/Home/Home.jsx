@@ -17,7 +17,6 @@ const Home = () => {
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <div style={{ padding: "20px"}}>
                     <CustomTable />
-
                 </div>
             </LocalizationProvider>
         </div>

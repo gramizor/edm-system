@@ -5,7 +5,7 @@ import users from '../../Data';
 
 export default function GenderPieChart() {
     const genderCounts = users.reduce((counts, user) => {
-        const gender = user.params.value.find(param => param.title === 'Gender').gender;
+        const gender = user.params.value.find(param => param.title === 'Пол').value;
         counts[gender] = (counts[gender] || 0) + 1;
         return counts;
     }, {});

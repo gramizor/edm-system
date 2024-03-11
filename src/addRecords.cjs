@@ -113,7 +113,7 @@ function generateRandomUserData(id) {
         const siblingGender = generateGender();
         siblings.push({
             title: siblingGender === "Мужской" ? "Брат" : "Сестра",
-            name: generateFullName(siblingGender)
+            value: generateFullName(siblingGender)
         });
     }
 
@@ -124,7 +124,7 @@ function generateRandomUserData(id) {
         const uni = j === 0 ? "Колледж" : generateUniversity();
         education.push({
             title: degree,
-            name: uni,
+            value: uni,
         });
     }
 
@@ -133,19 +133,19 @@ function generateRandomUserData(id) {
     if (workExperience > 0) {
         career.push({
             title: "Стаж",
-            workExperience: workExperience,
+            value: workExperience,
         });
         career.push({
             title: "Зарплата",
-            salary: generateSalary(),
+            value: generateSalary(),
         });
         career.push({
             title: "Должность",
-            position: randomPosition(),
+            value: randomPosition(),
         });
         career.push({
             title: "Отдел",
-            department: randomDepartment(),
+            value: randomDepartment(),
         });
     }
 
@@ -155,54 +155,54 @@ function generateRandomUserData(id) {
             title: "Основная информация",
             value: [
                 {
-                    title: "Full name",
-                    full_name: generateFullName(gender),
+                    title: "ФИО",
+                    value: generateFullName(gender),
                 },
                 {
-                    title: "Date of birth",
-                    birthday: generateBirthday(),
+                    title: "Дата рождения",
+                    value: generateBirthday(),
                 },
                 {
-                    title: "Phone number",
-                    phone: generatePhoneNumber(),
+                    title: "Номер телефона",
+                    value: generatePhoneNumber(),
                 },
                 {
-                    title: "Address",
-                    address: generateAddress(),
+                    title: "Адрес",
+                    value: generateAddress(),
                 },
                 {
-                    title: "Gender",
-                    gender: gender,
+                    title: "Пол",
+                    value: gender,
                 },
             ],
         },
         modules: {
             education: {
-                title: "Education",
+                title: "Образование",
                 value: education,
             },
             career: {
-                title: "Career",
+                title: "Карьера",
                 value: career,
             },
             family: {
-                title: "Family",
+                title: "Семья",
                 value: [
                     {
-                        title: "Father",
-                        father: generateFullName("Мужской"),
+                        title: "Отец",
+                        value: generateFullName("Мужской"),
                     },
                     {
-                        title: "Mother",
-                        mother: generateFullName("Женский"),
+                        title: "Мать",
+                        value: generateFullName("Женский"),
                     },
                     {
-                        title: "Marriage",
-                        maritalStatus: maritalStatus,
+                        title: "Семейное положение",
+                        value: maritalStatus,
                     },
                     {
-                        title: "Siblings",
-                        siblings: siblings,
+                        title: "Братья/сестры",
+                        value: siblings,
                     },
                 ]
             },

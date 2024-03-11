@@ -26,7 +26,7 @@ function BreadcrumbComponent() {
                     Главная
                 </Button>,
                 <Button key="user" color="inherit" href={`/user/${id}`} sx={{ color: "white" }}>
-                    {user ? user.params.value.find(item => item.title === 'Full name').full_name : 'Пользователь'}
+                    {user ? user.params.value.find(item => item.title === 'ФИО').full_name : 'Пользователь'}
                 </Button>
             ];
         }

@@ -8,7 +8,7 @@ export default function Linear() {
     React.useEffect(() => {
         const ageCounts = {};
         users.forEach(user => {
-            const birthday = new Date(user.params.value.find(param => param.title === 'Date of birth').birthday);
+            const birthday = new Date(user.params.value.find(param => param.title === 'Дата рождения').value);
             const age = new Date().getFullYear() - birthday.getFullYear();
             ageCounts[age] = (ageCounts[age] || 0) + 1;
         });
@@ -22,7 +22,7 @@ export default function Linear() {
 
     return (
         <LineChart
-            xAxis={[{ data: chartData.xAxis, label: 'Возраст', min: Math.min(...chartData.xAxis)-1 }]}
+            xAxis={[{ data: chartData.xAxis, label: 'Возраст', min: Math.min(...chartData.xAxis) - 1 }]}
             yAxis={[{ min: 0, label: 'Количество людей' }]}
             series={chartData.series}
             width={500}
