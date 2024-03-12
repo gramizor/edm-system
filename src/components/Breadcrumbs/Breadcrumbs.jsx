@@ -3,14 +3,15 @@ import { Breadcrumbs, Button, Link, Typography, IconButton } from '@mui/material
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { useLocation, useParams } from 'react-router-dom'; // Подключаем хук для получения текущего пути и параметров URL
 import users from '../../Data'; // Подключаем массив пользователей
+import './Breadcrumbs.scss'
 
 function BreadcrumbComponent() {
     const location = useLocation();
-    
+
     const getButtons = () => {
         if (location.pathname === '/') {
             return [
-                <Button key="home" color="inherit" href="/" sx={{ color: "white" }}>
+                <Button key="home" color="inherit" href="/" sx={{ color: "white", fontWeight: "bold" }}>
                     Главная
                 </Button>
             ];
@@ -19,10 +20,10 @@ function BreadcrumbComponent() {
             let id = location.pathname.slice(6);
             const user = users.find(user => user.id === parseInt(id));
             return [
-                <Button key="home" color="inherit" href="/" sx={{ color: "white" }}>
+                <Button key="home" color="inherit" href="/" sx={{ color: "white", fontWeight: "bold" }}>
                     Главная
                 </Button>,
-                <Button key="user" color="inherit" href={`/user/${id}`} sx={{ color: "white" }}>
+                <Button key="user" color="inherit" href={`/user/${id}`} sx={{ color: "white", fontWeight: "bold" }}>
                     {user ? user.params.value.find(item => item.title === 'ФИО').value : 'Пользователь'}
                 </Button>
             ];
