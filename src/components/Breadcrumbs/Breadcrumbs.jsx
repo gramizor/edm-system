@@ -5,11 +5,8 @@ import { useLocation, useParams } from 'react-router-dom'; // Подключае
 import users from '../../Data'; // Подключаем массив пользователей
 
 function BreadcrumbComponent() {
-    const location = useLocation(); // Получаем текущий путь
-    // Находим пользователя по идентификатору
-
-    // Определяем, какие кнопки должны отображаться в зависимости от текущего пути
-    // Определяем, какие кнопки должны отображаться в зависимости от текущего пути
+    const location = useLocation();
+    
     const getButtons = () => {
         if (location.pathname === '/') {
             return [
@@ -26,7 +23,7 @@ function BreadcrumbComponent() {
                     Главная
                 </Button>,
                 <Button key="user" color="inherit" href={`/user/${id}`} sx={{ color: "white" }}>
-                    {user ? user.params.value.find(item => item.title === 'ФИО').full_name : 'Пользователь'}
+                    {user ? user.params.value.find(item => item.title === 'ФИО').value : 'Пользователь'}
                 </Button>
             ];
         }

@@ -1,7 +1,25 @@
-.container{
-    width: 70%;
+.container {
+    width: 600px;
     display: flex;
     flex-direction: column;
-    margin:  10px auto;
-    border: rgba(0, 0, 0, 0.068)  solid 2px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.user-module {
+    height: auto;
+
+    .user-info {
+        ul {
+            li {
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .user-title {
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    }
 }

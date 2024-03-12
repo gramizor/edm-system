@@ -106,16 +106,6 @@ function generateRandomUserData(id) {
     const gender = generateGender();
     const maritalStatus = generateMaritalStatus(gender);
     const education = [];
-    const siblings = [];
-    const siblingsCount = random4(); // Случайное количество братьев и сестер
-
-    for (let i = 0; i < siblingsCount; i++) {
-        const siblingGender = generateGender();
-        siblings.push({
-            title: siblingGender === "Мужской" ? "Брат" : "Сестра",
-            value: generateFullName(siblingGender)
-        });
-    }
 
     const educationCount = Math.min(random4() + 1, 3); // Случайное количество высших образований (максимум 3)
 
@@ -199,10 +189,6 @@ function generateRandomUserData(id) {
                     {
                         title: "Семейное положение",
                         value: maritalStatus,
-                    },
-                    {
-                        title: "Братья/сестры",
-                        value: siblings,
                     },
                 ]
             },
