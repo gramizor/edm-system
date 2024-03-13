@@ -6,8 +6,10 @@ import './Card.scss';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import TextField from '@mui/material/TextField';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Button from '@mui/material/Button';
 
 const Card = () => {
     const { id } = useParams();
@@ -18,9 +20,15 @@ const Card = () => {
     }
 
     const { params, modules } = userData;
+    const [expanded, setExpanded] = React.useState("panel1");
+
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
+    };
 
     return (
         <div className='container'>
+
             {/* <Accordion>
                 <CustomCard userId={id} moduleName="education" data={modules.education} />
             </Accordion>
@@ -34,9 +42,9 @@ const Card = () => {
 
             <Accordion
                 elevation={16}
-                defaultExpanded
+                expanded={expanded === 'panel1'} // Здесь проверяем, если аккордеон равен panel1, то устанавливаем expanded в true
                 className='user-module'
-
+                onChange={handleChange('panel1')} // Убедитесь, что значение 'panel1' передается в функцию handleChange
             >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -52,7 +60,13 @@ const Card = () => {
                             <ul>
                                 {params.value.map((item, index) => (
                                     <li key={index}>
-                                        <span>{item.title}: </span>{item.value}
+                                        <span>{item.title}: </span>
+                                        <TextField
+                                            variant="standard"
+                                            id="info-input"
+                                            defaultValue={item.value}
+                                            fullWidth sx={{ m: 1 }}
+                                        />
                                     </li>
                                 ))}
                             </ul>
@@ -62,6 +76,8 @@ const Card = () => {
             </Accordion>
             <Accordion elevation={16}
                 className='user-module'
+                expanded={expanded === 'panel2'}
+                onChange={handleChange('panel2')}
             >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -77,8 +93,13 @@ const Card = () => {
                             <ul>
                                 {modules.education.value.map((item, index) => (
                                     <li key={index}>
-                                        <span>{item.title}: </span>{item.value}
-                                    </li>
+                                        <span>{item.title}: </span>
+                                        <TextField
+                                            variant="standard"
+                                            id="info-input"
+                                            defaultValue={item.value}
+                                            fullWidth sx={{ m: 1 }}
+                                        />                                    </li>
                                 ))}
                             </ul>
                         </div>
@@ -88,6 +109,8 @@ const Card = () => {
             <Accordion
                 elevation={16}
                 className='user-module'
+                expanded={expanded === 'panel3'}
+                onChange={handleChange('panel3')}
             >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -98,22 +121,32 @@ const Card = () => {
                     <div>{modules.career.title}</div>
                 </AccordionSummary>
                 <AccordionDetails>
-                    {modules.career && (
+                    {modules.career && modules.career.value && modules.career.value.length > 0 ? (
                         <div className='user-info'>
                             <ul>
                                 {modules.career.value.map((item, index) => (
                                     <li key={index}>
-                                        <span>{item.title}: </span>{item.value}
+                                        <span>{item.title}: </span>
+                                        <TextField
+                                            variant="standard"
+                                            id="info-input"
+                                            defaultValue={item.value}
+                                            fullWidth sx={{ m: 1 }}
+                                        />
                                     </li>
                                 ))}
                             </ul>
                         </div>
+                    ) : (
+                        <div className='no-experience'>Нет опыта работы</div>
                     )}
                 </AccordionDetails>
             </Accordion>
             <Accordion
                 className='user-module'
                 elevation={16}
+                expanded={expanded === 'panel4'}
+                onChange={handleChange('panel4')}
             >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -129,14 +162,39 @@ const Card = () => {
                             <ul>
                                 {modules.family.value.map((item, index) => (
                                     <li key={index}>
-                                        <span>{item.title}: </span>{item.value}
-                                    </li>
+                                        <span>{item.title}: </span>
+                                        <TextField
+                                            variant="standard"
+                                            id="info-input"
+                                            defaultValue={item.value}
+                                            fullWidth sx={{ m: 1 }}
+                                        />                                    </li>
                                 ))}
                             </ul>
                         </div>
                     )}
                 </AccordionDetails>
             </Accordion>
+            <ButtonGroup
+                className='button-group'
+                variant="contained"
+            >
+                <Button
+                    href="/"
+                >
+                    Вернуться
+                </Button>
+                <Button
+                    href={window.location.pathname}
+                >
+                    Обновить
+                </Button>
+                <Button
+                    onClick={() => console.log('Запрос на изменение данных')}
+                >
+                    Сохранить
+                </Button>
+            </ButtonGroup>
         </div>
     );
 };

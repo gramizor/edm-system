@@ -1,8 +1,8 @@
 import React from 'react';
 import { Breadcrumbs, Button, Link, Typography, IconButton } from '@mui/material';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import { useLocation, useParams } from 'react-router-dom'; // Подключаем хук для получения текущего пути и параметров URL
-import users from '../../Data'; // Подключаем массив пользователей
+import { useLocation, useParams } from 'react-router-dom';
+import users from '../../Data';
 import './Breadcrumbs.scss'
 
 function BreadcrumbComponent() {
