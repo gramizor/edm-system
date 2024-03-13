@@ -185,7 +185,7 @@ const Card = () => {
                     Вернуться
                 </Button>
                 <Button
-                    href={window.location.pathname}
+                    onClick={() => console.log('Запрос на обновление данных')}
                 >
                     Обновить
                 </Button>
