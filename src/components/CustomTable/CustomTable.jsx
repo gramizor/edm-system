@@ -62,7 +62,7 @@ export default function CustomTable() {
                 enableColumnPinning={true}
                 positionActionsColumn={"last"}
                 renderRowActions={(cell) => (
-                    <Link to={`/user/${parseInt(cell.row.id) + 1}`}>
+                    <Link to={`user/${parseInt(cell.row.id) + 1}`}>
                         <IconButton color="inherit">
                             <ArrowForwardIosIcon />
                         </IconButton>

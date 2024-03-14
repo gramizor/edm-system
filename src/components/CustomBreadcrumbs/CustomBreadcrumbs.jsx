@@ -3,27 +3,27 @@ import { Breadcrumbs, Button, Link, Typography, IconButton } from '@mui/material
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { useLocation, useParams } from 'react-router-dom';
 import users from '../../Data';
-import './Breadcrumbs.scss'
+import './CustomBreadcrumbs.scss'
 
-function BreadcrumbComponent() {
+function CustomBreadcrumbs() {
     const location = useLocation();
 
     const getButtons = () => {
-        if (location.pathname === '/') {
+        if (location.pathname === '/edm-system') {
             return [
                 <Button key="home" color="inherit" href="/" sx={{ color: "white", fontWeight: "bold" }}>
                     Главная
                 </Button>
             ];
         }
-        if (location.pathname.startsWith(`/user/`)) {
-            let id = location.pathname.slice(6);
+        if (location.pathname.startsWith(`/edm-system/user/`)) {
+            const id = location.pathname.slice(17);
             const user = users.find(user => user.id === parseInt(id));
             return [
                 <Button key="home" color="inherit" href="/" sx={{ color: "white", fontWeight: "bold" }}>
                     Главная
                 </Button>,
-                <Button key="user" color="inherit" href={`/user/${id}`} sx={{ color: "white", fontWeight: "bold" }}>
+                <Button key="user" color="inherit" href={`/edm-system/user/${id}`} sx={{ color: "white", fontWeight: "bold" }}>
                     {user ? user.params.value.find(item => item.title === 'ФИО').value : 'Пользователь'}
                 </Button>
             ];
@@ -32,10 +32,10 @@ function BreadcrumbComponent() {
 
 
     return (
-        <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+        <Breadcrumbs separator={<NavigateNextIcon fontSize="small" sx={{ color: "white" }} />} aria-label="breadcrumb">
             {getButtons()}
         </Breadcrumbs>
     );
 }
 
-export default BreadcrumbComponent;
+export default CustomBreadcrumbs;

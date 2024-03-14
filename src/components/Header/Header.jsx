@@ -1,7 +1,7 @@
 import React from 'react'
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@mui/material';
-import BreadcrumbComponent from '../Breadcrumbs/Breadcrumbs';
+import { AppBar, Toolbar, IconButton } from '@mui/material';
+import CustomBreadcrumbs from '../CustomBreadcrumbs/CustomBreadcrumbs';
 
 const Header = () => {
     return (
@@ -10,7 +10,7 @@ const Header = () => {
                 <IconButton edge="start" color="inherit" aria-label="menu">
                     <AssignmentIcon />
                 </IconButton>
-                <BreadcrumbComponent />
+                <CustomBreadcrumbs />
             </Toolbar>
         </AppBar>
     )
