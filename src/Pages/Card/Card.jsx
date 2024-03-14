@@ -42,9 +42,9 @@ const Card = () => {
 
             <Accordion
                 elevation={16}
-                expanded={expanded === 'panel1'} // Здесь проверяем, если аккордеон равен panel1, то устанавливаем expanded в true
+                expanded={expanded === 'panel1'}
                 className='user-module'
-                onChange={handleChange('panel1')} // Убедитесь, что значение 'panel1' передается в функцию handleChange
+                onChange={handleChange('panel1')}
             >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -99,7 +99,8 @@ const Card = () => {
                                             id="info-input"
                                             defaultValue={item.value}
                                             fullWidth sx={{ m: 1 }}
-                                        />                                    </li>
+                                        />
+                                    </li>
                                 ))}
                             </ul>
                         </div>
@@ -168,7 +169,8 @@ const Card = () => {
                                             id="info-input"
                                             defaultValue={item.value}
                                             fullWidth sx={{ m: 1 }}
-                                        />                                    </li>
+                                        />
+                                    </li>
                                 ))}
                             </ul>
                         </div>

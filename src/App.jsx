@@ -1,18 +1,18 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./Pages/Home/Home";
 import Card from "./Pages/Card/Card";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
-        <Route path="/edm-system" element={<Home />} />
-        <Route path="/edm-system/user/:id" element={<Card />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/user/:id" element={<Card />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
