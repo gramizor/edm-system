@@ -182,7 +182,7 @@ const Card = () => {
                 variant="contained"
             >
                 <Button
-                    href="/"
+                    href={`/edm-system#`}
                 >
                     Вернуться
                 </Button>

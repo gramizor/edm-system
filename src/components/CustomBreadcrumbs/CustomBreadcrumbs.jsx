@@ -11,7 +11,7 @@ function CustomBreadcrumbs() {
     const getButtons = () => {
         if (location.pathname === '/') {
             return [
-                <Button key="home" color="inherit" href="/" sx={{ color: "white", fontWeight: "bold" }}>
+                <Button key="home" color="inherit" href={`/edm-system#`} sx={{ color: "white", fontWeight: "bold" }}>
                     Главная
                 </Button>
             ];
@@ -21,7 +21,7 @@ function CustomBreadcrumbs() {
             const user = users.find(user => user.id === parseInt(id));
             console.log(id)
             return [
-                <Button key="home" color="inherit" href="/" sx={{ color: "white", fontWeight: "bold" }}>
+                <Button key="home" color="inherit" href={`/edm-system#`} sx={{ color: "white", fontWeight: "bold" }}>
                     Главная
                 </Button>,
                 <Button key="user" color="inherit" href={`/edm-system#/user/${id}`} sx={{ color: "white", fontWeight: "bold" }}>
