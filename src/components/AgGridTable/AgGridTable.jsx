@@ -1,20 +1,22 @@
-import { AgGridReact } from 'ag-grid-react'; // AG Grid Component
-import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the grid
-import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
-import './AgGridTable.scss';
+import { AgGridReact } from 'ag-grid-react';
+import "ag-grid-community/styles/ag-grid.css";
+import "ag-grid-community/styles/ag-theme-quartz.css";
+import './AgGridTable.scss'
 import 'ag-grid-enterprise';
 import users from '../../Data';
-import React, {
-    StrictMode,
-    useCallback,
-    useMemo,
-    useRef,
-    useState,
-} from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState, } from 'react';
+import { Button, ButtonGroup } from '@mui/material';
 
 const AgGridTable = () => {
     const rowData = [];
-    const colDefs = [];
+    const colDefs = [
+        { field: 'ФИО', cellDataType: 'text' },
+        { field: 'Дата рождения', cellDataType: 'dateString' },
+        { field: 'Номер телефона', cellDataType: 'text' },
+        { field: 'Адрес', cellDataType: 'text' },
+        { field: 'Пол', cellDataType: 'text' }
+    ];
+    const gridRef = useRef();
 
     users.forEach(user => {
         const row = {};
@@ -26,26 +28,20 @@ const AgGridTable = () => {
         rowData.push(row);
     });
 
-    users[0].params.value.forEach(param => {
-        colDefs.push({ field: param.title });
-    });
-    const gridRef = useRef();
-    const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
-    const gridStyle = useMemo(() => ({ height: '100%', width: '100%' }), []);
-
     const defaultColDef = useMemo(() => {
         return {
-            width: 100,
             enableRowGroup: true,
             enablePivot: true,
             enableValue: true,
         };
     }, []);
+
     const autoGroupColumnDef = useMemo(() => {
         return {
             minWidth: 200,
         };
     }, []);
+
     const sideBar = useMemo(() => {
         return {
             toolPanels: ['columns'],
@@ -55,41 +51,110 @@ const AgGridTable = () => {
     const onGridReady = useCallback((params) => {
         fetch('https://www.ag-grid.com/example-assets/olympic-winners.json')
             .then((resp) => resp.json())
-            .then((data) => setRowData(data));
+        // .then((data) => setRowData(data));
     }, []);
 
     const saveState = useCallback(() => {
         window.colState = gridRef.current.api.getColumnState();
-        console.log('column state saved');
+        console.log('Порядок столбцов сохранен!');
     }, []);
 
     const restoreState = useCallback(() => {
         if (!window.colState) {
-            console.log('no columns state to restore by, you must save state first');
+            console.log('Нет столбцов по умолчанию, сначала сохраните нужное состояние');
             return;
         }
         gridRef.current.api.applyColumnState({
             state: window.colState,
             applyOrder: true,
         });
-        console.log('column state restored');
+        console.log('Порядок столбцов сброшен!');
     }, []);
 
     const resetState = useCallback(() => {
         gridRef.current.api.resetColumnState();
-        console.log('column state reset');
+        console.log('Порядок столбцов восстановлен!');
+    }, []);
+
+    const onBtClearAllSorting = useCallback(() => {
+        gridRef.current.api.applyColumnState({
+            defaultState: { sort: null },
+        });
+        console.log('Сортировка сброшена!');
+    }, []);
+
+    const sortByBirthdayAndFullName = useCallback(() => {
+        gridRef.current.api.applyColumnState({
+            state: [
+                { colId: 'ФИО', sort: 'asc', sortIndex: 0 },
+                { colId: 'Дата рождения', sort: 'asc', sortIndex: 1 },
+            ],
+            defaultState: { sort: null },
+        });
+    }, []);
+
+    const autoSizeStrategy = useMemo(() => {
+        return {
+            type: 'fitGridWidth',
+            defaultMinWidth: 200,
+            columnLimits: [
+                {
+                    colId: 'ФИО',
+                    minWidth: 270,
+                },
+                {
+                    colId: 'Дата рождения',
+                    minWidth: 130,
+                },
+                {
+                    colId: 'Номер телефона',
+                    minWidth: 170,
+                },
+                {
+                    colId: 'Адрес',
+                    minWidth: 400,
+                },
+                {
+                    colId: 'Пол',
+                    minWidth: 100,
+                },
+            ],
+        };
     }, []);
 
     return (
         <div className="table-container">
-            <div className="example-section">
-                <button onClick={saveState}>Save State</button>
-                <button onClick={restoreState}>Restore State</button>
-                <button onClick={resetState}>Reset State</button>
+            <div className="header">
+                <div className="btn-section">
+                    <div className="btn-group">
+                        <div className="group-title">Порядок столбцов</div>
+                        <ButtonGroup>
+                            <Button variant="contained" onClick={saveState}>Сохранить</Button>
+                            <Button variant="contained" onClick={restoreState}>Восстановить</Button>
+                            <Button variant="contained" onClick={resetState}>Сбросить</Button>
+                        </ButtonGroup>
+                    </div>
+                    <div className="btn-group">
+                        <div className="group-title">Сортировка</div>
+                        <ButtonGroup>
+                            <Button variant="contained" onClick={sortByBirthdayAndFullName}>
+                                ФИО, затем дата рождения
+                            </Button>
+                            <Button variant="contained" onClick={onBtClearAllSorting}>
+                                Очистить
+                            </Button>
+                        </ButtonGroup>
+                    </div>
+                </div>
             </div>
+
             <div
-                className="ag-theme-quartz"
-                style={{ height: 300 }}
+                style={{
+                    height: '700px', padding: '20px'
+                }}
+                className={
+                    "ag-theme-quartz"
+                }
             >
                 <AgGridReact
                     ref={gridRef}
@@ -101,9 +166,10 @@ const AgGridTable = () => {
                     rowGroupPanelShow={'always'}
                     pivotPanelShow={'always'}
                     onGridReady={onGridReady}
+                    autoSizeStrategy={autoSizeStrategy}
                 />
             </div>
-        </div >
+        </div>
     )
 }
 

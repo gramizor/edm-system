@@ -1,7 +1,7 @@
 import React from 'react'
-import CustomTable from '../../components/CustomTable/CustomTable'
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+// import CustomTable from '../../components/CustomTable/CustomTable'
+// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import Pie from '../../components/Charts/Pie';
 import Linear from '../../components/Charts/Linear';
 import Stacking from '../../components/Charts/Stacking';
@@ -11,7 +11,7 @@ import AgGridTable from '../../components/AgGridTable/AgGridTable';
 const Home = () => {
 
     return (
-        <div>
+        <div className='home'>
             <div className="charts">
                 <Pie />
                 <Linear />
@@ -20,11 +20,11 @@ const Home = () => {
             <div>
                 <AgGridTable />
             </div>
-            <LocalizationProvider dateAdapter={AdapterDayjs}>
+            {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <div style={{ padding: "20px" }}>
                     <CustomTable />
                 </div>
-            </LocalizationProvider>
+            </LocalizationProvider> */}
         </div>
     )
 }
