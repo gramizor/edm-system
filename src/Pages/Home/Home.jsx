@@ -6,10 +6,10 @@ import Pie from '../../components/Charts/Pie';
 import Linear from '../../components/Charts/Linear';
 import Stacking from '../../components/Charts/Stacking';
 import './Home.scss'
-import users from '../../Data';
 import AgGridTable from '../../components/AgGridTable/AgGridTable';
 import { Fab } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [selectedUserId, setSelectedUserId] = useState(null);
@@ -29,9 +29,11 @@ const Home = () => {
                 <AgGridTable userSelected={handleUserSelect} />
             </div>
 
-            <Fab color="primary" className='navigate-button' onClick={() => console.log(selectedUserId)}>
-                <ArrowForwardIosIcon />
-            </Fab>
+            <Link to={selectedUserId !== null ? `user/${parseInt(selectedUserId) + 1}` : '#'}>
+                <Fab color="primary" className='navigate-button'>
+                    <ArrowForwardIosIcon />
+                </Fab>
+            </Link>
         </div>
     )
 }
