@@ -6,3 +6,14 @@
     justify-content: center;
     align-items: center;
 }
+
+.home {
+    position: relative;
+}
+
+.navigate-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}

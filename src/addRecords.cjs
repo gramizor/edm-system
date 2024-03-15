@@ -21,10 +21,6 @@ function generatePhoneNumber() {
         .replace(/\#/g, () => Math.floor(Math.random() * 9) + 1);
 }
 
-function random4() {
-    return Math.floor(Math.random() * 4);
-}
-
 function generateFullName(gender) {
     const maleFirstNames = ["Иван", "Петр", "Александр", "Сергей", "Михаил"];
     const femaleFirstNames = ["Елена", "Ольга", "Анна", "Мария", "Светлана"];
@@ -97,17 +93,19 @@ function randomPosition() {
 function generateRandomUserData(id) {
     const gender = generateGender();
     const maritalStatus = generateMaritalStatus(gender);
+
     const education = [];
-
-    const educationCount = Math.min(random4() + 1, 3);
-
-    for (let j = 0; j < educationCount; j++) {
-        const degree = j === 0 ? "Среднее" : (j === 1 ? "Бакалавриат" : "Магистратура");
-        const uni = j === 0 ? "Колледж" : generateUniversity();
-        education.push({
-            title: degree,
-            value: uni,
-        });
+    const educationCount = Math.floor(Math.random() * 3);
+    if (educationCount > 0) {
+        for (let j = 0; j < educationCount; j++) {
+            const degree = j === 0 ? "Бакалавриат" : "Магистратура";
+            const uni = generateUniversity();
+            education.push({
+                title: degree,
+                type: 'dropList',
+                value: uni,
+            });
+        }
     }
 
     const career = [];
@@ -116,18 +114,22 @@ function generateRandomUserData(id) {
         career.push({
             title: "Стаж",
             value: workExperience + " (в годах)",
+            type: 'text',
         });
         career.push({
             title: "Зарплата",
             value: generateSalary() + " руб.",
+            type: 'text',
         });
         career.push({
             title: "Должность",
             value: randomPosition(),
+            type: 'dropList',
         });
         career.push({
             title: "Отдел",
             value: randomDepartment(),
+            type: 'dropList',
         });
     }
 
@@ -139,22 +141,27 @@ function generateRandomUserData(id) {
                 {
                     title: "ФИО",
                     value: generateFullName(gender),
+                    type: 'text',
                 },
                 {
                     title: "Дата рождения",
                     value: generateBirthday(),
+                    type: 'date',
                 },
                 {
                     title: "Номер телефона",
                     value: generatePhoneNumber(),
+                    type: 'text',
                 },
                 {
                     title: "Адрес",
                     value: generateAddress(),
+                    type: 'text',
                 },
                 {
                     title: "Пол",
                     value: gender,
+                    type: 'dropList',
                 },
             ],
         },
@@ -173,14 +180,17 @@ function generateRandomUserData(id) {
                     {
                         title: "Отец",
                         value: generateFullName("Мужской"),
+                        type: 'text',
                     },
                     {
                         title: "Мать",
                         value: generateFullName("Женский"),
+                        type: 'text',
                     },
                     {
                         title: "Семейное положение",
                         value: maritalStatus,
+                        type: 'dropList',
                     },
                 ]
             },

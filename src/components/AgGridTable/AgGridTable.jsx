@@ -5,34 +5,50 @@ import './AgGridTable.scss'
 import 'ag-grid-enterprise';
 import users from '../../Data';
 import React, { useCallback, useEffect, useMemo, useRef, useState, } from 'react';
-import { Button, ButtonGroup } from '@mui/material';
+import { Button, ButtonGroup, IconButton } from '@mui/material';
+import { Link } from 'react-router-dom';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-const AgGridTable = () => {
+const AgGridTable = ({ userSelected }) => {
     const rowData = [];
+    const gridRef = useRef();
+
+    const CustomButtonComponent = (event) => {
+        // console.log(event.data)
+        // return <button onClick={(event) => window.alert(event.data)}>Push Me!</button>;
+    };
     const colDefs = [
         { field: 'ФИО', cellDataType: 'text' },
         { field: 'Дата рождения', cellDataType: 'dateString' },
         { field: 'Номер телефона', cellDataType: 'text' },
         { field: 'Адрес', cellDataType: 'text' },
-        { field: 'Пол', cellDataType: 'text' }
+        { field: 'Пол', cellDataType: 'text' },
+        { field: '', cellRenderer: CustomButtonComponent, flex: 1 },
     ];
-    const gridRef = useRef();
 
-    users.forEach(user => {
-        const row = {};
+    // users.forEach(user => {
+    //     const row = {};
 
-        user.params.value.forEach(param => {
-            row[param.title] = param.value;
-        });
+    //     user.params.value.forEach(param => {
+    //         row[param.title] = param.value;
+    //     });
+    //     row['Перейти'] = (
+    //         <Link to={`user/${parseInt(user.id) + 1}`}>
+    //             <IconButton color="inherit">
+    //                 <ArrowForwardIosIcon />
+    //             </IconButton>
+    //         </Link>
+    //     );
+    //     rowData.push(row);
 
-        rowData.push(row);
-    });
+    // });
 
     const defaultColDef = useMemo(() => {
         return {
             enableRowGroup: true,
             enablePivot: true,
             enableValue: true,
+            editable: true
         };
     }, []);
 
@@ -40,18 +56,6 @@ const AgGridTable = () => {
         return {
             minWidth: 200,
         };
-    }, []);
-
-    const sideBar = useMemo(() => {
-        return {
-            toolPanels: ['columns'],
-        };
-    }, []);
-
-    const onGridReady = useCallback((params) => {
-        fetch('https://www.ag-grid.com/example-assets/olympic-winners.json')
-            .then((resp) => resp.json())
-        // .then((data) => setRowData(data));
     }, []);
 
     const saveState = useCallback(() => {
@@ -122,6 +126,37 @@ const AgGridTable = () => {
         };
     }, []);
 
+    const onGridReady = useCallback(() => {
+        const rowData = [];
+
+        users.forEach(user => {
+            const row = {};
+            row['id'] = user.id;
+            user.params.value.forEach(param => {
+                row[param.title] = param.value;
+            });
+            rowData.push(row);
+        });
+        gridRef.current.api.setGridOption('rowData', rowData);
+        console.log(rowData)
+    }, [users]);
+
+    const [userSelectedId, setUserSelectedId] = useState(null);
+
+    const onSelectionChanged = useCallback(() => {
+        const selectedRows = gridRef.current.api.getSelectedRows();
+        if (selectedRows.length === 1) {
+            console.log("Выбранный ID пользователя:", selectedRows[0].id);
+            userSelected(selectedRows[0].id);
+            console.log(rowData)
+        }
+    }, [userSelected]);
+
+    useEffect(() => {
+        if (userSelectedId !== null) {
+            userSelected(userSelectedId);
+        }
+    }, [userSelected, userSelectedId]);
     return (
         <div className="table-container">
             <div className="header">
@@ -162,11 +197,12 @@ const AgGridTable = () => {
                     columnDefs={colDefs}
                     defaultColDef={defaultColDef}
                     autoGroupColumnDef={autoGroupColumnDef}
-                    sideBar={sideBar}
                     rowGroupPanelShow={'always'}
                     pivotPanelShow={'always'}
-                    onGridReady={onGridReady}
                     autoSizeStrategy={autoSizeStrategy}
+                    rowSelection={'single'}
+                    onSelectionChanged={onSelectionChanged}
+                    onGridReady={onGridReady}
                 />
             </div>
         </div>
