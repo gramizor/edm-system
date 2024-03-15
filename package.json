@@ -16,6 +16,8 @@
     "@mui/icons-material": "^5.15.11",
     "@mui/material": "^5.15.11",
     "@mui/x-charts": "^6.19.5",
+    "ag-grid-enterprise": "^31.1.1",
+    "ag-grid-react": "^31.1.1",
     "dayjs": "^1.11.10",
     "faker": "^6.6.6",
     "material-react-table": "^2.12.1",

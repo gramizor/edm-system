@@ -6,14 +6,19 @@ import Pie from '../../components/Charts/Pie';
 import Linear from '../../components/Charts/Linear';
 import Stacking from '../../components/Charts/Stacking';
 import './Home.scss'
+import AgGridTable from '../../components/AgGridTable/AgGridTable';
 
 const Home = () => {
+
     return (
         <div>
             <div className="charts">
                 <Pie />
                 <Linear />
                 <Stacking />
+            </div>
+            <div>
+                <AgGridTable />
             </div>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <div style={{ padding: "20px" }}>
