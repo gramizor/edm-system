@@ -39,7 +39,7 @@ const Home = () => {
             {showButton && (
                 <Link to={selectedUserId !== null ? `user/${parseInt(selectedUserId)}` : '#'}>
                     <Fab color="primary" className='navigate-button animate-slide-right' style={{
-                        position: 'absolute',
+                        position: 'fixed',
                         bottom: 16,
                         right: 16,
                     }}>

@@ -6,24 +6,17 @@ import 'ag-grid-enterprise';
 import users from '../../Data';
 import React, { useCallback, useEffect, useMemo, useRef, useState, } from 'react';
 import { Button, ButtonGroup, IconButton } from '@mui/material';
-import { Link } from 'react-router-dom';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const AgGridTable = ({ userSelected }) => {
     const rowData = [];
     const gridRef = useRef();
 
-    const CustomButtonComponent = (event) => {
-        // console.log(event.data)
-        // return <button onClick={(event) => window.alert(event.data)}>Push Me!</button>;
-    };
     const colDefs = [
         { field: 'ФИО', cellDataType: 'text' },
         { field: 'Дата рождения', cellDataType: 'dateString' },
         { field: 'Номер телефона', cellDataType: 'text' },
         { field: 'Адрес', cellDataType: 'text' },
         { field: 'Пол', cellDataType: 'text' },
-        { field: '', cellRenderer: CustomButtonComponent, flex: 1 },
     ];
 
     // users.forEach(user => {
