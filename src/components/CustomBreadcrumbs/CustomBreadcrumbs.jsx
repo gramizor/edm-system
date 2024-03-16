@@ -19,7 +19,6 @@ function CustomBreadcrumbs() {
         if (location.pathname.startsWith(`/user/`)) {
             const id = location.pathname.slice(6);
             const user = users.find(user => user.id === parseInt(id));
-            console.log(id)
             return [
                 <Button key="home" color="inherit" href={`/edm-system#`} sx={{ color: "white", fontWeight: "bold" }}>
                     Главная

@@ -5,36 +5,19 @@ import './AgGridTable.scss'
 import 'ag-grid-enterprise';
 import users from '../../Data';
 import React, { useCallback, useEffect, useMemo, useRef, useState, } from 'react';
-import { Button, ButtonGroup, IconButton } from '@mui/material';
+import { Button, ButtonGroup } from '@mui/material';
 
-const AgGridTable = ({ userSelected }) => {
-    const rowData = [];
+const AgGridTable = ({ userSelected, handleSnackbarOpen }) => {
+    const [rowData, setRowData] = useState([]);
     const gridRef = useRef();
 
     const colDefs = [
-        { field: 'ФИО', cellDataType: 'text' },
+        { field: 'ФИО', cellDataType: 'text', filter: 'agMultiColumnFilter' },
         { field: 'Дата рождения', cellDataType: 'dateString' },
         { field: 'Номер телефона', cellDataType: 'text' },
         { field: 'Адрес', cellDataType: 'text' },
         { field: 'Пол', cellDataType: 'text' },
     ];
-
-    // users.forEach(user => {
-    //     const row = {};
-
-    //     user.params.value.forEach(param => {
-    //         row[param.title] = param.value;
-    //     });
-    //     row['Перейти'] = (
-    //         <Link to={`user/${parseInt(user.id) + 1}`}>
-    //             <IconButton color="inherit">
-    //                 <ArrowForwardIosIcon />
-    //             </IconButton>
-    //         </Link>
-    //     );
-    //     rowData.push(row);
-
-    // });
 
     const defaultColDef = useMemo(() => {
         return {
@@ -53,31 +36,31 @@ const AgGridTable = ({ userSelected }) => {
 
     const saveState = useCallback(() => {
         window.colState = gridRef.current.api.getColumnState();
-        console.log('Порядок столбцов сохранен!');
+        handleSnackbarOpen('success', 'Порядок столбцов сохранен');
     }, []);
 
     const restoreState = useCallback(() => {
         if (!window.colState) {
-            console.log('Нет столбцов по умолчанию, сначала сохраните нужное состояние');
+            handleSnackbarOpen('error', 'Нет столбцов по умолчанию, сначала сохраните нужное состояние');
             return;
         }
         gridRef.current.api.applyColumnState({
             state: window.colState,
             applyOrder: true,
         });
-        console.log('Порядок столбцов сброшен!');
+        handleSnackbarOpen('success', 'Порядок столбцов сброшен');
     }, []);
 
     const resetState = useCallback(() => {
         gridRef.current.api.resetColumnState();
-        console.log('Порядок столбцов восстановлен!');
+        handleSnackbarOpen('success', 'Порядок столбцов восстановлен');
     }, []);
 
     const onBtClearAllSorting = useCallback(() => {
         gridRef.current.api.applyColumnState({
             defaultState: { sort: null },
         });
-        console.log('Сортировка сброшена!');
+        handleSnackbarOpen('success', 'Сортировка сброшена');
     }, []);
 
     const sortByBirthdayAndFullName = useCallback(() => {
@@ -88,6 +71,7 @@ const AgGridTable = ({ userSelected }) => {
             ],
             defaultState: { sort: null },
         });
+        handleSnackbarOpen('success', 'Сортировка настроена');
     }, []);
 
     const autoSizeStrategy = useMemo(() => {
@@ -131,7 +115,6 @@ const AgGridTable = ({ userSelected }) => {
             rowData.push(row);
         });
         gridRef.current.api.setGridOption('rowData', rowData);
-        console.log(rowData)
     }, [users]);
 
     const [userSelectedId, setUserSelectedId] = useState(null);
@@ -139,9 +122,7 @@ const AgGridTable = ({ userSelected }) => {
     const onSelectionChanged = useCallback(() => {
         const selectedRows = gridRef.current.api.getSelectedRows();
         if (selectedRows.length === 1) {
-            console.log("Выбранный ID пользователя:", selectedRows[0].id);
             userSelected(selectedRows[0].id);
-            console.log(rowData)
         }
     }, [userSelected]);
 

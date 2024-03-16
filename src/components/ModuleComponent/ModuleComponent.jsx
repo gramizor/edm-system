@@ -3,7 +3,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import DoneIcon from '@mui/icons-material/Done';
 import CloseIcon from '@mui/icons-material/Close';
 
-const ModuleComponent = ({ data }) => {
+const ModuleComponent = ({ data, handleSnackbarOpen }) => {
     const [editableIndex, setEditableIndex] = useState(null);
     const [editedValue, setEditedValue] = useState({});
 
@@ -13,12 +13,13 @@ const ModuleComponent = ({ data }) => {
     };
 
     const handleDoneClick = () => {
-        console.log("Changes saved to console:", editedValue);
+        console.log("Изменения сохранены в консоли:", editedValue);
+        handleSnackbarOpen('success', 'Изменения сохранены в консоли');
         setEditableIndex(null);
     };
 
     const handleCloseClick = () => {
-        console.log("Editing cancelled, changes discarded.");
+        handleSnackbarOpen('warning', 'Изменения отклонены');
         setEditableIndex(null);
     };
 
@@ -31,8 +32,8 @@ const ModuleComponent = ({ data }) => {
         <div>
             <table style={{ width: '100%', tableLayout: 'fixed' }}>
                 <colgroup>
-                    <col style={{ width: '150px' }} /> {/* Ширина первого столбца */}
-                    <col style={{ width: '310px' }} /> {/* Ширина второго столбца */}
+                    <col style={{ width: '150px' }} />
+                    <col style={{ width: '310px' }} />
                 </colgroup>
                 <tbody>
                     {data.value.map((item, index) => (

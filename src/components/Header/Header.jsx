@@ -5,7 +5,7 @@ import CustomBreadcrumbs from '../CustomBreadcrumbs/CustomBreadcrumbs';
 
 const Header = () => {
     return (
-        <AppBar position="static">
+        <AppBar position="sticky" top='0'>
             <Toolbar>
                 <IconButton edge="start" color="inherit" aria-label="menu">
                     <AssignmentIcon />

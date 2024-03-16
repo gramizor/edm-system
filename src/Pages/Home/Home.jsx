@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react'
-// import CustomTable from '../../components/CustomTable/CustomTable'
-// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import Pie from '../../components/Charts/Pie';
 import Linear from '../../components/Charts/Linear';
 import Stacking from '../../components/Charts/Stacking';
-import './Home.scss'
 import AgGridTable from '../../components/AgGridTable/AgGridTable';
-import { Fab } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Fab } from '@mui/material';
 import { Link } from 'react-router-dom';
+import './Home.scss'
 
-const Home = () => {
+const Home = ({ handleSnackbarOpen }) => {
     const [selectedUserId, setSelectedUserId] = useState(null);
 
     const handleUserSelect = (userId) => {
@@ -19,7 +16,6 @@ const Home = () => {
     };
 
     const [showButton, setShowButton] = useState(false);
-    console.log(selectedUserId)
     useEffect(() => {
         if (selectedUserId !== null) {
             setShowButton(true);
@@ -34,7 +30,7 @@ const Home = () => {
                 <Stacking />
             </div>
             <div>
-                <AgGridTable userSelected={handleUserSelect} />
+                <AgGridTable userSelected={handleUserSelect} handleSnackbarOpen={handleSnackbarOpen} />
             </div>
             {showButton && (
                 <Link to={selectedUserId !== null ? `user/${parseInt(selectedUserId)}` : '#'}>
