@@ -1,9 +1,8 @@
 import React from 'react';
 import { Breadcrumbs, Button, Link, Typography, IconButton } from '@mui/material';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { useLocation, useParams } from 'react-router-dom';
 import users from '../../Data';
-import './CustomBreadcrumbs.scss'
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 function CustomBreadcrumbs() {
     const location = useLocation();

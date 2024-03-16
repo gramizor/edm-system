@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./Pages/Home/Home";
-import Card2 from "./Pages/CustomCard/Card2";
+import Card2 from "./Pages/Card2/Card2";
 import { Alert, Snackbar } from "@mui/material";
 
 const App = () => {

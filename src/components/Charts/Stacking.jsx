@@ -18,7 +18,7 @@ export default function CityPopulationChart() {
 
     return (
         <BarChart
-            xAxis={[{ scaleType: 'band', data: xAxis }]}
+            xAxis={[{ label: "Города", scaleType: 'band', data: xAxis }]}
             yAxis={[{ label: "Жители" }]}
             series={series}
             width={700}
