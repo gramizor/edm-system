@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // import CustomTable from '../../components/CustomTable/CustomTable'
 // import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 // import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -18,6 +18,14 @@ const Home = () => {
         setSelectedUserId(userId);
     };
 
+    const [showButton, setShowButton] = useState(false);
+    console.log(selectedUserId)
+    useEffect(() => {
+        if (selectedUserId !== null) {
+            setShowButton(true);
+        }
+    }, [selectedUserId]);
+
     return (
         <div className='home'>
             <div className="charts">
@@ -28,12 +36,17 @@ const Home = () => {
             <div>
                 <AgGridTable userSelected={handleUserSelect} />
             </div>
-
-            <Link to={selectedUserId !== null ? `user/${parseInt(selectedUserId) + 1}` : '#'}>
-                <Fab color="primary" className='navigate-button'>
-                    <ArrowForwardIosIcon />
-                </Fab>
-            </Link>
+            {showButton && (
+                <Link to={selectedUserId !== null ? `user/${parseInt(selectedUserId)}` : '#'}>
+                    <Fab color="primary" className='navigate-button animate-slide-right' style={{
+                        position: 'absolute',
+                        bottom: 16,
+                        right: 16,
+                    }}>
+                        <ArrowForwardIosIcon />
+                    </Fab>
+                </Link>
+            )}
         </div>
     )
 }

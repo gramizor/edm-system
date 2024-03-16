@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 function generateBirthday() {
     const start = new Date(1970, 0, 1);
     const end = new Date(2005, 11, 31);
@@ -104,6 +103,7 @@ function generateRandomUserData(id) {
                 title: degree,
                 type: 'dropList',
                 value: uni,
+                variants: 'universitiesVariants',
             });
         }
     }
@@ -125,11 +125,13 @@ function generateRandomUserData(id) {
             title: "Должность",
             value: randomPosition(),
             type: 'dropList',
+            variants: 'positionVariants',
         });
         career.push({
             title: "Отдел",
             value: randomDepartment(),
             type: 'dropList',
+            variants: 'departmentVariants',
         });
     }
 
@@ -162,6 +164,7 @@ function generateRandomUserData(id) {
                     title: "Пол",
                     value: gender,
                     type: 'dropList',
+                    variants: 'genderVariants',
                 },
             ],
         },
@@ -191,6 +194,7 @@ function generateRandomUserData(id) {
                         title: "Семейное положение",
                         value: maritalStatus,
                         type: 'dropList',
+                        variants: 'maritalStatusVariants',
                     },
                 ]
             },
