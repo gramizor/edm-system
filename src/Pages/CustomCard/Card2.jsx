@@ -23,7 +23,7 @@ const Card2 = () => {
         setPickedItem(newPicked);
     };
     return (
-        <div>
+        <div style={{ maxWidth: '700px', margin: 'auto', marginTop: '25px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)' }}>
             <Box sx={{ width: '100%', typography: 'body1' }}>
                 <TabContext value={pickedItem}>
                     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
