@@ -227,7 +227,7 @@ const users = [{
             },
             {
                 title: "Пол",
-                value: "Мужской",
+                value: "Женский",
                 type: "dropList",
                 variants: genderVariants
             }
@@ -328,7 +328,7 @@ const users = [{
             },
             {
                 title: "Пол",
-                value: "Мужской",
+                value: "Женский",
                 type: "dropList",
                 variants: genderVariants
             }

@@ -7,30 +7,69 @@ import users from '../../Data';
 import React, { useCallback, useEffect, useMemo, useRef, useState, } from 'react';
 import { Button, ButtonGroup } from '@mui/material';
 
-const AgGridTable = ({ userSelected, handleSnackbarOpen }) => {
-    const [rowData, setRowData] = useState([]);
-    const gridRef = useRef();
+var dateFilterParams = {
+    filters: [
+        {
+            filter: 'agDateColumnFilter',
+            filterParams: {
+                comparator: (filterDate, cellValue) => {
+                    if (cellValue == null) return -1;
+                    return getDate(cellValue).getTime() - filterDate.getTime();
+                },
+            },
+        },
+        {
+            filter: 'agSetColumnFilter',
+            filterParams: {
+                comparator: (a, b) => {
+                    return getDate(a).getTime() - getDate(b).getTime();
+                },
+            },
+        },
+    ],
+};
 
-    const colDefs = [
-        { field: 'ФИО', cellDataType: 'text', filter: 'agMultiColumnFilter' },
-        { field: 'Дата рождения', cellDataType: 'dateString' },
-        { field: 'Номер телефона', cellDataType: 'text' },
-        { field: 'Адрес', cellDataType: 'text' },
-        { field: 'Пол', cellDataType: 'text' },
-    ];
+const getDate = (value) => {
+    var dateParts = value.split('/');
+    return new Date(
+        Number(dateParts[2]),
+        Number(dateParts[1]) - 1,
+        Number(dateParts[0])
+    );
+};
+
+const AgGridTable = ({ userSelected, handleSnackbarOpen }) => {
+    const gridRef = useRef();
+    const [rowData, setRowData] = useState([]);
+    const [userSelectedId, setUserSelectedId] = useState(null);
+
+    const [columnDefs, setColumnDefs] = useState([
+        { field: 'ФИО', cellDataType: 'text', filter: 'agTextColumnFilter' },
+        {
+            field: 'Дата рождения',
+            filter: 'agDateColumnFilter',
+            filterParams: dateFilterParams,
+            cellDataType: 'dateString',
+        },
+        { field: 'Номер телефона', cellDataType: 'text', filter: 'agTextColumnFilter' },
+        { field: 'Адрес', cellDataType: 'text', filter: 'agTextColumnFilter' },
+        { field: 'Пол', cellDataType: 'text', filter: 'agTextColumnFilter' },
+    ]);
 
     const defaultColDef = useMemo(() => {
         return {
             enableRowGroup: true,
             enablePivot: true,
             enableValue: true,
-            editable: true
+            editable: true,
+            floatingFilter: true,
+            menuTabs: ['filterMenuTab'],
         };
     }, []);
 
-    const autoGroupColumnDef = useMemo(() => {
+    const sideBar = useMemo(() => {
         return {
-            minWidth: 200,
+            toolPanels: ['filters'],
         };
     }, []);
 
@@ -72,6 +111,12 @@ const AgGridTable = ({ userSelected, handleSnackbarOpen }) => {
             defaultState: { sort: null },
         });
         handleSnackbarOpen('success', 'Сортировка настроена');
+    }, []);
+
+    const autoGroupColumnDef = useMemo(() => {
+        return {
+            minWidth: 200,
+        };
     }, []);
 
     const autoSizeStrategy = useMemo(() => {
@@ -117,8 +162,6 @@ const AgGridTable = ({ userSelected, handleSnackbarOpen }) => {
         gridRef.current.api.setGridOption('rowData', rowData);
     }, [users]);
 
-    const [userSelectedId, setUserSelectedId] = useState(null);
-
     const onSelectionChanged = useCallback(() => {
         const selectedRows = gridRef.current.api.getSelectedRows();
         if (selectedRows.length === 1) {
@@ -131,6 +174,7 @@ const AgGridTable = ({ userSelected, handleSnackbarOpen }) => {
             userSelected(userSelectedId);
         }
     }, [userSelected, userSelectedId]);
+
     return (
         <div className="table-container">
             <div className="header">
@@ -168,7 +212,7 @@ const AgGridTable = ({ userSelected, handleSnackbarOpen }) => {
                 <AgGridReact
                     ref={gridRef}
                     rowData={rowData}
-                    columnDefs={colDefs}
+                    columnDefs={columnDefs}
                     defaultColDef={defaultColDef}
                     autoGroupColumnDef={autoGroupColumnDef}
                     rowGroupPanelShow={'always'}
@@ -177,6 +221,7 @@ const AgGridTable = ({ userSelected, handleSnackbarOpen }) => {
                     rowSelection={'single'}
                     onSelectionChanged={onSelectionChanged}
                     onGridReady={onGridReady}
+                    sideBar={sideBar}
                 />
             </div>
         </div>

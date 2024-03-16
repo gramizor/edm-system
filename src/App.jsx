@@ -17,6 +17,9 @@ const App = () => {
   };
 
   const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
     setOpen(false);
   };
 
@@ -27,7 +30,7 @@ const App = () => {
         <Route path="/" element={<Home handleSnackbarOpen={handleSnackbarOpen} />} />
         <Route path="/user/:id" element={<Card2 handleSnackbarOpen={handleSnackbarOpen} />} />
       </Routes>
-      <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
         <Alert
           onClose={handleClose}
           severity={snackbarStatus}

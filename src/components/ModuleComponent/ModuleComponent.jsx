@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import EditIcon from '@mui/icons-material/Edit';
 import DoneIcon from '@mui/icons-material/Done';
 import CloseIcon from '@mui/icons-material/Close';
-
 const ModuleComponent = ({ data, handleSnackbarOpen }) => {
     const [editableIndex, setEditableIndex] = useState(null);
     const [editedValue, setEditedValue] = useState({});
@@ -38,7 +37,7 @@ const ModuleComponent = ({ data, handleSnackbarOpen }) => {
                 <tbody>
                     {data.value.map((item, index) => (
                         <tr key={index}>
-                            <td style={{ paddingRight: '20px', }}>
+                            <td style={{ paddingRight: '20px' }}>
                                 <strong>{item.title}</strong>
                             </td>
                             <td>
@@ -80,6 +79,20 @@ const ModuleComponent = ({ data, handleSnackbarOpen }) => {
                             </td>
                         </tr>
                     ))}
+                    {(data.title === 'Образование' && data.value.length === 0) && (
+                        <tr>
+                            <td colSpan="2">
+                                Нет высшего образования
+                            </td>
+                        </tr>
+                    )}
+                    {(data.title === 'Карьера' && data.value.length === 0) && (
+                        <tr>
+                            <td colSpan="2">
+                                Нет опыта работы
+                            </td>
+                        </tr>
+                    )}
                 </tbody>
             </table>
         </div>
